@@ -9,19 +9,19 @@
         <lastBuildDate>Fri, 05 Sep 2025 14:44:46 +0800</lastBuildDate>
         <category>CTF</category>
         <category>Web</category>
+        <category>信息搜集</category>
+        <category>爆破</category>
+        <category>BurpSuite</category>
+        <category>文件包含漏洞</category>
+        <category>日志包含</category>
+        <category>木马上传</category>
+        <category>session条件竞争</category>
         <category>命令执行RCE</category>
         <category>无参RCE</category>
         <category>php伪协议</category>
         <category>Linux系统命令</category>
         <category>过滤绕过</category>
         <category>POC</category>
-        <category>爆破</category>
-        <category>BurpSuite</category>
-        <category>信息搜集</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
         <category>PHP漏洞</category>
         <category>命令执行</category>
         <category>哈希碰撞</category>
@@ -35,173 +35,156 @@
             <category>Web</category>
             <category>信息搜集</category>
             <pubDate>Fri, 05 Sep 2025 14:44:46 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;web1&#34;&gt;&lt;a href=&#34;#web1&#34; class=&#34;headerlink&#34; title=&#34;web1&#34;&gt;&lt;/a&gt;web1&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;F12查看源代码&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;web1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web1&#34;&gt;#&lt;/a&gt; web1&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;F12 查看源代码&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{003df495-852d-4326-9f57-aee33ebdbb5a}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250402224023049.png&#34; alt=&#34;image-20250402224023049&#34; style=&#34;zoom:50%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web2&#34;&gt;&lt;a href=&#34;#web2&#34; class=&#34;headerlink&#34; title=&#34;web2&#34;&gt;&lt;/a&gt;web2&lt;/h1&gt;&lt;img data-src=&#34;\images\article_images\image-20250402224539067.png&#34; alt=&#34;image-20250402224539067&#34; style=&#34;zoom:35%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#x3D;&amp;#x3D;题解一&amp;#x3D;&amp;#x3D;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;ctrl + u&lt;/code&gt; 查看网页源代码 &amp;#x2F; 在URL前加上 &lt;code&gt;view-source: &lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web2&#34;&gt;#&lt;/a&gt; web2&lt;/h1&gt;
+&lt;img data-src=&#34;\images\article_images\image-20250402224539067.png&#34; alt=&#34;image-20250402224539067&#34; style=&#34;zoom:35%;&#34; /&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;label style=&#34;color:green&#34;&gt;题解一&lt;/label&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ctrl + u&lt;/code&gt;  查看网页源代码 / 在 URL 前加上  &lt;code&gt;view-source: &lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250402224707389.png&#34; alt=&#34;image-20250402224707389&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#x3D;&amp;#x3D;题解二&amp;#x3D;&amp;#x3D;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;刷新的同时按F12查看源代码&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;label style=&#34;color:green&#34;&gt;题解二&lt;/label&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;刷新的同时按 F12 查看源代码&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406205446977.png&#34; alt=&#34;image-20250406205446977&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web3&#34;&gt;&lt;a href=&#34;#web3&#34; class=&#34;headerlink&#34; title=&#34;web3&#34;&gt;&lt;/a&gt;web3&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;抓包&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web3&#34;&gt;#&lt;/a&gt; web3&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;抓包&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Flag: ctfshow{a2f4a406-c69c-4135-bb09-197a2230b537}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406203240665.png&#34; alt=&#34;image-20250406203240665&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406202851164.png&#34; alt=&#34;image-20250406202851164&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web4&#34;&gt;&lt;a href=&#34;#web4&#34; class=&#34;headerlink&#34; title=&#34;web4&#34;&gt;&lt;/a&gt;web4&lt;/h1&gt;&lt;p&gt;访问 &lt;code&gt;url/robots.txt&lt;/code&gt; ，根据提示 访问 &lt;code&gt;url/flagishere.txt&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web4&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web4&#34;&gt;#&lt;/a&gt; web4&lt;/h1&gt;
+&lt;p&gt;访问  &lt;code&gt;url/robots.txt&lt;/code&gt;  ，根据提示 访问  &lt;code&gt;url/flagishere.txt&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ctfshow&amp;#123;d1fc90c5-0c02-4457-a8fd-446ddf5f6c3f&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;img data-src=&#34;\images\article_images\image-20250406203833372.png&#34; alt=&#34;image-20250406203833372&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406203847247.png&#34; alt=&#34;image-20250406203847247&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web5&#34;&gt;&lt;a href=&#34;#web5&#34; class=&#34;headerlink&#34; title=&#34;web5&#34;&gt;&lt;/a&gt;web5&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;phps泄露，访问 &lt;code&gt;url/index.php&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web5&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web5&#34;&gt;#&lt;/a&gt; web5&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;phps 泄露，访问  &lt;code&gt;url/index.php&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406204721617.png&#34; alt=&#34;image-20250406204721617&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web6&#34;&gt;&lt;a href=&#34;#web6&#34; class=&#34;headerlink&#34; title=&#34;web6&#34;&gt;&lt;/a&gt;web6&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/www.zip&lt;/code&gt;，然后访问 &lt;code&gt;url/fl000g.txt&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web6&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web6&#34;&gt;#&lt;/a&gt; web6&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/www.zip&lt;/code&gt; ，然后访问  &lt;code&gt;url/fl000g.txt&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406210448625.png&#34; alt=&#34;image-20250406210448625&#34; style=&#34;zoom:50%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406210436670.png&#34; alt=&#34;image-20250406210436670&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web7&#34;&gt;&lt;a href=&#34;#web7&#34; class=&#34;headerlink&#34; title=&#34;web7&#34;&gt;&lt;/a&gt;web7&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/.git&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web7&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web7&#34;&gt;#&lt;/a&gt; web7&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/.git&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406211902205.png&#34; alt=&#34;image-20250406211902205&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web8&#34;&gt;&lt;a href=&#34;#web8&#34; class=&#34;headerlink&#34; title=&#34;web8&#34;&gt;&lt;/a&gt;web8&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/.svn&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web8&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web8&#34;&gt;#&lt;/a&gt; web8&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/.svn&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406213018884.png&#34; alt=&#34;image-20250406213018884&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web9&#34;&gt;&lt;a href=&#34;#web9&#34; class=&#34;headerlink&#34; title=&#34;web9&#34;&gt;&lt;/a&gt;web9&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/index.php.swp&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web9&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web9&#34;&gt;#&lt;/a&gt; web9&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/index.php.swp&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406213659612.png&#34; alt=&#34;image-20250406213659612&#34; style=&#34;zoom:50%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web10&#34;&gt;&lt;a href=&#34;#web10&#34; class=&#34;headerlink&#34; title=&#34;web10&#34;&gt;&lt;/a&gt;web10&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;F12查看cookies 或者 抓包&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;URL解码&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web10&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web10&#34;&gt;#&lt;/a&gt; web10&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;F12 查看 cookies 或者 抓包&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;URL 解码&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406215028988.png&#34; alt=&#34;image-20250406215028988&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406215252742.png&#34; alt=&#34;image-20250406215252742&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406215009170.png&#34; alt=&#34;image-20250406215009170&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web11&#34;&gt;&lt;a href=&#34;#web11&#34; class=&#34;headerlink&#34; title=&#34;web11&#34;&gt;&lt;/a&gt;web11&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;域名查询&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pcHcuY24vZG5zLw==&#34;&gt;域名解析查询 | DNS查询 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web11&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web11&#34;&gt;#&lt;/a&gt; web11&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;域名查询&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pcHcuY24vZG5zLw==&#34;&gt;域名解析查询 | DNS 查询 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aWppYW4uYWxpeXVuLmNvbS8=&#34;&gt;阿里云 &lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web12&#34;&gt;&lt;a href=&#34;#web12&#34; class=&#34;headerlink&#34; title=&#34;web12&#34;&gt;&lt;/a&gt;web12&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/robots.txt&lt;/code&gt;  接着访问 &lt;code&gt;url/admin&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;账号：&lt;code&gt;admin&lt;/code&gt;  密码：&lt;code&gt;372619038&lt;/code&gt;(帮助热线号码)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;ctfshow&amp;#123;e4ded847-4db4-4295-b998-1ac949c90089&amp;#125;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web12&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web12&#34;&gt;#&lt;/a&gt; web12&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/robots.txt&lt;/code&gt;   接着访问  &lt;code&gt;url/admin&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;账号： &lt;code&gt;admin&lt;/code&gt;   密码： &lt;code&gt;372619038&lt;/code&gt;  (帮助热线号码)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ctfshow&amp;#123;e4ded847-4db4-4295-b998-1ac949c90089&amp;#125;&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406230955467.png&#34; alt=&#34;image-20250406230955467&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406230856053.png&#34; alt=&#34;image-20250406230856053&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406231153154.png&#34; alt=&#34;image-20250406231153154&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web13&#34;&gt;&lt;a href=&#34;#web13&#34; class=&#34;headerlink&#34; title=&#34;web13&#34;&gt;&lt;/a&gt;web13&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;拉到最下面，&lt;code&gt;document&lt;/code&gt;下载，查看用户名和密码，访问 &lt;code&gt;靶机/system1103/login.php&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;ctfshow&amp;#123;16b63f10-2d6f-41fe-affc-9b4588184d47&amp;#125;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web13&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web13&#34;&gt;#&lt;/a&gt; web13&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;拉到最下面， &lt;code&gt;document&lt;/code&gt;  下载，查看用户名和密码，访问  &lt;code&gt;靶机/system1103/login.php&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ctfshow&amp;#123;16b63f10-2d6f-41fe-affc-9b4588184d47&amp;#125;&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406231933953.png&#34; alt=&#34;image-20250406231933953&#34; style=&#34;zoom: 23%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406231950964.png&#34; alt=&#34;image-20250406231950964&#34; style=&#34;zoom:50%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406231858102.png&#34; alt=&#34;image-20250406231858102&#34; style=&#34;zoom: 25%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web14&#34;&gt;&lt;a href=&#34;#web14&#34; class=&#34;headerlink&#34; title=&#34;web14&#34;&gt;&lt;/a&gt;web14&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/editor&lt;/code&gt; 在图片上传处可以查看整个目录 找到flag的位置&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;nothinghere&lt;/code&gt; 和 &lt;code&gt;editor&lt;/code&gt; 在同一目录下&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web14&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web14&#34;&gt;#&lt;/a&gt; web14&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/editor&lt;/code&gt;  在图片上传处可以查看整个目录 找到 flag 的位置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;nothinghere&lt;/code&gt;  和  &lt;code&gt;editor&lt;/code&gt;  在同一目录下&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{efea91c6-f966-4022-adc4-3f3b87fa8170}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406234839218.png&#34; alt=&#34;image-20250406234839218&#34; style=&#34;zoom:99%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406234743967.png&#34; alt=&#34;image-20250406234743967&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web15&#34;&gt;&lt;a href=&#34;#web15&#34; class=&#34;headerlink&#34; title=&#34;web15&#34;&gt;&lt;/a&gt;web15&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/admin&lt;/code&gt; 查询QQ得知现居陕西西安，回答密保问题获得重置密码&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web15&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web15&#34;&gt;#&lt;/a&gt; web15&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/admin&lt;/code&gt;  查询 QQ 得知现居陕西西安，回答密保问题获得重置密码&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{af4c6156-aac0-4702-b47c-0d44d354d067}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407002355266.png&#34; alt=&#34;image-20250407002355266&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407002445091.png&#34; alt=&#34;image-20250407002445091&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web16&#34;&gt;&lt;a href=&#34;#web16&#34; class=&#34;headerlink&#34; title=&#34;web16&#34;&gt;&lt;/a&gt;web16&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/tz.php&lt;/code&gt; ,找到 &lt;code&gt;PHPINFO&lt;/code&gt;，查看php信息&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web16&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web16&#34;&gt;#&lt;/a&gt; web16&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/tz.php&lt;/code&gt;  , 找到  &lt;code&gt;PHPINFO&lt;/code&gt; ，查看 php 信息&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{1191cce9-d664-40fa-81cc-c0bb07fe2f1c}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407135131371.png&#34; alt=&#34;image-20250407135131371&#34; style=&#34;zoom:99%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407135041938.png&#34; alt=&#34;image-20250407135041938&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407135131371.png&#34; alt=&#34;image-20250407135131371&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web17&#34;&gt;&lt;a href=&#34;#web17&#34; class=&#34;headerlink&#34; title=&#34;web17&#34;&gt;&lt;/a&gt;web17&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url/backup.sql&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web17&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web17&#34;&gt;#&lt;/a&gt; web17&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/backup.sql&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{2b4eda41-3d14-4ee7-adf1-c78bb5e867d3}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407135741167.png&#34; alt=&#34;image-20250407135741167&#34; style=&#34;zoom: 33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web18&#34;&gt;&lt;a href=&#34;#web18&#34; class=&#34;headerlink&#34; title=&#34;web18&#34;&gt;&lt;/a&gt;web18&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;在&lt;code&gt;Flappy_js.js&lt;/code&gt;看到提示信息，访问 &lt;code&gt;url/110.php&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web18&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web18&#34;&gt;#&lt;/a&gt; web18&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;在 &lt;code&gt;Flappy_js.js&lt;/code&gt;  看到提示信息，访问  &lt;code&gt;url/110.php&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{a48fcacb-d9f4-4e3e-8e20-6f2215fe7cf5}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250409120021668.png&#34; alt=&#34;image-20250409120021668&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250409120037458.png&#34; alt=&#34;image-20250409120037458&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250409120053482.png&#34; alt=&#34;image-20250409120053482&#34; style=&#34;zoom:50%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web19&#34;&gt;&lt;a href=&#34;#web19&#34; class=&#34;headerlink&#34; title=&#34;web19&#34;&gt;&lt;/a&gt;web19&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;源代码有账号密码，post得到ctfshow{5d6760a0-d647-4cd7-bed1-076c68fc072c}&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web19&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web19&#34;&gt;#&lt;/a&gt; web19&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;源代码有账号密码，post 得到 ctfshow {5d6760a0-d647-4cd7-bed1-076c68fc072c}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250409120921147.png&#34; alt=&#34;image-20250409120921147&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web20&#34;&gt;&lt;a href=&#34;#web20&#34; class=&#34;headerlink&#34; title=&#34;web20&#34;&gt;&lt;/a&gt;web20&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;访问 &lt;code&gt;url /db/db.mdb&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web20&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web20&#34;&gt;#&lt;/a&gt; web20&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url /db/db.mdb&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250409121741141.png&#34; alt=&#34;image-20250409121741141&#34; style=&#34;zoom:33%;&#34; /&gt;
-
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
  ]]></description>
         </item>
     </channel>
