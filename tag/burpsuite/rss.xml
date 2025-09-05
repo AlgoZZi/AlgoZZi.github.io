@@ -12,6 +12,12 @@
         <category>信息搜集</category>
         <category>爆破</category>
         <category>BurpSuite</category>
+        <category>命令执行RCE</category>
+        <category>无参RCE</category>
+        <category>php伪协议</category>
+        <category>Linux系统命令</category>
+        <category>过滤绕过</category>
+        <category>POC</category>
         <item>
             <guid isPermalink="true">http://example.com/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/</guid>
             <title>ctfshow爆破</title>
