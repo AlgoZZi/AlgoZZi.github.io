@@ -6,13 +6,13 @@
     <updated>2025-09-05T11:48:21.000Z</updated>
     <category term="CTF" />
     <category term="Web" />
-    <category term="信息搜集" />
-    <category term="爆破" />
-    <category term="BurpSuite" />
     <category term="文件包含漏洞" />
     <category term="日志包含" />
     <category term="木马上传" />
     <category term="session条件竞争" />
+    <category term="信息搜集" />
+    <category term="爆破" />
+    <category term="BurpSuite" />
     <category term="命令执行RCE" />
     <category term="无参RCE" />
     <category term="php伪协议" />
@@ -1511,7 +1511,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;** &lt;code&gt;$_SERVER[&#39;QUERY_STRING&#39;]&lt;/code&gt;  ** 是 URL 中  &lt;code&gt;?&lt;/code&gt;  后面的部分。&lt;/p&gt;
+&lt;p&gt;** &lt;code&gt;$_SERVER[&#39;QUERY_STRING&#39;]&lt;/code&gt; ** 是 URL 中  &lt;code&gt;?&lt;/code&gt;  后面的部分。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;extract($_POST);&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
@@ -1994,7 +1994,7 @@
 &lt;h1 id=&#34;web31&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web31&#34;&gt;#&lt;/a&gt; web31&lt;/h1&gt;
 &lt;figure class=&#34;highlight php&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# &lt;span class=&#34;doctag&#34;&gt;@Author&lt;/span&gt;: h1xa&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# &lt;span class=&#34;doctag&#34;&gt;@Date&lt;/span&gt;:   2020-09-04 00:12:34&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# &lt;span class=&#34;doctag&#34;&gt;@Last&lt;/span&gt; Modified by:   h1xa&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# &lt;span class=&#34;doctag&#34;&gt;@Last&lt;/span&gt; Modified time: 2020-09-04 00:49:10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# &lt;span class=&#34;doctag&#34;&gt;@email&lt;/span&gt;: h1xa&lt;span class=&#34;doctag&#34;&gt;@ctfer&lt;/span&gt;.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# &lt;span class=&#34;doctag&#34;&gt;@link&lt;/span&gt;: https://ctfer.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;error_reporting&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;isset&lt;/span&gt;(&lt;span class=&#34;variable&#34;&gt;$_GET&lt;/span&gt;[&lt;span class=&#34;string&#34;&gt;&amp;#x27;c&amp;#x27;&lt;/span&gt;]))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;variable&#34;&gt;$c&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$_GET&lt;/span&gt;[&lt;span class=&#34;string&#34;&gt;&amp;#x27;c&amp;#x27;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(!&lt;span class=&#34;title function_ invoke__&#34;&gt;preg_match&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;/flag|system|php|cat|sort|shell|\.| |\&amp;#x27;/i&amp;quot;&lt;/span&gt;, &lt;span class=&#34;variable&#34;&gt;$c&lt;/span&gt;))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;eval&lt;/span&gt;(&lt;span class=&#34;variable&#34;&gt;$c&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;title function_ invoke__&#34;&gt;highlight_file&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;__FILE__&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;label style=&#34;color:green&#34;&gt;题解一&lt;/label&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;mark&gt;题解一&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;system&lt;/code&gt;  被过滤可以用  &lt;code&gt;passthru&lt;/code&gt;  函数绕过，  &lt;code&gt;cat&lt;/code&gt;  被过滤可以用  &lt;code&gt;more、less、nl&lt;/code&gt;  绕过 (但我试过  &lt;code&gt;more&lt;/code&gt;  不行？？)，空格被过滤可以用  &lt;code&gt;$&amp;#123;IFS&amp;#125;&lt;/code&gt; 、 &lt;code&gt;%09&lt;/code&gt;  绕过。&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;空格绕过&lt;/strong&gt;&lt;/p&gt;

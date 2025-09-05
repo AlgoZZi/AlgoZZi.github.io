@@ -9,13 +9,13 @@
         <lastBuildDate>Fri, 05 Sep 2025 19:48:21 +0800</lastBuildDate>
         <category>CTF</category>
         <category>Web</category>
-        <category>信息搜集</category>
-        <category>爆破</category>
-        <category>BurpSuite</category>
         <category>文件包含漏洞</category>
         <category>日志包含</category>
         <category>木马上传</category>
         <category>session条件竞争</category>
+        <category>信息搜集</category>
+        <category>爆破</category>
+        <category>BurpSuite</category>
         <category>命令执行RCE</category>
         <category>无参RCE</category>
         <category>php伪协议</category>
@@ -1524,7 +1524,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;** &lt;code&gt;$_SERVER[&#39;QUERY_STRING&#39;]&lt;/code&gt;  ** 是 URL 中  &lt;code&gt;?&lt;/code&gt;  后面的部分。&lt;/p&gt;
+&lt;p&gt;** &lt;code&gt;$_SERVER[&#39;QUERY_STRING&#39;]&lt;/code&gt; ** 是 URL 中  &lt;code&gt;?&lt;/code&gt;  后面的部分。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;extract($_POST);&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
