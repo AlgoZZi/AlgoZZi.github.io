@@ -11,14 +11,14 @@
     <category term="日志包含" />
     <category term="木马上传" />
     <category term="session条件竞争" />
+    <category term="爆破" />
+    <category term="BurpSuite" />
     <category term="命令执行RCE" />
     <category term="无参RCE" />
     <category term="php伪协议" />
     <category term="Linux系统命令" />
     <category term="过滤绕过" />
     <category term="POC" />
-    <category term="爆破" />
-    <category term="BurpSuite" />
     <entry>
         <id>http://example.com/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/</id>
         <title>ctfshow爆破</title>
