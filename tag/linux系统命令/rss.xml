@@ -9,19 +9,19 @@
         <lastBuildDate>Fri, 05 Sep 2025 19:48:21 +0800</lastBuildDate>
         <category>CTF</category>
         <category>Web</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
+        <category>信息搜集</category>
         <category>命令执行RCE</category>
         <category>无参RCE</category>
         <category>php伪协议</category>
         <category>Linux系统命令</category>
         <category>过滤绕过</category>
         <category>POC</category>
+        <category>文件包含漏洞</category>
+        <category>日志包含</category>
+        <category>木马上传</category>
+        <category>session条件竞争</category>
         <category>爆破</category>
         <category>BurpSuite</category>
-        <category>信息搜集</category>
         <category>PHP漏洞</category>
         <category>命令执行</category>
         <category>哈希碰撞</category>
@@ -33,8 +33,8 @@
             <link>http://example.com/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/</link>
             <category>CTF</category>
             <category>Web</category>
-            <category>session条件竞争</category>
             <category>Linux系统命令</category>
+            <category>session条件竞争</category>
             <category>PHP漏洞</category>
             <category>命令执行</category>
             <category>哈希碰撞</category>
