@@ -6,15 +6,15 @@
     <updated>2025-09-05T06:44:46.000Z</updated>
     <category term="CTF" />
     <category term="Web" />
-    <category term="信息搜集" />
-    <category term="爆破" />
-    <category term="BurpSuite" />
     <category term="命令执行RCE" />
     <category term="无参RCE" />
     <category term="php伪协议" />
     <category term="Linux系统命令" />
     <category term="过滤绕过" />
     <category term="POC" />
+    <category term="爆破" />
+    <category term="BurpSuite" />
+    <category term="信息搜集" />
     <entry>
         <id>http://example.com/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/</id>
         <title>ctfshow信息搜集</title>
