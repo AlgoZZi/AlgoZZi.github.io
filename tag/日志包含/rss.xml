@@ -10,16 +10,16 @@
         <category>CTF</category>
         <category>Web</category>
         <category>信息搜集</category>
+        <category>文件包含漏洞</category>
+        <category>日志包含</category>
+        <category>木马上传</category>
+        <category>session条件竞争</category>
         <category>命令执行RCE</category>
         <category>无参RCE</category>
         <category>php伪协议</category>
         <category>Linux系统命令</category>
         <category>过滤绕过</category>
         <category>POC</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
         <category>爆破</category>
         <category>BurpSuite</category>
         <category>PHP漏洞</category>
