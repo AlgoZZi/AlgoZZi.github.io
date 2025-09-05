@@ -18,9 +18,11 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;web2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web2&#34;&gt;#&lt;/a&gt; web2&lt;/h1&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250402224539067.png&#34; alt=&#34;image-20250402224539067&#34; style=&#34;zoom:35%;&#34; /&gt;
-&lt;p&gt;&lt;strong&gt;题解一： &lt;code&gt;ctrl + u&lt;/code&gt;  查看网页源代码 / 在 URL 前加上  &lt;code&gt;view-source: &lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;mark&gt;题解一&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;ctrl + u&lt;/code&gt;  查看网页源代码 / 在 URL 前加上  &lt;code&gt;view-source: &lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250402224707389.png&#34; alt=&#34;image-20250402224707389&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;p&gt;&lt;strong&gt;解法二：刷新的同时按 F12 查看源代码&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;mark&gt;解法二&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;刷新的同时按 F12 查看源代码&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406205446977.png&#34; alt=&#34;image-20250406205446977&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;web3&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web3&#34;&gt;#&lt;/a&gt; web3&lt;/h1&gt;
@@ -87,9 +89,8 @@
 &lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/editor&lt;/code&gt;  在图片上传处可以查看整个目录 找到 flag 的位置&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;nothinghere&lt;/code&gt;  和  &lt;code&gt;editor&lt;/code&gt;  在同一目录下&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{efea91c6-f966-4022-adc4-3f3b87fa8170}&lt;/strong&gt;&lt;/p&gt;
-&lt;img data-src=&#34;\images\article_images\image-20250406234705649.png&#34; alt=&#34;image-20250406234705649&#34; style=&#34;zoom: 40%;&#34; /&gt;
+&lt;img data-src=&#34;\images\article_images\image-20250406234839218.png&#34; alt=&#34;image-20250406234839218&#34; style=&#34;zoom:99%;&#34; /&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406234743967.png&#34; alt=&#34;image-20250406234743967&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt;&lt;img data-src=&#34;%5Cimages%5Carticle_images%5Cimage-20250406234839218.png&#34; alt=&#34;image-20250406234839218&#34;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;web15&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web15&#34;&gt;#&lt;/a&gt; web15&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/admin&lt;/code&gt;  查询 QQ 得知现居陕西西安，回答密保问题获得重置密码&lt;/strong&gt;&lt;/p&gt;
@@ -100,8 +101,9 @@
 &lt;h1 id=&#34;web16&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web16&#34;&gt;#&lt;/a&gt; web16&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/tz.php&lt;/code&gt;  , 找到  &lt;code&gt;PHPINFO&lt;/code&gt; ，查看 php 信息&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{1191cce9-d664-40fa-81cc-c0bb07fe2f1c}&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;%5Cimages%5Carticle_images%5Cimage-20250407135131371.png&#34; alt=&#34;image-20250407135131371&#34;&gt;&lt;/p&gt;
+&lt;img data-src=&#34;\images\article_images\image-20250407135131371.png&#34; alt=&#34;image-20250407135131371&#34; style=&#34;zoom:99%;&#34; /&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250407135041938.png&#34; alt=&#34;image-20250407135041938&#34; style=&#34;zoom: 33%;&#34; /&gt;
+&lt;img data-src=&#34;\images\article_images\image-20250407135131371.png&#34; alt=&#34;image-20250407135131371&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;web17&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web17&#34;&gt;#&lt;/a&gt; web17&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;访问  &lt;code&gt;url/backup.sql&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
