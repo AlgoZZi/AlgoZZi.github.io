@@ -10,6 +10,8 @@
         <category>CTF</category>
         <category>Web</category>
         <category>信息搜集</category>
+        <category>爆破</category>
+        <category>BurpSuite</category>
         <item>
             <guid isPermalink="true">http://example.com/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/</guid>
             <title>ctfshow信息搜集</title>
@@ -28,7 +30,7 @@
 &lt;p&gt;&lt;strong&gt;&lt;mark&gt;题解一&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt; &lt;code&gt;ctrl + u&lt;/code&gt;  查看网页源代码 / 在 URL 前加上  &lt;code&gt;view-source: &lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250402224707389.png&#34; alt=&#34;image-20250402224707389&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;p&gt;&lt;strong&gt;&lt;mark&gt;解法二&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;mark&gt;题解二&lt;/mark&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;刷新的同时按 F12 查看源代码&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406205446977.png&#34; alt=&#34;image-20250406205446977&#34; style=&#34;zoom: 33%;&#34; /&gt;
 &lt;hr&gt;
