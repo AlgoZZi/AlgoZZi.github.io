@@ -102,12 +102,12 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="/images/bg/8.jpg"></li>
-          <li class="item" data-background-image="/images/bg/9.jpg"></li>
-          <li class="item" data-background-image="/images/bg/7.jpg"></li>
-          <li class="item" data-background-image="/images/bg/13.jpg"></li>
+          <li class="item" data-background-image="/images/bg/10.jpg"></li>
           <li class="item" data-background-image="/images/bg/3.jpg"></li>
-          <li class="item" data-background-image="/images/bg/6.jpg"></li>
+          <li class="item" data-background-image="/images/bg/21.jpg"></li>
+          <li class="item" data-background-image="/images/bg/12.jpg"></li>
+          <li class="item" data-background-image="/images/bg/11.jpg"></li>
+          <li class="item" data-background-image="/images/bg/8.jpg"></li>
         </ul>
       </div>
     </header>
@@ -153,74 +153,87 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="web21"><a class="markdownIt-Anchor" href="#web21">#</a> web21</h1>
-<p><strong> <code>Payload set</code>  ----&gt;  <code>custom iterator</code>  (自定义迭代器)    需要 base64 编码</strong></p>
+    <h1 id="web21"><a href="#web21" class="headerlink" title="web21"></a>web21</h1><p><strong><code>Payload set</code> —-&gt; <code>custom iterator</code>(自定义迭代器)    需要 base64 编码</strong></p>
 <p><strong>ctfshow{91bd4cda-e6db-4b02-9c72-0b9ec12b06c6}</strong></p>
 <img data-src="\images\article_images\image-20250415135857606.png" alt="image-20250415135857606" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250415135834992.png" alt="image-20250415135834992" style="zoom: 33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250415132207403.png" alt="image-20250415132207403" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <hr>
-<h1 id="web22"><a class="markdownIt-Anchor" href="#web22">#</a> web22</h1>
-<p><strong>子域名爆破</strong></p>
-<p> </p>
+<h1 id="web22"><a href="#web22" class="headerlink" title="web22"></a>web22</h1><p><strong>子域名爆破</strong></p>
+<p>&nbsp;</p>
 <hr>
-<h1 id="web23"><a class="markdownIt-Anchor" href="#web23">#</a> web23</h1>
-<p><strong>脚本寻找符合条件的值</strong></p>
+<h1 id="web23"><a href="#web23" class="headerlink" title="web23"></a>web23</h1><p><strong>脚本寻找符合条件的值</strong></p>
 <img data-src="\images\article_images\image-20250415232134157.png" alt="image-20250415232134157" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250415232153261.png" alt="image-20250415232153261" style="zoom:33%;" />
-<p> </p>
-<h1 id="web24"><a class="markdownIt-Anchor" href="#web24">#</a> web24</h1>
-<p><strong>php 伪随机数漏洞    找到多次访问不变的随机数</strong></p>
+
+<p>&nbsp;</p>
+<h1 id="web24"><a href="#web24" class="headerlink" title="web24"></a>web24</h1><p><strong>php伪随机数漏洞    找到多次访问不变的随机数</strong></p>
 <img data-src="\images\article_images\image-20250415234223624.png" alt="image-20250415234223624" style="zoom: 50%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250415234418611.png" alt="image-20250415234418611" style="zoom: 33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <hr>
-<h1 id="web25"><a class="markdownIt-Anchor" href="#web25">#</a> web25</h1>
-<p><strong>逆推：</strong></p>
-<p><strong>传 <code>r=0</code>  得到 -766445872 (这个就是 <code>-intval(mt_rand()</code> )</strong></p>
-<p><strong>所以  <code>intval(mt_rand)=766445872</code> ， 接下来使用 kali 反推出种子（会有几个种子，需要去试试是哪个），然后再根据种子用脚本得到的第一次的随机数给 <code>r</code> , 第二次和第三次的随机数的二者之和赋给 cookie 的 token</strong></p>
+<h1 id="web25"><a href="#web25" class="headerlink" title="web25"></a>web25</h1><p><strong>逆推：</strong></p>
+<p><strong>传<code>r=0</code>得到 -766445872(这个就是<code>-intval(mt_rand()</code>)</strong></p>
+<p><strong>所以 <code>intval(mt_rand)=766445872</code>， 接下来使用kali反推出种子（会有几个种子，需要去试试是哪个），然后再根据种子用脚本得到的第一次的随机数给<code>r</code>,第二次和第三次的随机数的二者之和赋给cookie的token</strong></p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">include</span>(<span class="string">&quot;flag.php&quot;</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;r&#x27;</span>]))&#123;</span><br><span class="line">    <span class="variable">$r</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;r&#x27;</span>];</span><br><span class="line">    <span class="title function_ invoke__">mt_srand</span>(<span class="title function_ invoke__">hexdec</span>(<span class="title function_ invoke__">substr</span>(<span class="title function_ invoke__">md5</span>(<span class="variable">$flag</span>), <span class="number">0</span>,<span class="number">8</span>)));</span><br><span class="line">    <span class="variable">$rand</span> = <span class="title function_ invoke__">intval</span>(<span class="variable">$r</span>)-<span class="title function_ invoke__">intval</span>(<span class="title function_ invoke__">mt_rand</span>());<span class="comment">//第一次调用</span></span><br><span class="line">    <span class="keyword">if</span>((!<span class="variable">$rand</span>))&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="variable">$_COOKIE</span>[<span class="string">&#x27;token&#x27;</span>]==(<span class="title function_ invoke__">mt_rand</span>()+<span class="title function_ invoke__">mt_rand</span>()))&#123;<span class="comment">//第二次和第三次</span></span><br><span class="line">            <span class="keyword">echo</span> <span class="variable">$flag</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$rand</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">    <span class="keyword">echo</span> <span class="title function_ invoke__">system</span>(<span class="string">&#x27;cat /proc/version&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <img data-src="\images\article_images\image-20250416001946094.png" alt="image-20250416001946094" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416121106676.png" alt="image-20250416121106676" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416125247763.png" alt="image-20250416125247763" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416125329494.png" alt="image-20250416125329494" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416125112127.png" alt="image-20250416125112127" style="zoom: 33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <hr>
-<h1 id="web26"><a class="markdownIt-Anchor" href="#web26">#</a> web26</h1>
-<p><strong>按提示填写后抓包，爆破密码</strong></p>
+<h1 id="web26"><a href="#web26" class="headerlink" title="web26"></a>web26</h1><p><strong>按提示填写后抓包，爆破密码</strong></p>
 <p><strong>ctfshow{60fe9a09-2e71-4d50-9f97-2cbfe1e42310}</strong></p>
 <img data-src="\images\article_images\image-20250416132016529.png" alt="image-20250416132016529" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416131950853.png" alt="image-20250416131950853" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <hr>
-<h1 id="web27"><a class="markdownIt-Anchor" href="#web27">#</a> web27</h1>
-<p><strong>根据录取名单，爆破身份证号，注意日期格式  <code>yyyyMMdd</code>  ，附加前缀和后缀</strong></p>
+<h1 id="web27"><a href="#web27" class="headerlink" title="web27"></a>web27</h1><p><strong>根据录取名单，爆破身份证号，注意日期格式 <code>yyyyMMdd</code> ，附加前缀和后缀</strong></p>
 <img data-src="\images\article_images\image-20250416133958163.png" alt="image-20250416133958163" style="zoom:90%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416133750995.png" alt="image-20250416133750995" style="zoom: 33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416133717374.png" alt="image-20250416133717374" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <hr>
-<h1 id="web28"><a class="markdownIt-Anchor" href="#web28">#</a> web28</h1>
-<p><strong>爆破目录（注意要删去  <code>/2.txt</code> ）</strong></p>
+<h1 id="web28"><a href="#web28" class="headerlink" title="web28"></a>web28</h1><p><strong>爆破目录（注意要删去 <code>/2.txt</code>）</strong></p>
 <img data-src="\images\article_images\image-20250416135330728.png" alt="image-20250416135330728" style="zoom: 25%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416135304794.png" alt="image-20250416135304794" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 <img data-src="\images\article_images\image-20250416135250311.png" alt="image-20250416135250311" style="zoom:33%;" />
-<p> </p>
+
+<p>&nbsp;</p>
 
       <div class="tags">
           <a href="/tags/CTF/" rel="tag"><i class="ic i-tag"></i> CTF</a>
@@ -270,7 +283,7 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
     <div class="item left">
       
 
-  <a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;19.jpg" title="ctfshow信息搜集">
+  <a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;18.jpg" title="ctfshow信息搜集">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> ctfshow-web入门wp</span>
   <h3>ctfshow信息搜集</h3>
@@ -280,7 +293,7 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
     <div class="item right">
       
 
-  <a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;12.jpg" title="ctfshow命令执行">
+  <a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;20.jpg" title="ctfshow命令执行">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> ctfshow-web入门wp</span>
   <h3>ctfshow命令执行</h3>
@@ -302,11 +315,11 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#web21"><span class="toc-number">1.</span> <span class="toc-text"> web21</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web22"><span class="toc-number">2.</span> <span class="toc-text"> web22</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web23"><span class="toc-number">3.</span> <span class="toc-text"> web23</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web24"><span class="toc-number">4.</span> <span class="toc-text"> web24</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web25"><span class="toc-number">5.</span> <span class="toc-text"> web25</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web26"><span class="toc-number">6.</span> <span class="toc-text"> web26</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web27"><span class="toc-number">7.</span> <span class="toc-text"> web27</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web28"><span class="toc-number">8.</span> <span class="toc-text"> web28</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#web21"><span class="toc-number">1.</span> <span class="toc-text">web21</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web22"><span class="toc-number">2.</span> <span class="toc-text">web22</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web23"><span class="toc-number">3.</span> <span class="toc-text">web23</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web24"><span class="toc-number">4.</span> <span class="toc-text">web24</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web25"><span class="toc-number">5.</span> <span class="toc-text">web25</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web26"><span class="toc-number">6.</span> <span class="toc-text">web26</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web27"><span class="toc-number">7.</span> <span class="toc-text">web27</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web28"><span class="toc-number">8.</span> <span class="toc-text">web28</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" rel="bookmark" title="ctfshow信息搜集">ctfshow信息搜集</a></li><li class="active"><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" rel="bookmark" title="ctfshow爆破">ctfshow爆破</a></li><li><a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="bookmark" title="ctfshow命令执行">ctfshow命令执行</a></li><li><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" rel="bookmark" title="ctfshow文件包含">ctfshow文件包含</a></li>
+          <li><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" rel="bookmark" title="ctfshow信息搜集">ctfshow信息搜集</a></li><li class="active"><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" rel="bookmark" title="ctfshow爆破">ctfshow爆破</a></li><li><a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" rel="bookmark" title="ctfshow命令执行">ctfshow命令执行</a></li><li><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" rel="bookmark" title="ctfshow文件包含">ctfshow文件包含</a></li><li><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" rel="bookmark" title="ctfshow php特性">ctfshow php特性</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -320,7 +333,7 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">5</span>
+        <span class="count">6</span>
         <span class="name">文章</span>
       </a>
     </div>
@@ -332,7 +345,7 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">15</span>
+        <span class="count">20</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -384,10 +397,19 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
   <li class="item">
     
 <div class="breadcrumb">
+</div>
+
+    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" title="ctfshow信息搜集">ctfshow信息搜集</a></span>
+    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
   </li>
 
       
@@ -407,16 +429,7 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
   </li>
 
       
@@ -426,7 +439,17 @@ AlgoZZi's Blog = 这一年的故事很简单 遇见你 我很喜欢</title>
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
+    <span><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" title="ctfshow信息搜集">ctfshow信息搜集</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
   </li>
 
   </ul>
