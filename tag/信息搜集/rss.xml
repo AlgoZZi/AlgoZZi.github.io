@@ -9,13 +9,17 @@
         <lastBuildDate>Fri, 05 Sep 2025 14:44:46 +0800</lastBuildDate>
         <category>CTF</category>
         <category>Web</category>
-        <category>信息搜集</category>
+        <category>文件包含漏洞</category>
+        <category>日志包含</category>
+        <category>木马上传</category>
+        <category>session条件竞争</category>
         <category>命令执行RCE</category>
         <category>无参RCE</category>
         <category>php伪协议</category>
         <category>Linux系统命令</category>
         <category>过滤绕过</category>
         <category>POC</category>
+        <category>信息搜集</category>
         <category>SQL注入</category>
         <category>时间盲注</category>
         <category>布尔盲注</category>
@@ -24,10 +28,6 @@
         <category>sqlmap</category>
         <category>Webshell</category>
         <category>MySQL</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
         <category>爆破</category>
         <category>BurpSuite</category>
         <category>PHP漏洞</category>
@@ -70,7 +70,8 @@
 &lt;hr&gt;
 &lt;h1 id=&#34;web4&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web4&#34;&gt;#&lt;/a&gt; web4&lt;/h1&gt;
 &lt;p&gt;访问  &lt;code&gt;url/robots.txt&lt;/code&gt;  ，根据提示 访问  &lt;code&gt;url/flagishere.txt&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ctfshow&amp;#123;d1fc90c5-0c02-4457-a8fd-446ddf5f6c3f&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code&gt;ctfshow&amp;#123;d1fc90c5-0c02-4457-a8fd-446ddf5f6c3f&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406203833372.png&#34; alt=&#34;image-20250406203833372&#34; style=&#34;zoom:33%;&#34; /&gt;
 &lt;p&gt; &lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250406203847247.png&#34; alt=&#34;image-20250406203847247&#34; style=&#34;zoom:33%;&#34; /&gt;
