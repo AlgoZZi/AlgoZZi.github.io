@@ -9,28 +9,28 @@
         <lastBuildDate>Sat, 06 Sep 2025 16:55:54 +0800</lastBuildDate>
         <category>CTF</category>
         <category>Web</category>
+        <category>信息搜集</category>
+        <category>爆破</category>
+        <category>BurpSuite</category>
+        <category>文件上传</category>
+        <category>木马上传</category>
+        <category>命令执行RCE</category>
+        <category>日志包含</category>
+        <category>Linux系统命令</category>
+        <category>session条件竞争</category>
+        <category>Webshell</category>
+        <category>文件包含漏洞</category>
+        <category>无参RCE</category>
+        <category>php伪协议</category>
+        <category>过滤绕过</category>
+        <category>POC</category>
         <category>SQL注入</category>
         <category>时间盲注</category>
         <category>布尔盲注</category>
         <category>报错注入</category>
         <category>堆叠注入</category>
         <category>sqlmap</category>
-        <category>Webshell</category>
         <category>MySQL</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
-        <category>信息搜集</category>
-        <category>爆破</category>
-        <category>BurpSuite</category>
-        <category>文件上传</category>
-        <category>命令执行RCE</category>
-        <category>Linux系统命令</category>
-        <category>无参RCE</category>
-        <category>php伪协议</category>
-        <category>过滤绕过</category>
-        <category>POC</category>
         <category>PHP漏洞</category>
         <category>哈希碰撞</category>
         <category>正则漏洞</category>
@@ -40,13 +40,13 @@
             <link>http://example.com/2025/09/06/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</link>
             <category>CTF</category>
             <category>Web</category>
-            <category>Webshell</category>
-            <category>日志包含</category>
-            <category>木马上传</category>
-            <category>session条件竞争</category>
             <category>文件上传</category>
+            <category>木马上传</category>
             <category>命令执行RCE</category>
+            <category>日志包含</category>
             <category>Linux系统命令</category>
+            <category>session条件竞争</category>
+            <category>Webshell</category>
             <pubDate>Sat, 06 Sep 2025 16:55:54 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;web151&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web151&#34;&gt;#&lt;/a&gt; web151&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;1. 前端校验&lt;/strong&gt;&lt;/p&gt;
