@@ -76,7 +76,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>2.6k</span>
+    <span>2.7k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="/images/bg/5.jpg"></li>
-          <li class="item" data-background-image="/images/bg/10.jpg"></li>
-          <li class="item" data-background-image="/images/bg/4.jpg"></li>
-          <li class="item" data-background-image="/images/bg/8.jpg"></li>
+          <li class="item" data-background-image="/images/bg/15.jpg"></li>
+          <li class="item" data-background-image="/images/bg/7.jpg"></li>
+          <li class="item" data-background-image="/images/bg/2.jpg"></li>
+          <li class="item" data-background-image="/images/bg/9.jpg"></li>
           <li class="item" data-background-image="/images/bg/12.jpg"></li>
-          <li class="item" data-background-image="/images/bg/18.jpg"></li>
+          <li class="item" data-background-image="/images/bg/4.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,92 +168,129 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="元组"><a class="markdownIt-Anchor" href="#元组">#</a> 元组</h1>
-<h1 id="选择题"><a class="markdownIt-Anchor" href="#选择题">#</a> 选择题</h1>
-<h2 id="1-题目"><a class="markdownIt-Anchor" href="#1-题目">#</a> 1. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>以下哪个是错误定义元组的方式<span class="token punctuation">(</span> <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>x<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>x<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>x<span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>x<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：B</strong></p>
-<p><strong>选项 A</strong>： <code>x=(9,)</code>  → 正确。这是单元素元组的正确定义方式，必须在元素后面添加逗号。</p>
-<p><strong>选项 B</strong>： <code>x=(1)</code>  → 错误。这里的圆括号仅起到优先级包裹的作用， <code>(1)</code>  本质上就是整数 1，不是元组。</p>
-<p><strong>选项 C</strong>： <code>x=()</code>  → 正确。这是空元组的标准定义方式。</p>
-<p><strong>选项 D</strong>： <code>x=(1,2,3)</code>  → 正确。这是多元素元组的正确定义方式。</p>
-<p> </p>
-<h2 id="2-题目"><a class="markdownIt-Anchor" href="#2-题目">#</a> 2. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>对于元组t <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span>以下哪个操作会报错 <span class="token punctuation">(</span> D <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre>A<span class="token punctuation">.</span><span class="token builtin">len</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre>B<span class="token punctuation">.</span><span class="token builtin">max</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>C<span class="token punctuation">.</span><span class="token builtin">min</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>D<span class="token punctuation">.</span><span class="token builtin">tuple</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">5</span></pre></td></tr></table></figure><p>答案：D</p>
-<p><strong>选项 A</strong>： <code>len(t)</code>  → 正确。 <code>len()</code>  函数可以获取元组的长度。</p>
-<p><strong>选项 B</strong>： <code>max(t)</code>  → 正确。 <code>max()</code>  函数可以获取元组中的最大值。</p>
-<p><strong>选项 C</strong>： <code>min(t)</code>  → 正确。 <code>min()</code>  函数可以获取元组中的最小值。</p>
-<p><strong>选项 D</strong>： <code>tuple[2] = 5</code>  → 错误。首先， <code>tuple</code>  是元组的类型名，不是变量名；其次，元组是不可变的，不支持元素赋值操作。</p>
-<p> </p>
-<h2 id="3-题目"><a class="markdownIt-Anchor" href="#3-题目">#</a> 3. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span>和<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span>输出为多少<span class="token punctuation">(</span> <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：B</strong></p>
-<p><strong>选项 A</strong>：(2,), 2 → 错误。(1,)*2 的结果是 (1,1)，不是 (2,)。</p>
-<p><strong>选项 B</strong>：(1,1), 2 → 正确。(1,)*2 是元组的重复操作，结果为 (1,1)；(1)*2 是整数 1 乘以 2，结果为 2。</p>
-<p><strong>选项 C</strong>：(2,), (1,1) → 错误。(1)*2 的结果是 2，不是 (1,1)。</p>
-<p><strong>选项 D</strong>：(1,1), (1,1) → 错误。(1)*2 的结果是 2，不是 (1,1)。</p>
-<p> </p>
-<h2 id="4-题目"><a class="markdownIt-Anchor" href="#4-题目">#</a> 4. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>语句x <span class="token operator">=</span> <span class="token number">3</span><span class="token operator">==</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span>执行结束后，变量x的值为_____________。</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>运行出错</pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span><span class="token boolean">True</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token number">5</span>）</pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span><span class="token number">5</span></pre></td></tr></table></figure><p><strong>答案：C</strong></p>
-<p><strong>选项 A</strong>：运行出错 → 错误。该语句可以正常执行。</p>
-<p><strong>选项 B</strong>：True → 错误。x 的值是一个元组，不是单个布尔值。</p>
-<p><strong>选项 C</strong>：(True, 5）→ 正确。先执行 3==3 得到 True，然后逗号的作用是隐式打包为元组，所以 x 的值为 (True, 5)。</p>
-<p><strong>选项 D</strong>：5 → 错误。x 的值是一个元组，不是单个整数。</p>
-<p> </p>
-<h2 id="5-题目"><a class="markdownIt-Anchor" href="#5-题目">#</a> 5. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>t <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span> t<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">print</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span>输出是什么<span class="token punctuation">(</span> <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>报错</pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：B</strong></p>
-<p><strong>选项 A</strong>：(1,2,3, (4,5,6)) → 错误。元组没有 append () 方法，无法调用该方法。</p>
-<p><strong>选项 B</strong>：报错 → 正确。元组是不可变对象，没有 append () 方法，调用该方法会抛出 AttributeError。</p>
-<p><strong>选项 C</strong>：(1,2,3),(4,5,6) → 错误。元组没有 append () 方法，无法得到这个结果。</p>
-<p><strong>选项 D</strong>：(1,2,3,4,5,6) → 错误。元组没有 append () 方法，无法得到这个结果。</p>
-<p> </p>
-<h1 id="判断题"><a class="markdownIt-Anchor" href="#判断题">#</a> 判断题</h1>
-<h2 id="1-题目-2"><a class="markdownIt-Anchor" href="#1-题目-2">#</a> 1. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>python中列表<span class="token punctuation">.</span>元组都属于有序序列<span class="token punctuation">.</span>   <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：在 Python 中，列表和元组都属于有序序列，元素的存储顺序严格遵循定义时的插入顺序，可以通过整数索引精准访问元素。</p>
-<p> </p>
-<h2 id="2-题目-2"><a class="markdownIt-Anchor" href="#2-题目-2">#</a> 2. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>对于生成器对象x <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">3</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>，执行<span class="token builtin">list</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>的结果是<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>，接着再执行<span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>的结果是<span class="token punctuation">&#123;</span><span class="token number">3</span><span class="token punctuation">&#125;</span>。    <span class="token punctuation">(</span>     <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：执行 <code>list(x)</code>  后，生成器 x 已经被完全耗尽，内部不再有可迭代的元素。因此，执行 <code>set(x)</code>  的结果是空集合，而非 {3}。</p>
-<p> </p>
-<h2 id="3-题目-2"><a class="markdownIt-Anchor" href="#3-题目-2">#</a> 3. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>元组不可以进行修改<span class="token punctuation">,</span>为不可变序列<span class="token punctuation">.</span>  <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+    <h1 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h1><h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><h2 id="1-题目"><a href="#1-题目" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">以下哪个是错误定义元组的方式( )
+
+A.x=(9,)
+B.x=(1)
+C.x=()
+D.x=(1,2,3)
+</code></pre>
+<p><strong>答案：B</strong></p>
+<p><strong>选项A</strong>：<code>x=(9,)</code> → 正确。这是单元素元组的正确定义方式，必须在元素后面添加逗号。</p>
+<p><strong>选项B</strong>：<code>x=(1)</code> → 错误。这里的圆括号仅起到优先级包裹的作用，<code>(1)</code>本质上就是整数1，不是元组。</p>
+<p><strong>选项C</strong>：<code>x=()</code> → 正确。这是空元组的标准定义方式。</p>
+<p><strong>选项D</strong>：<code>x=(1,2,3)</code> → 正确。这是多元素元组的正确定义方式。</p>
+<p>&nbsp;</p>
+<h2 id="2-题目"><a href="#2-题目" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">对于元组t = (1,2,3,4),以下哪个操作会报错 ( D )
+A.len(t)
+B.max(t)
+C.min(t)
+D.tuple[2] = 5
+</code></pre>
+<p>答案：D</p>
+<p><strong>选项A</strong>：<code>len(t)</code> → 正确。<code>len()</code>函数可以获取元组的长度。</p>
+<p><strong>选项B</strong>：<code>max(t)</code> → 正确。<code>max()</code>函数可以获取元组中的最大值。</p>
+<p><strong>选项C</strong>：<code>min(t)</code> → 正确。<code>min()</code>函数可以获取元组中的最小值。</p>
+<p><strong>选项D</strong>：<code>tuple[2] = 5</code> → 错误。首先，<code>tuple</code>是元组的类型名，不是变量名；其次，元组是不可变的，不支持元素赋值操作。</p>
+<p>&nbsp;</p>
+<h2 id="3-题目"><a href="#3-题目" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">(1, )*2和(1)*2输出为多少( )
+
+A.(2,), 2
+B.(1,1), 2
+C.(2,), (1,1)
+D.(1,1), (1,1)
+</code></pre>
+<p><strong>答案：B</strong></p>
+<p><strong>选项A</strong>：(2,), 2 → 错误。(1,)*2的结果是(1,1)，不是(2,)。</p>
+<p><strong>选项B</strong>：(1,1), 2 → 正确。(1,)*2是元组的重复操作，结果为(1,1)；(1)*2是整数1乘以2，结果为2。</p>
+<p><strong>选项C</strong>：(2,), (1,1) → 错误。(1)*2的结果是2，不是(1,1)。</p>
+<p><strong>选项D</strong>：(1,1), (1,1) → 错误。(1)*2的结果是2，不是(1,1)。</p>
+<p>&nbsp;</p>
+<h2 id="4-题目"><a href="#4-题目" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">语句x = 3==3, 5执行结束后，变量x的值为_____________。
+
+A.运行出错
+B.True
+C.(True, 5）
+D.5
+</code></pre>
+<p><strong>答案：C</strong></p>
+<p><strong>选项A</strong>：运行出错 → 错误。该语句可以正常执行。</p>
+<p><strong>选项B</strong>：True → 错误。x的值是一个元组，不是单个布尔值。</p>
+<p><strong>选项C</strong>：(True, 5）→ 正确。先执行3&#x3D;&#x3D;3得到True，然后逗号的作用是隐式打包为元组，所以x的值为(True, 5)。</p>
+<p><strong>选项D</strong>：5 → 错误。x的值是一个元组，不是单个整数。</p>
+<p>&nbsp;	</p>
+<h2 id="5-题目"><a href="#5-题目" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">t = (1,2,3) t.append((4,5,6)) print(t)输出是什么( )
+
+A.(1,2,3, (4,5,6))
+B.报错
+C.(1,2,3),(4,5,6)
+D.(1,2,3,4,5,6)
+</code></pre>
+<p><strong>答案：B</strong></p>
+<p><strong>选项A</strong>：(1,2,3, (4,5,6)) → 错误。元组没有append()方法，无法调用该方法。</p>
+<p><strong>选项B</strong>：报错 → 正确。元组是不可变对象，没有append()方法，调用该方法会抛出AttributeError。</p>
+<p><strong>选项C</strong>：(1,2,3),(4,5,6) → 错误。元组没有append()方法，无法得到这个结果。</p>
+<p><strong>选项D</strong>：(1,2,3,4,5,6) → 错误。元组没有append()方法，无法得到这个结果。</p>
+<p>&nbsp;</p>
+<h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><h2 id="1-题目-1"><a href="#1-题目-1" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">python中列表.元组都属于有序序列.   (    )
+</code></pre>
+<p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：在Python中，列表和元组都属于有序序列，元素的存储顺序严格遵循定义时的插入顺序，可以通过整数索引精准访问元素。</p>
+<p>&nbsp;</p>
+<h2 id="2-题目-1"><a href="#2-题目-1" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">对于生成器对象x = (3 for i in range(5))，执行list(x)的结果是[3, 3, 3, 3, 3]，接着再执行set(x)的结果是&#123;3&#125;。    (     )
+</code></pre>
+<p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：执行<code>list(x)</code>后，生成器x已经被完全耗尽，内部不再有可迭代的元素。因此，执行<code>set(x)</code>的结果是空集合，而非{3}。</p>
+<p>&nbsp;</p>
+<h2 id="3-题目-1"><a href="#3-题目-1" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">元组不可以进行修改,为不可变序列.  (    )
+</code></pre>
+<p><strong>答案：对</strong></p>
 <p><strong>解析</strong>：元组是不可变序列，一旦创建，其内部元素的指向就无法修改，不支持元素的赋值、新增、删除操作。</p>
-<p> </p>
-<h2 id="4-题目-2"><a class="markdownIt-Anchor" href="#4-题目-2">#</a> 4. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>元组可以包含任意类型元素<span class="token punctuation">.</span>  <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p>&nbsp;</p>
+<h2 id="4-题目-1"><a href="#4-题目-1" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">元组可以包含任意类型元素.  (    )
+</code></pre>
+<p><strong>答案：对</strong></p>
 <p><strong>解析</strong>：元组可以包含任意类型的元素，包括数字、字符串、列表、字典等，甚至可以包含其他元组。</p>
-<p> </p>
-<h2 id="5-题目-2"><a class="markdownIt-Anchor" href="#5-题目-2">#</a> 5. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>语句 x<span class="token punctuation">,</span>y <span class="token operator">=</span> y<span class="token punctuation">,</span>x 可以完成变量x<span class="token punctuation">,</span>y中数据的交换<span class="token punctuation">.</span>    <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：这是 Python 中交换变量值的常用方法。执行该语句时，Python 会先将右侧的 y 和 x 打包成一个元组，然后将其解包并赋值给左侧的 x 和 y。</p>
-<p> </p>
-<h2 id="6-题目"><a class="markdownIt-Anchor" href="#6-题目">#</a> 6. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>元组不能进行切片操作<span class="token punctuation">.</span>    <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p>&nbsp;</p>
+<h2 id="5-题目-1"><a href="#5-题目-1" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">语句 x,y = y,x 可以完成变量x,y中数据的交换.    (   )
+</code></pre>
+<p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：这是Python中交换变量值的常用方法。执行该语句时，Python会先将右侧的y和x打包成一个元组，然后将其解包并赋值给左侧的x和y。</p>
+<p>&nbsp;</p>
+<h2 id="6-题目"><a href="#6-题目" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">元组不能进行切片操作.    (   )
+</code></pre>
+<p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：元组支持切片操作。切片操作返回一个新的元组，包含原元组中指定范围的元素，不会修改原元组（符合元组的不可变性）。</p>
-<p> </p>
-<h2 id="7-题目"><a class="markdownIt-Anchor" href="#7-题目">#</a> 7. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>元组的访问速度比列表更块<span class="token punctuation">,</span>如果不修改元素的话<span class="token punctuation">,</span>建议使元组而非列表<span class="token punctuation">.</span>    <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：由于元组的不可变性，Python 可以为其分配固定大小的内存空间，访问时无需额外处理动态信息，因此访问速度比列表更快。</p>
-<p> </p>
-<h2 id="8-题目"><a class="markdownIt-Anchor" href="#8-题目">#</a> 8. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>表达式<span class="token punctuation">(</span>i<span class="token operator">**</span><span class="token number">2</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>的结果是个元组。    <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p>&nbsp;</p>
+<h2 id="7-题目"><a href="#7-题目" class="headerlink" title="7. 题目"></a>7. 题目</h2><pre><code class="python">元组的访问速度比列表更块,如果不修改元素的话,建议使元组而非列表.    (   )
+</code></pre>
+<p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：由于元组的不可变性，Python可以为其分配固定大小的内存空间，访问时无需额外处理动态信息，因此访问速度比列表更快。</p>
+<p>&nbsp;</p>
+<h2 id="8-题目"><a href="#8-题目" class="headerlink" title="8. 题目"></a>8. 题目</h2><pre><code class="python">表达式(i**2 for i in range(100))的结果是个元组。    (   )
+</code></pre>
+<p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：该表达式是生成器表达式，执行后返回的是一个生成器对象，而非元组。生成器表达式的圆括号是生成器的语法标识，而非元组的标识。</p>
-<p> </p>
-<h2 id="9-题目"><a class="markdownIt-Anchor" href="#9-题目">#</a> 9. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知seq为长度大于<span class="token number">10</span>的列表，并且已导入random模块，那么<span class="token punctuation">[</span>random<span class="token punctuation">.</span>choice<span class="token punctuation">(</span>seq<span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">]</span>和random<span class="token punctuation">.</span>sample<span class="token punctuation">(</span>seq<span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>等价。    <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
-<p><strong>解析</strong>： <code>random.choice(seq)</code>  是有放回抽样，允许重复元素； <code>random.sample(seq,10)</code>  是无放回抽样，不允许重复元素。因此，这两个表达式不等价。</p>
-<p> </p>
-<h2 id="10-题目"><a class="markdownIt-Anchor" href="#10-题目">#</a> 10. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知x和y是两个字符串，那么表达式<span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token keyword">for</span> i<span class="token punctuation">,</span>j <span class="token keyword">in</span> <span class="token builtin">zip</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span> <span class="token keyword">if</span> i<span class="token operator">==</span>j<span class="token punctuation">)</span><span class="token punctuation">)</span>可以用来计算两个字符串中对应位置字符相等的个数。    <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：该表达式的逻辑是：遍历两个字符串的对应位置字符，每发现一对相等的字符就生成一个 1，最后对这些 1 求和，得到的就是对应位置字符相等的总个数。</p>
-<p> </p>
-<h1 id="填空题"><a class="markdownIt-Anchor" href="#填空题">#</a> 填空题</h1>
-<h2 id="1-题目-3"><a class="markdownIt-Anchor" href="#1-题目-3">#</a> 1. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>执行代码 x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> z <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 之后，变量y的值为________</pre></td></tr></table></figure><p><strong>答案：2</strong></p>
-<p><strong>解析</strong>： <code>sorted([1, 3, 2])</code>  返回排序后的列表 [1, 2, 3]，然后通过序列解包将这三个元素分别赋值给 x、y、z，因此 y 的值为 2。</p>
-<p> </p>
-<h2 id="2-题目-3"><a class="markdownIt-Anchor" href="#2-题目-3">#</a> 2. 题目</h2>
-<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>执行语句 x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">,</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 之后，变量y的值为______</pre></td></tr></table></figure><p><strong>答案：'1’</strong></p>
-<p><strong>解析</strong>： <code>range(3)</code>  生成 0、1、2， <code>map(str, range(3))</code>  将这三个整数转换为字符串’0’、‘1’、‘2’，然后通过序列解包将这三个字符串分别赋值给 x、y、z，因此 y 的值为’1’。</p>
+<p>&nbsp;</p>
+<h2 id="9-题目"><a href="#9-题目" class="headerlink" title="9. 题目"></a>9. 题目</h2><pre><code class="python">已知seq为长度大于10的列表，并且已导入random模块，那么[random.choice(seq) for i in range(10)]和random.sample(seq,10)等价。    (    )   
+</code></pre>
+<p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：<code>random.choice(seq)</code>是有放回抽样，允许重复元素；<code>random.sample(seq,10)</code>是无放回抽样，不允许重复元素。因此，这两个表达式不等价。</p>
+<p>&nbsp;</p>
+<h2 id="10-题目"><a href="#10-题目" class="headerlink" title="10. 题目"></a>10. 题目</h2><pre><code class="python">已知x和y是两个字符串，那么表达式sum((1 for i,j in zip(x,y) if i==j))可以用来计算两个字符串中对应位置字符相等的个数。    (    )
+</code></pre>
+<p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：该表达式的逻辑是：遍历两个字符串的对应位置字符，每发现一对相等的字符就生成一个1，最后对这些1求和，得到的就是对应位置字符相等的总个数。</p>
+<p>&nbsp;</p>
+<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><h2 id="1-题目-2"><a href="#1-题目-2" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">执行代码 x, y, z = sorted([1, 3, 2]) 之后，变量y的值为________
+</code></pre>
+<p><strong>答案：2</strong></p>
+<p><strong>解析</strong>：<code>sorted([1, 3, 2])</code>返回排序后的列表[1, 2, 3]，然后通过序列解包将这三个元素分别赋值给x、y、z，因此y的值为2。</p>
+<p>&nbsp;</p>
+<h2 id="2-题目-2"><a href="#2-题目-2" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">执行语句 x,y,z = map(str, range(3)) 之后，变量y的值为______
+</code></pre>
+<p><strong>答案：’1’</strong></p>
+<p><strong>解析</strong>：<code>range(3)</code>生成0、1、2，<code>map(str, range(3))</code>将这三个整数转换为字符串’0’、’1’、’2’，然后通过序列解包将这三个字符串分别赋值给x、y、z，因此y的值为’1’。</p>
 
       <div class="tags">
           <a href="/tags/Python/" rel="tag"><i class="ic i-tag"></i> Python</a>
@@ -300,7 +337,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
     <div class="item left">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;7.jpg" title="Python程序设计习题——列表与列表推导式">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;9.jpg" title="Python程序设计习题——列表与列表推导式">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——列表与列表推导式</h3>
@@ -310,7 +347,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
     <div class="item right">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;13.jpg" title="Python程序设计习题——字典">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;2.jpg" title="Python程序设计习题——字典">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——字典</h3>
@@ -332,7 +369,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%83%E7%BB%84"><span class="toc-number">1.</span> <span class="toc-text"> 元组</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.5.</span> <span class="toc-text"> 5. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text"> 6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text"> 7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text"> 8. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.9.</span> <span class="toc-text"> 9. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.10.</span> <span class="toc-text"> 10. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.2.</span> <span class="toc-text"> 2. 题目</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%83%E7%BB%84"><span class="toc-number">1.</span> <span class="toc-text">元组</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.5.</span> <span class="toc-text">5. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text">6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text">7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text">8. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.9.</span> <span class="toc-text">9. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.10.</span> <span class="toc-text">10. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.2.</span> <span class="toc-text">2. 题目</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -419,29 +456,10 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
-</div>
-
-    <span><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" title="ctfshow信息搜集">ctfshow信息搜集</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
-</div>
-
-    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" title="Python程序设计习题——字典">Python程序设计习题——字典</a></span>
   </li>
 
       
@@ -451,27 +469,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="Python程序设计习题——程序思维与Python语言基础">Python程序设计习题——程序思维与Python语言基础</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" title="Python程序设计习题——类与继承">Python程序设计习题——类与继承</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" title="Python程序设计习题——函数">Python程序设计习题——函数</a></span>
   </li>
 
       
@@ -488,10 +486,10 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" title="Python程序设计习题——字典">Python程序设计习题——字典</a></span>
+    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
   </li>
 
       
@@ -501,7 +499,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/06/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" title="ctfshow文件上传">ctfshow文件上传</a></span>
+    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
   </li>
 
       
@@ -511,7 +509,46 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/" title="Python程序设计习题——文件">Python程序设计习题——文件</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" title="ctfshow命令执行">ctfshow命令执行</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
   </li>
 
   </ul>
@@ -536,13 +573,13 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">1.3m 字</span>
+    <span title="站点总字数">1.4m 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">19:59</span>
+    <span title="站点阅读时长">20:39</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

@@ -11,10 +11,18 @@
         <category>CTF</category>
         <category>Web</category>
         <category>信息搜集</category>
+        <category>文件上传</category>
+        <category>木马上传</category>
         <category>命令执行RCE</category>
+        <category>日志包含</category>
+        <category>Linux系统命令</category>
+        <category>session条件竞争</category>
+        <category>Webshell</category>
+        <category>文件包含漏洞</category>
+        <category>爆破</category>
+        <category>BurpSuite</category>
         <category>无参RCE</category>
         <category>php伪协议</category>
-        <category>Linux系统命令</category>
         <category>过滤绕过</category>
         <category>POC</category>
         <category>SQL注入</category>
@@ -23,15 +31,7 @@
         <category>报错注入</category>
         <category>堆叠注入</category>
         <category>sqlmap</category>
-        <category>Webshell</category>
         <category>MySQL</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
-        <category>爆破</category>
-        <category>BurpSuite</category>
-        <category>文件上传</category>
         <category>PHP漏洞</category>
         <category>哈希碰撞</category>
         <category>正则漏洞</category>
@@ -44,74 +44,105 @@
             <category>爆破</category>
             <category>BurpSuite</category>
             <pubDate>Fri, 05 Sep 2025 15:57:39 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;web21&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web21&#34;&gt;#&lt;/a&gt; web21&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt; &lt;code&gt;Payload set&lt;/code&gt;  ----&amp;gt;  &lt;code&gt;custom iterator&lt;/code&gt;  (自定义迭代器)    需要 base64 编码&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;web21&#34;&gt;&lt;a href=&#34;#web21&#34; class=&#34;headerlink&#34; title=&#34;web21&#34;&gt;&lt;/a&gt;web21&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;&lt;code&gt;Payload set&lt;/code&gt; —-&amp;gt; &lt;code&gt;custom iterator&lt;/code&gt;(自定义迭代器)    需要 base64 编码&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{91bd4cda-e6db-4b02-9c72-0b9ec12b06c6}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415135857606.png&#34; alt=&#34;image-20250415135857606&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415135834992.png&#34; alt=&#34;image-20250415135834992&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415132207403.png&#34; alt=&#34;image-20250415132207403&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web22&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web22&#34;&gt;#&lt;/a&gt; web22&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;子域名爆破&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
+&lt;h1 id=&#34;web22&#34;&gt;&lt;a href=&#34;#web22&#34; class=&#34;headerlink&#34; title=&#34;web22&#34;&gt;&lt;/a&gt;web22&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;子域名爆破&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web23&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web23&#34;&gt;#&lt;/a&gt; web23&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;脚本寻找符合条件的值&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web23&#34;&gt;&lt;a href=&#34;#web23&#34; class=&#34;headerlink&#34; title=&#34;web23&#34;&gt;&lt;/a&gt;web23&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;脚本寻找符合条件的值&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415232134157.png&#34; alt=&#34;image-20250415232134157&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415232153261.png&#34; alt=&#34;image-20250415232153261&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web24&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web24&#34;&gt;#&lt;/a&gt; web24&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;php 伪随机数漏洞    找到多次访问不变的随机数&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web24&#34;&gt;&lt;a href=&#34;#web24&#34; class=&#34;headerlink&#34; title=&#34;web24&#34;&gt;&lt;/a&gt;web24&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;php伪随机数漏洞    找到多次访问不变的随机数&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415234223624.png&#34; alt=&#34;image-20250415234223624&#34; style=&#34;zoom: 50%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250415234418611.png&#34; alt=&#34;image-20250415234418611&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web25&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web25&#34;&gt;#&lt;/a&gt; web25&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;逆推：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;传 &lt;code&gt;r=0&lt;/code&gt;  得到 -766445872 (这个就是 &lt;code&gt;-intval(mt_rand()&lt;/code&gt; )&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;所以  &lt;code&gt;intval(mt_rand)=766445872&lt;/code&gt; ， 接下来使用 kali 反推出种子（会有几个种子，需要去试试是哪个），然后再根据种子用脚本得到的第一次的随机数给 &lt;code&gt;r&lt;/code&gt; , 第二次和第三次的随机数的二者之和赋给 cookie 的 token&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption data-lang=&#34;PHP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;error_reporting&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;include&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string double-quoted-string&#34;&gt;&#34;flag.php&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;isset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;r&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token variable&#34;&gt;$r&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;r&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;mt_srand&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;hexdec&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;substr&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;md5&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$flag&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token variable&#34;&gt;$rand&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;intval&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$r&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;intval&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mt_rand&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;// 第一次调用&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$rand&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$_COOKIE&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;token&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mt_rand&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;mt_rand&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token comment&#34;&gt;// 第二次和第三次&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;            &lt;span class=&#34;token keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$flag&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$rand&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;highlight_file&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token constant&#34;&gt;__FILE__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;system&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;cat /proc/version&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;img data-src=&#34;\images\article_images\image-20250416001946094.png&#34; alt=&#34;image-20250416001946094&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+&lt;h1 id=&#34;web25&#34;&gt;&lt;a href=&#34;#web25&#34; class=&#34;headerlink&#34; title=&#34;web25&#34;&gt;&lt;/a&gt;web25&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;逆推：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;传&lt;code&gt;r=0&lt;/code&gt;得到 -766445872(这个就是&lt;code&gt;-intval(mt_rand()&lt;/code&gt;)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所以 &lt;code&gt;intval(mt_rand)=766445872&lt;/code&gt;， 接下来使用kali反推出种子（会有几个种子，需要去试试是哪个），然后再根据种子用脚本得到的第一次的随机数给&lt;code&gt;r&lt;/code&gt;,第二次和第三次的随机数的二者之和赋给cookie的token&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php
+error_reporting(0);
+include(&amp;quot;flag.php&amp;quot;);
+if(isset($_GET[&amp;#39;r&amp;#39;]))&amp;#123;
+    $r = $_GET[&amp;#39;r&amp;#39;];
+    mt_srand(hexdec(substr(md5($flag), 0,8)));
+    $rand = intval($r)-intval(mt_rand());//第一次调用
+    if((!$rand))&amp;#123;
+        if($_COOKIE[&amp;#39;token&amp;#39;]==(mt_rand()+mt_rand()))&amp;#123;//第二次和第三次
+            echo $flag;
+        &amp;#125;
+    &amp;#125;else&amp;#123;
+        echo $rand;
+    &amp;#125;
+&amp;#125;else&amp;#123;
+    highlight_file(__FILE__);
+    echo system(&amp;#39;cat /proc/version&amp;#39;);
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img data-src=&#34;\images\article_images\image-20250416001946094.png&#34; alt=&#34;image-20250416001946094&#34; style=&#34;zoom:33%;&#34; /&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416121106676.png&#34; alt=&#34;image-20250416121106676&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416125247763.png&#34; alt=&#34;image-20250416125247763&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416125329494.png&#34; alt=&#34;image-20250416125329494&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416125112127.png&#34; alt=&#34;image-20250416125112127&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web26&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web26&#34;&gt;#&lt;/a&gt; web26&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;按提示填写后抓包，爆破密码&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web26&#34;&gt;&lt;a href=&#34;#web26&#34; class=&#34;headerlink&#34; title=&#34;web26&#34;&gt;&lt;/a&gt;web26&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;按提示填写后抓包，爆破密码&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;ctfshow{60fe9a09-2e71-4d50-9f97-2cbfe1e42310}&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416132016529.png&#34; alt=&#34;image-20250416132016529&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416131950853.png&#34; alt=&#34;image-20250416131950853&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web27&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web27&#34;&gt;#&lt;/a&gt; web27&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;根据录取名单，爆破身份证号，注意日期格式  &lt;code&gt;yyyyMMdd&lt;/code&gt;  ，附加前缀和后缀&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web27&#34;&gt;&lt;a href=&#34;#web27&#34; class=&#34;headerlink&#34; title=&#34;web27&#34;&gt;&lt;/a&gt;web27&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;根据录取名单，爆破身份证号，注意日期格式 &lt;code&gt;yyyyMMdd&lt;/code&gt; ，附加前缀和后缀&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416133958163.png&#34; alt=&#34;image-20250416133958163&#34; style=&#34;zoom:90%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416133750995.png&#34; alt=&#34;image-20250416133750995&#34; style=&#34;zoom: 33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416133717374.png&#34; alt=&#34;image-20250416133717374&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;web28&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#web28&#34;&gt;#&lt;/a&gt; web28&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;爆破目录（注意要删去  &lt;code&gt;/2.txt&lt;/code&gt; ）&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;web28&#34;&gt;&lt;a href=&#34;#web28&#34; class=&#34;headerlink&#34; title=&#34;web28&#34;&gt;&lt;/a&gt;web28&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;爆破目录（注意要删去 &lt;code&gt;/2.txt&lt;/code&gt;）&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416135330728.png&#34; alt=&#34;image-20250416135330728&#34; style=&#34;zoom: 25%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416135304794.png&#34; alt=&#34;image-20250416135304794&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;img data-src=&#34;\images\article_images\image-20250416135250311.png&#34; alt=&#34;image-20250416135250311&#34; style=&#34;zoom:33%;&#34; /&gt;
-&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
