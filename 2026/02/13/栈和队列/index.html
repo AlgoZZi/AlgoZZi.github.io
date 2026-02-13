@@ -76,7 +76,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>7.8k</span>
+    <span>7.7k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="/images/bg/15.jpg"></li>
-          <li class="item" data-background-image="/images/bg/7.jpg"></li>
+          <li class="item" data-background-image="/images/bg/17.jpg"></li>
+          <li class="item" data-background-image="/images/bg/18.jpg"></li>
+          <li class="item" data-background-image="/images/bg/10.jpg"></li>
           <li class="item" data-background-image="/images/bg/2.jpg"></li>
+          <li class="item" data-background-image="/images/bg/3.jpg"></li>
           <li class="item" data-background-image="/images/bg/21.jpg"></li>
-          <li class="item" data-background-image="/images/bg/6.jpg"></li>
-          <li class="item" data-background-image="/images/bg/1.jpg"></li>
         </ul>
       </div>
     </header>
@@ -224,121 +224,27 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
 <img data-src="\images\article_images\image-20251007201956592.png" alt="image-20251007201956592" style="zoom:50%;" />
 <figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">SeqStack</span>  <span class="token comment">// 顺序栈类定义</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    T <span class="token operator">*</span>elements<span class="token punctuation">;</span>    <span class="token comment">// 栈元素存放数组</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">int</span> top<span class="token punctuation">;</span>    <span class="token comment">// 栈顶指针</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">int</span> maxSize<span class="token punctuation">;</span>    <span class="token comment">// 栈最大容量</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">overflowProcess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 栈的溢出处理</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">public</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token function">SeqStack</span><span class="token punctuation">(</span><span class="token keyword">int</span> sz<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 构造函数</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token operator">~</span><span class="token function">SeqStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 析构函数</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">Push</span><span class="token punctuation">(</span>T x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 进栈</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">Pop</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 出栈</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">getTop</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 取栈顶内容</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">IsEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span></pre></td></tr><tr><td data-num="16"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token keyword">return</span> top<span class="token operator">==</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">IsFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>        <span class="token keyword">return</span> top<span class="token operator">==</span>maxSize<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="3构造函数"><a class="markdownIt-Anchor" href="#3构造函数">#</a> 3. 构造函数</h2>
-<pre><code class="language-c++">template&lt;class T&gt;
-SeqStack&lt;T&gt;::SeqStack(int sz) : maxSize(sz)//构造函数
-&#123;
-    top=-1;
-    elements=new T[maxSize];
-    assert(elements!=NULL);//判断是否分配成功
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">SeqStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">SeqStack</span><span class="token punctuation">(</span><span class="token keyword">int</span> sz<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">maxSize</span><span class="token punctuation">(</span>sz<span class="token punctuation">)</span><span class="token comment">// 构造函数</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    top<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    elements<span class="token operator">=</span><span class="token keyword">new</span> T<span class="token punctuation">[</span>maxSize<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token function">assert</span><span class="token punctuation">(</span>elements<span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 判断是否分配成功</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="4析构函数"><a class="markdownIt-Anchor" href="#4析构函数">#</a> 4. 析构函数</h2>
-<pre><code class="language-c++">template&lt;class T&gt;
-SeqStack&lt;T&gt;::~SeqStack()//析构函数
-&#123;
-    delete []elements;
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre>SeqStack<span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token operator">~</span><span class="token function">SeqStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 析构函数</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">delete</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>elements<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="5栈溢出处理函数"><a class="markdownIt-Anchor" href="#5栈溢出处理函数">#</a> 5. 栈溢出处理函数</h2>
 <figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">void</span> <span class="token class-name">SeqStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">overflowProcess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 栈溢出处理函数</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 当栈满，则执行扩充栈存储空间处理</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    T <span class="token operator">*</span>newArray<span class="token operator">=</span><span class="token keyword">new</span> T<span class="token punctuation">[</span><span class="token number">2</span><span class="token operator">*</span>maxSize<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 创建更大的存储数组</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span>top<span class="token punctuation">;</span><span class="token operator">++</span>i<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        newArray<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span>elements<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    maxSize<span class="token operator">+=</span>maxSize<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">delete</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>elements<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    elements<span class="token operator">=</span>newArray<span class="token punctuation">;</span><span class="token comment">// 改变 elements 指针</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="6进栈操作"><a class="markdownIt-Anchor" href="#6进栈操作">#</a> 6. 进栈操作</h2>
 <img data-src="\images\article_images\image-20251007205124199.png" alt="image-20251007205124199" style="zoom:50%;" />
-<pre><code class="language-c++">template&lt;class T&gt;
-void SeqStack&lt;T&gt;::Push(T x)//进栈操作
-&#123;
-    if(IsFull()==true)//栈满-&gt;扩充
-    &#123;
-        overflowProcess();
-    &#125;
-    elements[++top]=x;//栈顶指针先+1，再进栈
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">void</span> <span class="token class-name">SeqStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">Push</span><span class="token punctuation">(</span>T x<span class="token punctuation">)</span><span class="token comment">// 进栈操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">IsFull</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token comment">// 栈满 -> 扩充</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token function">overflowProcess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    elements<span class="token punctuation">[</span><span class="token operator">++</span>top<span class="token punctuation">]</span><span class="token operator">=</span>x<span class="token punctuation">;</span><span class="token comment">// 栈顶指针先 + 1，再进栈</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="7出栈操作"><a class="markdownIt-Anchor" href="#7出栈操作">#</a> 7. 出栈操作</h2>
 <img data-src="\images\article_images\image-20251007211011505.png" alt="image-20251007211011505" style="zoom:50%;" />
-<pre><code class="language-c++">template&lt;class T&gt;
-bool SeqStack&lt;T&gt;::Pop(T &amp;x)//出栈操作
-&#123;
-    if(IsEmpty()==true)
-    &#123;
-        return false;
-    &#125;
-    x=elements[top--];//栈顶指针-1
-    return true;//退栈成功
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">bool</span> <span class="token class-name">SeqStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">Pop</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token comment">// 出栈操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">IsEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    x<span class="token operator">=</span>elements<span class="token punctuation">[</span>top<span class="token operator">--</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">// 栈顶指针 - 1</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span><span class="token comment">// 退栈成功</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="8取栈顶操作"><a class="markdownIt-Anchor" href="#8取栈顶操作">#</a> 8. 取栈顶操作</h2>
-<pre><code class="language-c++">template&lt;class T&gt;
-bool SeqStack&lt;T&gt;::getTop(T &amp;x)//取栈顶操作
-&#123;
-    if(IsEmpty()==true)//若栈不空，则函数返回该栈栈顶元素的地址
-    &#123;
-        return false;
-    &#125;
-    x=elements[top];
-    return true;
-&#125;
-</code></pre>
-<p>​	 </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">bool</span> <span class="token class-name">SeqStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">getTop</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token comment">// 取栈顶操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">IsEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token comment">// 若栈不空，则函数返回该栈栈顶元素的地址</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    x<span class="token operator">=</span>elements<span class="token punctuation">[</span>top<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p>​	 </p>
 <p><strong>以上算法时间复杂度均为 O (1)</strong></p>
 <p> </p>
 <h1 id="二-链式栈"><a class="markdownIt-Anchor" href="#二-链式栈">#</a> 二、链式栈</h1>
 <h2 id="1链式栈类的定义"><a class="markdownIt-Anchor" href="#1链式栈类的定义">#</a> 1. 链式栈类的定义</h2>
 <img data-src="\images\article_images\image-20251007211935833.png" alt="image-20251007211935833" style="zoom:50%;" />
-<pre><code class="language-c++">template&lt;class T&gt;
-struct StackNode//栈结点类定义
-&#123;
-public:
-    T data; //栈结点数据
-    StackNode&lt;T&gt; *link; //结点链指针
-    StackNode(T d=0,StackNode&lt;T&gt; *next=NULL) : data(d),link(next)&#123;&#125;//构造函数
-&#125;;
-
-template&lt;class T&gt;
-class LinkedStack//链式栈类定义
-&#123;
-private:
-    StackNode&lt;T&gt; *top;  //栈顶指针
-    void output(ostream *os,StackNode&lt;T&gt; *ptr,int i);//递归输出栈的所有元素
-
-public:
-    LinkedStack() : top(NULL)&#123;&#125; //构造函数
-    ~LinkedStack()  //析构函数
-    &#123;
-        makeEmpty();
-    &#125;
-    void Push(T x);//进栈
-    bool Pop(T &amp;x);//出栈
-    bool getTop(T &amp;x) const;//取栈顶
-    bool IsEmpty() const
-    &#123;
-        return top==NULL;
-    &#125;
-    void makeEmpty();//清空栈的内容
-    friend osetream &amp;operator&lt;&lt;(ostream &amp;os,LinkedStack&lt;T&gt; &amp;s)//输出栈元素的重载操作&lt;&lt;
-    &#123;
-        output(os,s.top,1);
-    &#125;
-&#125;;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">struct</span> <span class="token class-name">StackNode</span><span class="token comment">// 栈结点类定义</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">public</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    T data<span class="token punctuation">;</span> <span class="token comment">// 栈结点数据</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    StackNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>link<span class="token punctuation">;</span> <span class="token comment">// 结点链指针</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token function">StackNode</span><span class="token punctuation">(</span>T d<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>StackNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>next<span class="token operator">=</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">data</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">link</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token comment">// 构造函数</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">LinkedStack</span><span class="token comment">// 链式栈类定义</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token keyword">private</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    StackNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>top<span class="token punctuation">;</span>  <span class="token comment">// 栈顶指针</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">output</span><span class="token punctuation">(</span>ostream <span class="token operator">*</span>os<span class="token punctuation">,</span>StackNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>ptr<span class="token punctuation">,</span><span class="token keyword">int</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 递归输出栈的所有元素</span></pre></td></tr><tr><td data-num="16"></td><td><pre></pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token keyword">public</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token function">LinkedStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">top</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token comment">// 构造函数</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token operator">~</span><span class="token function">LinkedStack</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment">// 析构函数</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>        <span class="token function">makeEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">Push</span><span class="token punctuation">(</span>T x<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 进栈</span></pre></td></tr><tr><td data-num="24"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">Pop</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 出栈</span></pre></td></tr><tr><td data-num="25"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">getTop</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span><span class="token comment">// 取栈顶</span></pre></td></tr><tr><td data-num="26"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">IsEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span></pre></td></tr><tr><td data-num="27"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="28"></td><td><pre>        <span class="token keyword">return</span> top<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">makeEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 清空栈的内容</span></pre></td></tr><tr><td data-num="31"></td><td><pre>    <span class="token keyword">friend</span> osetream <span class="token operator">&amp;</span><span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>ostream <span class="token operator">&amp;</span>os<span class="token punctuation">,</span>LinkedStack<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">&amp;</span>s<span class="token punctuation">)</span><span class="token comment">// 输出栈元素的重载操作 & lt;&lt;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="33"></td><td><pre>        <span class="token function">output</span><span class="token punctuation">(</span>os<span class="token punctuation">,</span>s<span class="token punctuation">.</span>top<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="34"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="35"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="2清空操作"><a class="markdownIt-Anchor" href="#2清空操作">#</a> 2. 清空操作</h2>
-<pre><code class="language-c++">template&lt;class T&gt;
-void LinkedStack&lt;T&gt;::makeEmpty()//清空操作
-&#123;
-    StackNode&lt;T&gt; *p;
-    while(top!=NULL)
-    &#123;
-        p=top;
-        top=top-&gt;link;
-        delete p;
-    &#125;
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">void</span> <span class="token class-name">LinkedStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">makeEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment">// 清空操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    StackNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>p<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">while</span><span class="token punctuation">(</span>top<span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        p<span class="token operator">=</span>top<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        top<span class="token operator">=</span>top<span class="token operator">-></span>link<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token keyword">delete</span> p<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="3进栈操作"><a class="markdownIt-Anchor" href="#3进栈操作">#</a> 3. 进栈操作</h2>
 <img data-src="\images\article_images\image-20251007215009912.png" alt="image-20251007215009912" style="zoom:50%;" />
 <figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">void</span> <span class="token class-name">LinkedStack</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">Push</span><span class="token punctuation">(</span>T x<span class="token punctuation">)</span><span class="token comment">// 进栈操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 将元素值 x 插入到链式栈的栈顶，即链头</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    top<span class="token operator">=</span><span class="token keyword">new</span> <span class="token generic-function"><span class="token function">StackNode</span><span class="token generic class-name"><span class="token operator">&lt;</span>T<span class="token operator">></span></span></span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>top<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 创建新结点</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token function">assert</span><span class="token punctuation">(</span>top<span class="token operator">!=</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 创建失败退出</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
@@ -408,48 +314,9 @@ void LinkedStack&lt;T&gt;::makeEmpty()//清空操作
 <figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">LinkedQueue</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">private</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    QueueNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>front<span class="token punctuation">,</span><span class="token operator">*</span>rear<span class="token punctuation">;</span>  <span class="token comment">// 队头、队尾指针</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">public</span><span class="token operator">:</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token function">LinkedQueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">rear</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">front</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>   <span class="token comment">// 构造函数</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token operator">~</span><span class="token function">LinkedQueue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 析构函数</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">EnQueue</span><span class="token punctuation">(</span><span class="token keyword">const</span> T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 入队操作</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">DeQueue</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 出队操作</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">GetFront</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token keyword">void</span> <span class="token function">MakeEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 实现与～Queue () 同</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token keyword">bool</span> <span class="token function">IsEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span>    <span class="token comment">// 判空函数</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token keyword">return</span> front<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="3入队操作-2"><a class="markdownIt-Anchor" href="#3入队操作-2">#</a> 3. 入队操作</h2>
 <img data-src="\images\article_images\image-20251008123239297.png" alt="image-20251008123239297" style="zoom:50%;" />
-<pre><code class="language-c++">template&lt;class T&gt;
-bool LinkedQueue&lt;T&gt;::EnQueue(const T &amp;x)//入队操作
-&#123;
-    //将新元素x插入到队列的队尾
-    if(front==NULL)//队列为空
-    &#123;
-        front=rear=new QueueNode&lt;T&gt;(x);//创建第一个结点
-        if(front==NULL) //分配失败
-        &#123;
-            return false;//分配失败
-        &#125;
-    &#125;
-    else//队列不空
-    &#123;
-        rear-&gt;link=new QueueNode&lt;T&gt;(x);//插入
-        if(rear-&gt;link==NULL)//分配失败
-        &#123;
-            return false;//分配失败
-        &#125;
-        rear=rear-&gt;link;
-    &#125;
-    return true;
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">bool</span> <span class="token class-name">LinkedQueue</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">EnQueue</span><span class="token punctuation">(</span><span class="token keyword">const</span> T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token comment">// 入队操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 将新元素 x 插入到队列的队尾</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span>front<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token comment">// 队列为空</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        front<span class="token operator">=</span>rear<span class="token operator">=</span><span class="token keyword">new</span> <span class="token generic-function"><span class="token function">QueueNode</span><span class="token generic class-name"><span class="token operator">&lt;</span>T<span class="token operator">></span></span></span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 创建第一个结点</span></pre></td></tr><tr><td data-num="8"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span>front<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span> <span class="token comment">// 分配失败</span></pre></td></tr><tr><td data-num="9"></td><td><pre>        <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span class="token comment">// 分配失败</span></pre></td></tr><tr><td data-num="11"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token keyword">else</span><span class="token comment">// 队列不空</span></pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        rear<span class="token operator">-></span>link<span class="token operator">=</span><span class="token keyword">new</span> <span class="token generic-function"><span class="token function">QueueNode</span><span class="token generic class-name"><span class="token operator">&lt;</span>T<span class="token operator">></span></span></span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 插入</span></pre></td></tr><tr><td data-num="16"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span>rear<span class="token operator">-></span>link<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token comment">// 分配失败</span></pre></td></tr><tr><td data-num="17"></td><td><pre>        <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span class="token comment">// 分配失败</span></pre></td></tr><tr><td data-num="19"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>        rear<span class="token operator">=</span>rear<span class="token operator">-></span>link<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <h2 id="4出队操作-2"><a class="markdownIt-Anchor" href="#4出队操作-2">#</a> 4. 出队操作</h2>
-<pre><code class="language-c++">template&lt;class T&gt;
-bool LinkedQueue&lt;T&gt;::DeQueue(T &amp;x)//出队操作
-&#123;
-    //如果队列不空，将队头结点从链式队列中删去
-    if(IsEmpty()==true) //判空
-    &#123;
-        return false;
-    &#125;
-    QueueNode&lt;T&gt; *p=front;
-    x=front-&gt;data;
-    front=front-&gt;link;
-    delete p;
-    return true;
-&#125;
-</code></pre>
-<p> </p>
+<figure class="highlight cpp"><figcaption data-lang="C++"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">T</span><span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">bool</span> <span class="token class-name">LinkedQueue</span><span class="token operator">&lt;</span>T<span class="token operator">></span><span class="token double-colon punctuation">::</span><span class="token function">DeQueue</span><span class="token punctuation">(</span>T <span class="token operator">&amp;</span>x<span class="token punctuation">)</span><span class="token comment">// 出队操作</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token comment">// 如果队列不空，将队头结点从链式队列中删去</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">IsEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">==</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token comment">// 判空</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    QueueNode<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token operator">*</span>p<span class="token operator">=</span>front<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    x<span class="token operator">=</span>front<span class="token operator">-></span>data<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    front<span class="token operator">=</span>front<span class="token operator">-></span>link<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">delete</span> p<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p> </p>
 <p><strong>入队和出队算法的时间复杂度均为 O (1)</strong></p>
 <p> </p>
 <h2 id="5取队头元素操作"><a class="markdownIt-Anchor" href="#5取队头元素操作">#</a> 5. 取队头元素操作</h2>
@@ -473,7 +340,7 @@ bool LinkedQueue&lt;T&gt;::DeQueue(T &amp;x)//出队操作
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2026-02-13 18:56:54" itemprop="dateModified" datetime="2026-02-13T18:56:54+08:00">2026-02-13</time>
+    <time title="修改时间：2026-02-13 20:37:57" itemprop="dateModified" datetime="2026-02-13T20:37:57+08:00">2026-02-13</time>
   </span>
 </div>
 
@@ -614,10 +481,10 @@ bool LinkedQueue&lt;T&gt;::DeQueue(T &amp;x)//出队操作
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/" title="分类于 数据结构（C++）">数据结构（C++）</a>
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/02/13/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" title="栈和队列">栈和队列</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
   </li>
 
       
@@ -637,36 +504,7 @@ bool LinkedQueue&lt;T&gt;::DeQueue(T &amp;x)//出队操作
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/" title="Python程序设计习题——元组">Python程序设计习题——元组</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
   </li>
 
       
@@ -696,7 +534,17 @@ bool LinkedQueue&lt;T&gt;::DeQueue(T &amp;x)//出队操作
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" title="ctfshow信息搜集">ctfshow信息搜集</a></span>
+    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+</div>
+
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" title="Python程序设计习题——类与继承">Python程序设计习题——类与继承</a></span>
   </li>
 
       
@@ -707,6 +555,25 @@ bool LinkedQueue&lt;T&gt;::DeQueue(T &amp;x)//出队操作
 </div>
 
     <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/" title="Python程序设计习题——文件">Python程序设计习题——文件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
   </li>
 
   </ul>
