@@ -7,6 +7,7 @@
     <category term="Python" />
     <category term="CTF" />
     <category term="Web" />
+    <category term="信息搜集" />
     <category term="SQL注入" />
     <category term="时间盲注" />
     <category term="布尔盲注" />
@@ -21,11 +22,11 @@
     <category term="Linux系统命令" />
     <category term="过滤绕过" />
     <category term="POC" />
-    <category term="信息搜集" />
     <category term="文件上传" />
     <category term="木马上传" />
     <category term="日志包含" />
     <category term="session条件竞争" />
+    <category term="文件包含漏洞" />
     <category term="爆破" />
     <category term="BurpSuite" />
     <category term="数据结构" />
@@ -35,7 +36,6 @@
     <category term="二叉树" />
     <category term="堆" />
     <category term="线性表" />
-    <category term="文件包含漏洞" />
     <category term="PHP漏洞" />
     <category term="哈希碰撞" />
     <category term="正则漏洞" />
