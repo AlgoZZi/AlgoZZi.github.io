@@ -117,12 +117,12 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
+          <li class="item" data-background-image="/images/bg/5.jpg"></li>
+          <li class="item" data-background-image="/images/bg/7.jpg"></li>
           <li class="item" data-background-image="/images/bg/8.jpg"></li>
-          <li class="item" data-background-image="/images/bg/14.jpg"></li>
-          <li class="item" data-background-image="/images/bg/20.jpg"></li>
-          <li class="item" data-background-image="/images/bg/13.jpg"></li>
-          <li class="item" data-background-image="/images/bg/1.jpg"></li>
-          <li class="item" data-background-image="/images/bg/15.jpg"></li>
+          <li class="item" data-background-image="/images/bg/9.jpg"></li>
+          <li class="item" data-background-image="/images/bg/16.jpg"></li>
+          <li class="item" data-background-image="/images/bg/21.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,82 +168,58 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h1><h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><h2 id="1-题目"><a href="#1-题目" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">(多选)
-关于CSV格式文件，下列说法正确的是（  ）
-
-A.每行表示一个一维数据，多行表示二维数据
-B.必须要含列名，而且列名放置在文件第一行
-C.纯文本格式，通过单一编码表示字符
-D.以逗号分隔每列数据，列数据为空也要保留逗号
-</code></pre>
-<p><strong>答案：ACD</strong></p>
-<p><strong>选项A</strong>：正确，CSV文件的结构就是每行表示一个一维数据，多行表示二维数据。</p>
-<p><strong>选项B</strong>：错误，CSV文件不一定必须包含列名，是否包含列名取决于具体应用场景。</p>
-<p><strong>选项C</strong>：正确，CSV是纯文本格式，可以使用单一编码（如UTF-8）表示字符。</p>
-<p><strong>选项D</strong>：正确，CSV文件使用逗号分隔每列数据，即使列数据为空也要保留逗号作为分隔符。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目"><a href="#2-题目" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">关于read,readline和readlines说法正确的是（  ）
-
-A.readlines 读取整个文件到一个迭代器以供我们遍历
-B.read 读取整个文件
-C.使用read,readline和readlines之前必须先用open打开文件，但不用显示指明打开模式‘r’
-D.readline 读取下一行,使用生成器方法
-</code></pre>
-<p><strong>答案：B</strong></p>
-<p><strong>选项A</strong>：错误，readlines()返回的是列表而非迭代器。</p>
-<p><strong>选项B</strong>：正确，read()方法在不指定参数时会读取整个文件内容。</p>
-<p><strong>选项C</strong>：错误，表述过于绝对，二进制文件需要显式指定’r’或’rb’模式。</p>
-<p><strong>选项D</strong>：错误，readline()不是生成器方法，它每次调用只读取一行内容。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目"><a href="#3-题目" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">以下选项中不是Python文件操作方法的是(  )
-
-A.readline()
-B.read()
-C.readtext()
-D.readlines()
-</code></pre>
-<p><strong>答案：C</strong></p>
-<p><strong>选项A</strong>：readline()是文件操作方法，用于读取一行内容。</p>
-<p><strong>选项B</strong>：read()是文件操作方法，用于读取文件内容。</p>
-<p><strong>选项C</strong>：readtext()不是标准的Python文件操作方法，正确的方法是read()。</p>
-<p><strong>选项D</strong>：readlines()是文件操作方法，用于读取所有行并返回列表。</p>
-<p>&nbsp;</p>
-<h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><h2 id="1-题目-1"><a href="#1-题目-1" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">以写模式打开的文件无法进读操作。  (   )  
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：以写模式（’w’）打开的文件只能进行写操作，不能进行读操作。如果需要同时读写，可以使用’r+’、’w+’或’a+’模式。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-1"><a href="#2-题目-1" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">二进制文件也可以使用记事本或其他文本编辑器打开，但是一般来说无法正常查看其中的内容。(   ) 
-</code></pre>
-<p><strong>答案：对</strong></p>
+    <h1 id="文件"><a class="markdownIt-Anchor" href="#文件">#</a> 文件</h1>
+<h1 id="选择题"><a class="markdownIt-Anchor" href="#选择题">#</a> 选择题</h1>
+<h2 id="1-题目"><a class="markdownIt-Anchor" href="#1-题目">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">(</span>多选<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre>关于CSV格式文件，下列说法正确的是（  ）</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>A<span class="token punctuation">.</span>每行表示一个一维数据，多行表示二维数据</pre></td></tr><tr><td data-num="5"></td><td><pre>B<span class="token punctuation">.</span>必须要含列名，而且列名放置在文件第一行</pre></td></tr><tr><td data-num="6"></td><td><pre>C<span class="token punctuation">.</span>纯文本格式，通过单一编码表示字符</pre></td></tr><tr><td data-num="7"></td><td><pre>D<span class="token punctuation">.</span>以逗号分隔每列数据，列数据为空也要保留逗号</pre></td></tr></table></figure><p><strong>答案：ACD</strong></p>
+<p><strong>选项 A</strong>：正确，CSV 文件的结构就是每行表示一个一维数据，多行表示二维数据。</p>
+<p><strong>选项 B</strong>：错误，CSV 文件不一定必须包含列名，是否包含列名取决于具体应用场景。</p>
+<p><strong>选项 C</strong>：正确，CSV 是纯文本格式，可以使用单一编码（如 UTF-8）表示字符。</p>
+<p><strong>选项 D</strong>：正确，CSV 文件使用逗号分隔每列数据，即使列数据为空也要保留逗号作为分隔符。</p>
+<p> </p>
+<h2 id="2-题目"><a class="markdownIt-Anchor" href="#2-题目">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>关于read<span class="token punctuation">,</span>readline和readlines说法正确的是（  ）</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>readlines 读取整个文件到一个迭代器以供我们遍历</pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>read 读取整个文件</pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>使用read<span class="token punctuation">,</span>readline和readlines之前必须先用<span class="token builtin">open</span>打开文件，但不用显示指明打开模式‘r’</pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>readline 读取下一行<span class="token punctuation">,</span>使用生成器方法</pre></td></tr></table></figure><p><strong>答案：B</strong></p>
+<p><strong>选项 A</strong>：错误，readlines () 返回的是列表而非迭代器。</p>
+<p><strong>选项 B</strong>：正确，read () 方法在不指定参数时会读取整个文件内容。</p>
+<p><strong>选项 C</strong>：错误，表述过于绝对，二进制文件需要显式指定’r’或’rb’模式。</p>
+<p><strong>选项 D</strong>：错误，readline () 不是生成器方法，它每次调用只读取一行内容。</p>
+<p> </p>
+<h2 id="3-题目"><a class="markdownIt-Anchor" href="#3-题目">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>以下选项中不是Python文件操作方法的是<span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>readline<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>readtext<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>readlines<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：C</strong></p>
+<p><strong>选项 A</strong>：readline () 是文件操作方法，用于读取一行内容。</p>
+<p><strong>选项 B</strong>：read () 是文件操作方法，用于读取文件内容。</p>
+<p><strong>选项 C</strong>：readtext () 不是标准的 Python 文件操作方法，正确的方法是 read ()。</p>
+<p><strong>选项 D</strong>：readlines () 是文件操作方法，用于读取所有行并返回列表。</p>
+<p> </p>
+<h1 id="判断题"><a class="markdownIt-Anchor" href="#判断题">#</a> 判断题</h1>
+<h2 id="1-题目-2"><a class="markdownIt-Anchor" href="#1-题目-2">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>以写模式打开的文件无法进读操作。  <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：以写模式（‘w’）打开的文件只能进行写操作，不能进行读操作。如果需要同时读写，可以使用’r+’、'w+' 或’a+' 模式。</p>
+<p> </p>
+<h2 id="2-题目-2"><a class="markdownIt-Anchor" href="#2-题目-2">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>二进制文件也可以使用记事本或其他文本编辑器打开，但是一般来说无法正常查看其中的内容。<span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
 <p><strong>解析</strong>：二进制文件可以用文本编辑器打开，但由于其内容是二进制数据，通常会显示为乱码，无法正常查看。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目-1"><a href="#3-题目-1" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">对字符串信息进行编码以后，必须使用同样的或者兼容的编码格式进行解码才能还原本来的信息。(   )
-</code></pre>
-<p><strong>答案：对</strong></p>
+<p> </p>
+<h2 id="3-题目-2"><a class="markdownIt-Anchor" href="#3-题目-2">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>对字符串信息进行编码以后，必须使用同样的或者兼容的编码格式进行解码才能还原本来的信息。<span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
 <p><strong>解析</strong>：字符串编码和解码必须使用相同或兼容的编码格式，否则会出现乱码或解码错误。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目"><a href="#4-题目" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">文本文件是可以迭代的，可以使用for line in fp类似的语句遍历文件对象fp中的每一行。(  )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：在Python中，文本文件对象是可迭代的，可以直接用for循环遍历文件的每一行。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目"><a href="#5-题目" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">使用pickle进行序列化得到的二进制文件使用struct也可以正确地进行反序列化。(   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：pickle和struct是不同的序列化模块，它们使用不同的格式存储数据，不能互相反序列化。</p>
-<p>&nbsp;</p>
-<h2 id="6-题目"><a href="#6-题目" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">使用内置函数open()且以”w”模式打开的文件，文件指针默认指向文件尾。(   )
-</code></pre>
-<p><strong>答案：错</strong></p>
+<p> </p>
+<h2 id="4-题目"><a class="markdownIt-Anchor" href="#4-题目">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>文本文件是可以迭代的，可以使用<span class="token keyword">for</span> line <span class="token keyword">in</span> fp类似的语句遍历文件对象fp中的每一行。<span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：在 Python 中，文本文件对象是可迭代的，可以直接用 for 循环遍历文件的每一行。</p>
+<p> </p>
+<h2 id="5-题目"><a class="markdownIt-Anchor" href="#5-题目">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>使用pickle进行序列化得到的二进制文件使用struct也可以正确地进行反序列化。<span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：pickle 和 struct 是不同的序列化模块，它们使用不同的格式存储数据，不能互相反序列化。</p>
+<p> </p>
+<h2 id="6-题目"><a class="markdownIt-Anchor" href="#6-题目">#</a> 6. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>使用内置函数<span class="token builtin">open</span><span class="token punctuation">(</span><span class="token punctuation">)</span>且以”w”模式打开的文件，文件指针默认指向文件尾。<span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：以’w’模式打开文件时，文件指针默认指向文件开头，且会清空文件内容。</p>
-<p>&nbsp;</p>
-<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><h2 id="1-题目-2"><a href="#1-题目-2" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">已知当前文件夹中有纯英文文本文件readme.txt，请填空完成功能把readme.txt文件中的所有内容复制到dst.txt中，
-with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
-      dst.write(src.read())。
-</code></pre>
-<p><strong>答案：’w’</strong></p>
-<p><strong>解析</strong>：open函数使用’w’模式表示以写模式打开文件，这样可以将内容写入到dst.txt中。</p>
+<p> </p>
+<h1 id="填空题"><a class="markdownIt-Anchor" href="#填空题">#</a> 填空题</h1>
+<h2 id="1-题目-3"><a class="markdownIt-Anchor" href="#1-题目-3">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知当前文件夹中有纯英文文本文件readme<span class="token punctuation">.</span>txt，请填空完成功能把readme<span class="token punctuation">.</span>txt文件中的所有内容复制到dst<span class="token punctuation">.</span>txt中，</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'readme.txt'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> src<span class="token punctuation">,</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'dst.txt'</span><span class="token punctuation">,</span> ______<span class="token punctuation">)</span> <span class="token keyword">as</span> dst<span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>      dst<span class="token punctuation">.</span>write<span class="token punctuation">(</span>src<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>。</pre></td></tr></table></figure><p><strong>答案：'w’</strong></p>
+<p><strong>解析</strong>：open 函数使用’w’模式表示以写模式打开文件，这样可以将内容写入到 dst.txt 中。</p>
 
       <div class="tags">
           <a href="/tags/Python/" rel="tag"><i class="ic i-tag"></i> Python</a>
@@ -290,7 +266,7 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
     <div class="item left">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;3.jpg" title="Python程序设计习题——类与继承">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;9.jpg" title="Python程序设计习题——类与继承">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——类与继承</h3>
@@ -298,6 +274,14 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 
     </div>
     <div class="item right">
+      
+
+  <a href="/2026/02/13/%E7%BA%BF%E6%80%A7%E8%A1%A8/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;7.jpg" title="线性表">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 数据结构（C++）</span>
+  <h3>线性表</h3>
+  </a>
+
     </div>
 </div>
 
@@ -314,7 +298,7 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text">3. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text">6. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.1.</span> <span class="toc-text">1. 题目</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text"> 文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text"> 6. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.1.</span> <span class="toc-text"> 1. 题目</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -332,19 +316,19 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
+        <span class="count">19</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">28</span>
+        <span class="count">33</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -374,10 +358,12 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 
   <ul id="quick">
     <li class="prev pjax">
+        <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
+        <a href="/2026/02/13/%E7%BA%BF%E6%80%A7%E8%A1%A8/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -402,37 +388,7 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="Python程序设计习题——程序思维与Python语言基础">Python程序设计习题——程序思维与Python语言基础</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/" title="Python程序设计习题——元组">Python程序设计习题——元组</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
-</div>
-
-    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
-</div>
-
-    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/" title="Python程序设计习题——文件">Python程序设计习题——文件</a></span>
   </li>
 
       
@@ -452,16 +408,6 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" title="Python程序设计习题——函数">Python程序设计习题——函数</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
     <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" title="Python程序设计习题——类与继承">Python程序设计习题——类与继承</a></span>
   </li>
 
@@ -469,9 +415,20 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="Python程序设计习题——程序思维与Python语言基础">Python程序设计习题——程序思维与Python语言基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
   </li>
 
       
@@ -481,7 +438,7 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/16/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="Python程序设计">Python程序设计</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
   </li>
 
       
@@ -491,7 +448,37 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" title="Python程序设计习题——字典">Python程序设计习题——字典</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/" title="Python程序设计习题——元组">Python程序设计习题——元组</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" title="ctfshow命令执行">ctfshow命令执行</a></span>
   </li>
 
   </ul>
@@ -516,13 +503,13 @@ with open(&#39;readme.txt&#39;) as src, open(&#39;dst.txt&#39;, ______) as dst:
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">1.4m 字</span>
+    <span title="站点总字数">1.3m 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">20:39</span>
+    <span title="站点阅读时长">20:17</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

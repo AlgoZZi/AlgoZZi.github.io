@@ -76,7 +76,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3.9k</span>
+    <span>3.4k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -84,7 +84,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>4 分钟</span>
+    <span>3 分钟</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="/images/bg/19.jpg"></li>
-          <li class="item" data-background-image="/images/bg/2.jpg"></li>
+          <li class="item" data-background-image="/images/bg/15.jpg"></li>
+          <li class="item" data-background-image="/images/bg/7.jpg"></li>
           <li class="item" data-background-image="/images/bg/1.jpg"></li>
-          <li class="item" data-background-image="/images/bg/21.jpg"></li>
           <li class="item" data-background-image="/images/bg/3.jpg"></li>
-          <li class="item" data-background-image="/images/bg/20.jpg"></li>
+          <li class="item" data-background-image="/images/bg/16.jpg"></li>
+          <li class="item" data-background-image="/images/bg/4.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,145 +168,101 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h1><h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><h2 id="1-题目"><a href="#1-题目" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">以下哪个不可以当作字典的键(  )
-
-A.列表
-B.元组
-C.整数
-D.字符串
-</code></pre>
-<p><strong>答案：A</strong></p>
-<p><strong>选项A</strong>：列表是可变对象，不可哈希，不能作为字典的键。</p>
-<p><strong>选项B</strong>：元组是不可变对象，可哈希，可以作为字典的键。</p>
-<p><strong>选项C</strong>：整数是不可变对象，可哈希，可以作为字典的键。</p>
-<p><strong>选项D</strong>：字符串是不可变对象，可哈希，可以作为字典的键。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目"><a href="#2-题目" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">给定字典d, 以下可以清空字典并保留变量的是(  )
-
-A.d.clear()
-B.del d
-C.d.pop()
-D.d.remove()
-</code></pre>
-<p><strong>答案：A</strong></p>
-<p><strong>选项A</strong>：<code>d.clear()</code>清空字典中所有的键值对，使字典变为空字典，但字典变量d依然存在。</p>
-<p><strong>选项B</strong>：<code>del d</code>删除字典变量d，字典不再存在，不符合“保留变量”的要求。</p>
-<p><strong>选项C</strong>：<code>d.pop()</code>删除并返回指定键对应的键值对，需要传入参数，且只能删除单个键值对，无法清空整个字典。</p>
-<p><strong>选项D</strong>：字典没有<code>remove()</code>方法，这是列表的方法。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目"><a href="#3-题目" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">以下不能创建一个字典的语句是 （  ）
-
-A.dict2 = &#123; 3 : 5 &#125;
-B.dict3 = &#123;[1,2,3]: &quot;uestc&quot;&#125;
-C.dict1 = &#123;&#125;
-D.dict4 = &#123;(1,2,3): &quot;uestc&quot;&#125;
-</code></pre>
-<p><strong>答案：B</strong></p>
-<p><strong>选项A</strong>：使用字面量创建字典，键是整数3，值是整数5，合法。</p>
-<p><strong>选项B</strong>：尝试用列表[1,2,3]作为字典的键，列表是可变不可哈希对象，不合法，这是核心错误选项。</p>
-<p><strong>选项C</strong>：使用空大括号创建空字典，合法。</p>
-<p><strong>选项D</strong>：使用元组(1,2,3)作为字典的键，元组是不可变可哈希对象，合法。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目"><a href="#4-题目" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">print(list(&#123;&#39;a&#39;:1, &#39;b&#39;:2, &#39;c&#39;:3&#125;))输出结果为(  )
-
-A.[&#39;a’, &#39;b’, &#39;c&#39;]
-B.[1,2,3]
-C.[(&#39;a&#39;,1), (&#39;b&#39;,2), (&#39;c&#39;,3)]
-D.[(1,&#39;a&#39;), (2,&#39;b&#39;), (3,&#39;c&#39;)]
-</code></pre>
-<p><strong>答案：A</strong></p>
-<p><strong>选项A</strong>：字典默认迭代的是键，<code>list(字典)</code>将键转换为列表，结果为[‘a’, ‘b’, ‘c’]，正确。</p>
-<p><strong>选项B</strong>：如果要获取值的列表，应该使用<code>list(字典.values())</code>，直接转换字典不会得到值的列表。</p>
-<p><strong>选项C</strong>：如果要获取键值对的列表，应该使用<code>list(字典.items())</code>。</p>
-<p><strong>选项D</strong>：这是将键值对反转后的结果，不是默认行为。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目"><a href="#5-题目" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">dict = &#123;&quot;name&quot;: &quot;wangwu&quot;, &quot;age&quot;: 22&#125;
-print(dict[&quot;sex&quot;])和print(dict.get(&quot;sex&quot;))输出是什么(    )
-
-A.None, None
-B.None, KeyError
-C.KeyError, KeyError
-D.KeyError, None
-</code></pre>
-<p><strong>答案：D</strong></p>
-<p><strong>选项A</strong>：<code>dict[&quot;sex&quot;]</code>会抛出KeyError，不是None。</p>
-<p><strong>选项B</strong>：顺序错误，<code>dict[&quot;sex&quot;]</code>会抛出KeyError，<code>dict.get(&quot;sex&quot;)</code>返回None。</p>
-<p><strong>选项C</strong>：<code>dict.get(&quot;sex&quot;)</code>不会抛出KeyError，而是返回None。</p>
-<p><strong>选项D</strong>：<code>dict[&quot;sex&quot;]</code>抛出KeyError，<code>dict.get(&quot;sex&quot;)</code>返回None，正确。</p>
-<p>&nbsp;</p>
-<h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><h2 id="1-题目-1"><a href="#1-题目-1" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">给字典不存在的键赋值时会报错.   (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：对于普通的Python字典，当键不存在时，执行<code>字典[不存在的键] = 值</code>的操作，会自动在字典中新增一个键值对，程序正常执行，无任何报错。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-1"><a href="#2-题目-1" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">字典对象的get()方法可以获取指定“键”对应的“值”，并且可以在指定“键”不存在的时候返回指定值，如果不指定则返回None。 (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：<code>字典.get(key, default=None)</code>方法的功能是：当key存在时，返回该键对应的值；当key不存在时，返回default指定的值（若不指定，默认返回None）。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目-1"><a href="#3-题目-1" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">字典可以作为集合的元素。  (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
+    <h1 id="字典"><a class="markdownIt-Anchor" href="#字典">#</a> 字典</h1>
+<h1 id="选择题"><a class="markdownIt-Anchor" href="#选择题">#</a> 选择题</h1>
+<h2 id="1-题目"><a class="markdownIt-Anchor" href="#1-题目">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>以下哪个不可以当作字典的键<span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>列表</pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>元组</pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>整数</pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>字符串</pre></td></tr></table></figure><p><strong>答案：A</strong></p>
+<p><strong>选项 A</strong>：列表是可变对象，不可哈希，不能作为字典的键。</p>
+<p><strong>选项 B</strong>：元组是不可变对象，可哈希，可以作为字典的键。</p>
+<p><strong>选项 C</strong>：整数是不可变对象，可哈希，可以作为字典的键。</p>
+<p><strong>选项 D</strong>：字符串是不可变对象，可哈希，可以作为字典的键。</p>
+<p> </p>
+<h2 id="2-题目"><a class="markdownIt-Anchor" href="#2-题目">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>给定字典d<span class="token punctuation">,</span> 以下可以清空字典并保留变量的是<span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>d<span class="token punctuation">.</span>clear<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span><span class="token keyword">del</span> d</pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>d<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>d<span class="token punctuation">.</span>remove<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：A</strong></p>
+<p><strong>选项 A</strong>： <code>d.clear()</code>  清空字典中所有的键值对，使字典变为空字典，但字典变量 d 依然存在。</p>
+<p><strong>选项 B</strong>： <code>del d</code>  删除字典变量 d，字典不再存在，不符合 “保留变量” 的要求。</p>
+<p><strong>选项 C</strong>： <code>d.pop()</code>  删除并返回指定键对应的键值对，需要传入参数，且只能删除单个键值对，无法清空整个字典。</p>
+<p><strong>选项 D</strong>：字典没有 <code>remove()</code>  方法，这是列表的方法。</p>
+<p> </p>
+<h2 id="3-题目"><a class="markdownIt-Anchor" href="#3-题目">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>以下不能创建一个字典的语句是 （  ）</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>dict2 <span class="token operator">=</span> <span class="token punctuation">&#123;</span> <span class="token number">3</span> <span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>dict3 <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">"uestc"</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>dict1 <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>dict4 <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token string">"uestc"</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p><strong>答案：B</strong></p>
+<p><strong>选项 A</strong>：使用字面量创建字典，键是整数 3，值是整数 5，合法。</p>
+<p><strong>选项 B</strong>：尝试用列表 [1,2,3] 作为字典的键，列表是可变不可哈希对象，不合法，这是核心错误选项。</p>
+<p><strong>选项 C</strong>：使用空大括号创建空字典，合法。</p>
+<p><strong>选项 D</strong>：使用元组 (1,2,3) 作为字典的键，元组是不可变可哈希对象，合法。</p>
+<p> </p>
+<h2 id="4-题目"><a class="markdownIt-Anchor" href="#4-题目">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token string">'a'</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>输出结果为<span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token string">'a’, '</span>b’<span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token string">'c'</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">]</span></pre></td></tr></table></figure><p><strong>答案：A</strong></p>
+<p><strong>选项 A</strong>：字典默认迭代的是键， <code>list(字典)</code>  将键转换为列表，结果为 [‘a’, ‘b’, ‘c’]，正确。</p>
+<p><strong>选项 B</strong>：如果要获取值的列表，应该使用 <code>list(字典.values())</code> ，直接转换字典不会得到值的列表。</p>
+<p><strong>选项 C</strong>：如果要获取键值对的列表，应该使用 <code>list(字典.items())</code> 。</p>
+<p><strong>选项 D</strong>：这是将键值对反转后的结果，不是默认行为。</p>
+<p> </p>
+<h2 id="5-题目"><a class="markdownIt-Anchor" href="#5-题目">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token builtin">dict</span> <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"name"</span><span class="token punctuation">:</span> <span class="token string">"wangwu"</span><span class="token punctuation">,</span> <span class="token string">"age"</span><span class="token punctuation">:</span> <span class="token number">22</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">[</span><span class="token string">"sex"</span><span class="token punctuation">]</span><span class="token punctuation">)</span>和<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"sex"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>输出是什么<span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>A<span class="token punctuation">.</span><span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span></pre></td></tr><tr><td data-num="5"></td><td><pre>B<span class="token punctuation">.</span><span class="token boolean">None</span><span class="token punctuation">,</span> KeyError</pre></td></tr><tr><td data-num="6"></td><td><pre>C<span class="token punctuation">.</span>KeyError<span class="token punctuation">,</span> KeyError</pre></td></tr><tr><td data-num="7"></td><td><pre>D<span class="token punctuation">.</span>KeyError<span class="token punctuation">,</span> <span class="token boolean">None</span></pre></td></tr></table></figure><p><strong>答案：D</strong></p>
+<p><strong>选项 A</strong>： <code>dict[&quot;sex&quot;]</code>  会抛出 KeyError，不是 None。</p>
+<p><strong>选项 B</strong>：顺序错误， <code>dict[&quot;sex&quot;]</code>  会抛出 KeyError， <code>dict.get(&quot;sex&quot;)</code>  返回 None。</p>
+<p><strong>选项 C</strong>： <code>dict.get(&quot;sex&quot;)</code>  不会抛出 KeyError，而是返回 None。</p>
+<p><strong>选项 D</strong>： <code>dict[&quot;sex&quot;]</code>  抛出 KeyError， <code>dict.get(&quot;sex&quot;)</code>  返回 None，正确。</p>
+<p> </p>
+<h1 id="判断题"><a class="markdownIt-Anchor" href="#判断题">#</a> 判断题</h1>
+<h2 id="1-题目-2"><a class="markdownIt-Anchor" href="#1-题目-2">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>给字典不存在的键赋值时会报错<span class="token punctuation">.</span>   <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：对于普通的 Python 字典，当键不存在时，执行 <code>字典[不存在的键] = 值</code> 的操作，会自动在字典中新增一个键值对，程序正常执行，无任何报错。</p>
+<p> </p>
+<h2 id="2-题目-2"><a class="markdownIt-Anchor" href="#2-题目-2">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>字典对象的get<span class="token punctuation">(</span><span class="token punctuation">)</span>方法可以获取指定“键”对应的“值”，并且可以在指定“键”不存在的时候返回指定值，如果不指定则返回<span class="token boolean">None</span>。 <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>： <code>字典.get(key, default=None)</code>  方法的功能是：当 key 存在时，返回该键对应的值；当 key 不存在时，返回 default 指定的值（若不指定，默认返回 None）。</p>
+<p> </p>
+<h2 id="3-题目-2"><a class="markdownIt-Anchor" href="#3-题目-2">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>字典可以作为集合的元素。  <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：字典是可变对象，不可哈希，而集合的元素必须是可哈希对象。因此，字典不能作为集合的元素。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目-1"><a href="#4-题目-1" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">假设有列表a = [&#39;name&#39;, &#39;age&#39;, &#39;sex&#39;]和b = [&#39;Dong&#39;, 38, &#39;Male&#39;]，请使用一个语句将这两个列表的内容转换为字典，并且以列表a中的元素为“键”，以列表b中的元素为“值”，这个语句可以写为c = dict(zip(a, b))。  (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：<code>zip(a, b)</code>按对应位置将两个列表的元素打包成元组，<code>dict()</code>构造函数将这些元组转换为字典，键来自列表a，值来自列表b，符合要求。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目-1"><a href="#5-题目-1" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">已知x = &#123;1:1, 2:2&#125;，那么执行语句x[3] = 3之后，表达式sorted(x.items())的值为&#123;(1, 1), (2, 2), (3, 3)&#125;。   (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：<code>sorted()</code>函数的返回值固定为列表，不是集合。题目中将排序结果写为<code>&#123;(1, 1), (2, 2), (3, 3)&#125;</code>（集合格式），这是语法类型错误。</p>
-<p>&nbsp;</p>
-<h2 id="6-题目"><a href="#6-题目" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">已知 x = &#123;&#39;a&#39;:&#39;b&#39;, &#39;c&#39;:&#39;d&#39;&#125;，那么表达式 &#39;a&#39;:&#39;b&#39; in x 的值为True。   (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：<code>&#39;a&#39;:&#39;b&#39;</code>是字典中键值对的字面量书写格式，仅能用于字典定义，不能作为独立表达式参与<code>in</code>判断。即使忽略语法错误，<code>in</code>运算符在字典中仅判断键是否存在，不判断键值对。</p>
-<p>&nbsp;</p>
-<h2 id="7-题目"><a href="#7-题目" class="headerlink" title="7. 题目"></a>7. 题目</h2><pre><code class="python">任意长度的Python列表.元组.字符串和字典中最后一个元素的下标为-1.   (    )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：只有列表、元组、字符串支持负索引（下标-1表示最后一个元素），而字典不支持索引访问，不存在“下标-1对应最后一个元素”的说法。</p>
-<p>&nbsp;</p>
-<h2 id="8-题目"><a href="#8-题目" class="headerlink" title="8. 题目"></a>8. 题目</h2><pre><code class="python">字典中值可以是任意类型.  (  )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：Python字典的值可以是任意内置类型或自定义类型，包括不可哈希对象（如列表、字典）也可作为字典的值。</p>
-<p>&nbsp;</p>
-<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><h2 id="1-题目-2"><a href="#1-题目-2" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">已知 x = &#123;1:2, 2:3&#125;，那么表达式 x.get(2, 4) 的值为______
-</code></pre>
-<p><strong>答案：3</strong></p>
-<p><strong>解析</strong>：<code>x.get(2, 4)</code>中，键2存在于字典中，因此返回该键对应的值3，而不是默认值4。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-2"><a href="#2-题目-2" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">已知 x = &#123;1:2, 2:3, 3:4&#125;，那么表达式 sum(x) 的值为________
-</code></pre>
-<p><strong>答案：6</strong></p>
-<p><strong>解析</strong>：<code>sum()</code>函数对字典操作时，默认迭代字典的键。字典x的键是1、2、3，求和结果为1+2+3&#x3D;6。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目-2"><a href="#3-题目-2" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">已知字典 x = &#123;i:_____ for i in range(3)&#125;，那么表达式 &#39;&#39;.join(x.values()) 的值为&#39;345&#39;。
-</code></pre>
-<p><strong>答案：str(i+3)</strong></p>
-<p><strong>解析</strong>：<code>range(3)</code>生成的i依次为0、1、2，字典的值需要是’3’、’4’、’5’。<code>str(i+3)</code>满足：i&#x3D;0时为’3’，i&#x3D;1时为’4’，i&#x3D;2时为’5’。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目-2"><a href="#4-题目-2" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">运行下列语句后
-data = &#123;&#39;x&#39;: 1, **&#123;&#39;y&#39;: 2&#125;&#125;
-k = min(data.items(), key=lambda item: -item[1])[1]
-k的值为_____
-</code></pre>
-<p><strong>答案：2</strong></p>
-<p><strong>解析</strong>：<code>data = &#123;&#39;x&#39;: 1, **&#123;&#39;y&#39;: 2&#125;&#125;</code>合并为<code>&#123;&#39;x&#39;: 1, &#39;y&#39;: 2&#125;</code>。<code>min(data.items(), key=lambda item: -item[1])</code>按值的负数排序，即取值最大的键值对(‘y’, 2)，然后取索引1的元素（值）得到2。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目-2"><a href="#5-题目-2" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">表达式sorted(&#123;&#39;a&#39;:3, &#39;b&#39;:9, &#39;c&#39;:78&#125;)的值为_______
-</code></pre>
-<p><strong>答案：[‘a’,’b’,’c’]</strong></p>
-<p><strong>解析</strong>：<code>sorted()</code>对字典操作时，默认迭代字典的键，并对键进行升序排序。字典的键是’a’、’b’、’c’，排序后得到[‘a’,’b’,’c’]。</p>
-<p>&nbsp;</p>
-<h2 id="6-题目-1"><a href="#6-题目-1" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">已知字典 x = &#123;i:str(i+3) for i in range(5)&#125;，那么表达式 sum(item[0] for item in x.items()) 的值为_______
-</code></pre>
-<p><strong>答案：10</strong></p>
-<p><strong>解析</strong>：<code>range(5)</code>生成的i依次为0、1、2、3、4（字典的键）。<code>sum(item[0] for item in x.items())</code>对字典的键求和，结果为0+1+2+3+4&#x3D;10。</p>
-<p>&nbsp;</p>
+<p> </p>
+<h2 id="4-题目-2"><a class="markdownIt-Anchor" href="#4-题目-2">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>假设有列表a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">,</span> <span class="token string">'sex'</span><span class="token punctuation">]</span>和b <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Dong'</span><span class="token punctuation">,</span> <span class="token number">38</span><span class="token punctuation">,</span> <span class="token string">'Male'</span><span class="token punctuation">]</span>，请使用一个语句将这两个列表的内容转换为字典，并且以列表a中的元素为“键”，以列表b中的元素为“值”，这个语句可以写为c <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">)</span>。  <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>： <code>zip(a, b)</code>  按对应位置将两个列表的元素打包成元组， <code>dict()</code>  构造函数将这些元组转换为字典，键来自列表 a，值来自列表 b，符合要求。</p>
+<p> </p>
+<h2 id="5-题目-2"><a class="markdownIt-Anchor" href="#5-题目-2">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">&#125;</span>，那么执行语句x<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">3</span>之后，表达式<span class="token builtin">sorted</span><span class="token punctuation">(</span>x<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>的值为<span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>。   <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>： <code>sorted()</code>  函数的返回值固定为列表，不是集合。题目中将排序结果写为 <code>&#123;(1, 1), (2, 2), (3, 3)&#125;</code> （集合格式），这是语法类型错误。</p>
+<p> </p>
+<h2 id="6-题目"><a class="markdownIt-Anchor" href="#6-题目">#</a> 6. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知 x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">'a'</span><span class="token punctuation">:</span><span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">:</span><span class="token string">'d'</span><span class="token punctuation">&#125;</span>，那么表达式 <span class="token string">'a'</span><span class="token punctuation">:</span><span class="token string">'b'</span> <span class="token keyword">in</span> x 的值为<span class="token boolean">True</span>。   <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>： <code>'a':'b'</code>  是字典中键值对的字面量书写格式，仅能用于字典定义，不能作为独立表达式参与 <code>in</code>  判断。即使忽略语法错误， <code>in</code>  运算符在字典中仅判断键是否存在，不判断键值对。</p>
+<p> </p>
+<h2 id="7-题目"><a class="markdownIt-Anchor" href="#7-题目">#</a> 7. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>任意长度的Python列表<span class="token punctuation">.</span>元组<span class="token punctuation">.</span>字符串和字典中最后一个元素的下标为<span class="token operator">-</span><span class="token number">1.</span>   <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：只有列表、元组、字符串支持负索引（下标 - 1 表示最后一个元素），而字典不支持索引访问，不存在 “下标 - 1 对应最后一个元素” 的说法。</p>
+<p> </p>
+<h2 id="8-题目"><a class="markdownIt-Anchor" href="#8-题目">#</a> 8. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>字典中值可以是任意类型<span class="token punctuation">.</span>  <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：Python 字典的值可以是任意内置类型或自定义类型，包括不可哈希对象（如列表、字典）也可作为字典的值。</p>
+<p> </p>
+<h1 id="填空题"><a class="markdownIt-Anchor" href="#填空题">#</a> 填空题</h1>
+<h2 id="1-题目-3"><a class="markdownIt-Anchor" href="#1-题目-3">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知 x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">&#125;</span>，那么表达式 x<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span> 的值为______</pre></td></tr></table></figure><p><strong>答案：3</strong></p>
+<p><strong>解析</strong>： <code>x.get(2, 4)</code>  中，键 2 存在于字典中，因此返回该键对应的值 3，而不是默认值 4。</p>
+<p> </p>
+<h2 id="2-题目-3"><a class="markdownIt-Anchor" href="#2-题目-3">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知 x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">&#125;</span>，那么表达式 <span class="token builtin">sum</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> 的值为________</pre></td></tr></table></figure><p><strong>答案：6</strong></p>
+<p><strong>解析</strong>： <code>sum()</code>  函数对字典操作时，默认迭代字典的键。字典 x 的键是 1、2、3，求和结果为 1+2+3=6。</p>
+<p> </p>
+<h2 id="3-题目-3"><a class="markdownIt-Anchor" href="#3-题目-3">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知字典 x <span class="token operator">=</span> <span class="token punctuation">&#123;</span>i<span class="token punctuation">:</span>_____ <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>，那么表达式 <span class="token string">''</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>x<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 的值为<span class="token string">'345'</span>。</pre></td></tr></table></figure><p><strong>答案：str (i+3)</strong></p>
+<p><strong>解析</strong>： <code>range(3)</code>  生成的 i 依次为 0、1、2，字典的值需要是’3’、‘4’、‘5’。 <code>str(i+3)</code>  满足：i=0 时为’3’，i=1 时为’4’，i=2 时为’5’。</p>
+<p> </p>
+<h2 id="4-题目-3"><a class="markdownIt-Anchor" href="#4-题目-3">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>运行下列语句后</pre></td></tr><tr><td data-num="2"></td><td><pre>data <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">'x'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">**</span><span class="token punctuation">&#123;</span><span class="token string">'y'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>k <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token keyword">lambda</span> item<span class="token punctuation">:</span> <span class="token operator">-</span>item<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="4"></td><td><pre>k的值为_____</pre></td></tr></table></figure><p><strong>答案：2</strong></p>
+<p><strong>解析</strong>： <code>data = &#123;'x': 1, **&#123;'y': 2&#125;&#125;</code>  合并为 <code>&#123;'x': 1, 'y': 2&#125;</code> 。 <code>min(data.items(), key=lambda item: -item[1])</code>  按值的负数排序，即取值最大的键值对 (‘y’, 2)，然后取索引 1 的元素（值）得到 2。</p>
+<p> </p>
+<h2 id="5-题目-3"><a class="markdownIt-Anchor" href="#5-题目-3">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>表达式<span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token string">'a'</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">:</span><span class="token number">9</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">:</span><span class="token number">78</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>的值为_______</pre></td></tr></table></figure><p><strong>答案：[‘a’,‘b’,‘c’]</strong></p>
+<p><strong>解析</strong>： <code>sorted()</code>  对字典操作时，默认迭代字典的键，并对键进行升序排序。字典的键是’a’、‘b’、‘c’，排序后得到 [‘a’,‘b’,‘c’]。</p>
+<p> </p>
+<h2 id="6-题目-2"><a class="markdownIt-Anchor" href="#6-题目-2">#</a> 6. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知字典 x <span class="token operator">=</span> <span class="token punctuation">&#123;</span>i<span class="token punctuation">:</span><span class="token builtin">str</span><span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>，那么表达式 <span class="token builtin">sum</span><span class="token punctuation">(</span>item<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">for</span> item <span class="token keyword">in</span> x<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 的值为_______</pre></td></tr></table></figure><p><strong>答案：10</strong></p>
+<p><strong>解析</strong>： <code>range(5)</code>  生成的 i 依次为 0、1、2、3、4（字典的键）。 <code>sum(item[0] for item in x.items())</code>  对字典的键求和，结果为 0+1+2+3+4=10。</p>
+<p> </p>
 
       <div class="tags">
           <a href="/tags/Python/" rel="tag"><i class="ic i-tag"></i> Python</a>
@@ -353,7 +309,7 @@ k的值为_____
     <div class="item left">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;14.jpg" title="Python程序设计习题——元组">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;16.jpg" title="Python程序设计习题——元组">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——元组</h3>
@@ -363,7 +319,7 @@ k的值为_____
     <div class="item right">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;2.jpg" title="Python程序设计习题——集合">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;21.jpg" title="Python程序设计习题——集合">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——集合</h3>
@@ -385,7 +341,7 @@ k的值为_____
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E5%85%B8"><span class="toc-number">1.</span> <span class="toc-text">字典</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.5.</span> <span class="toc-text">5. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text">6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text">7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text">8. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.6.</span> <span class="toc-text">6. 题目</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E5%85%B8"><span class="toc-number">1.</span> <span class="toc-text"> 字典</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.5.</span> <span class="toc-text"> 5. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text"> 6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text"> 7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text"> 8. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.6.</span> <span class="toc-text"> 6. 题目</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -403,19 +359,19 @@ k的值为_____
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
+        <span class="count">19</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">28</span>
+        <span class="count">33</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -472,10 +428,10 @@ k的值为_____
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/" title="Python程序设计习题——元组">Python程序设计习题——元组</a></span>
+    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
   </li>
 
       
@@ -491,10 +447,30 @@ k的值为_____
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/" title="分类于 数据结构（C++）">数据结构（C++）</a>
+</div>
+
+    <span><a href="/2026/02/13/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" title="栈和队列">栈和队列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+</div>
+
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
+    <span><a href="/2025/09/06/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" title="ctfshow文件上传">ctfshow文件上传</a></span>
   </li>
 
       
@@ -504,17 +480,7 @@ k的值为_____
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/" title="Python程序设计习题——集合">Python程序设计习题——集合</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="Python程序设计习题——程序思维与Python语言基础">Python程序设计习题——程序思维与Python语言基础</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" title="Python程序设计习题——字典">Python程序设计习题——字典</a></span>
   </li>
 
       
@@ -551,20 +517,10 @@ k的值为_____
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
+    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
   </li>
 
   </ul>
@@ -589,13 +545,13 @@ k的值为_____
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">1.4m 字</span>
+    <span title="站点总字数">1.3m 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">20:39</span>
+    <span title="站点阅读时长">20:17</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

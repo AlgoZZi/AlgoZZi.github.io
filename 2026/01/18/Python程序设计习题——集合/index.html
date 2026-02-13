@@ -76,7 +76,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3.2k</span>
+    <span>3k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="/images/bg/10.jpg"></li>
-          <li class="item" data-background-image="/images/bg/7.jpg"></li>
+          <li class="item" data-background-image="/images/bg/18.jpg"></li>
+          <li class="item" data-background-image="/images/bg/8.jpg"></li>
+          <li class="item" data-background-image="/images/bg/9.jpg"></li>
+          <li class="item" data-background-image="/images/bg/5.jpg"></li>
           <li class="item" data-background-image="/images/bg/17.jpg"></li>
-          <li class="item" data-background-image="/images/bg/4.jpg"></li>
-          <li class="item" data-background-image="/images/bg/21.jpg"></li>
-          <li class="item" data-background-image="/images/bg/14.jpg"></li>
+          <li class="item" data-background-image="/images/bg/7.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,121 +168,95 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><h2 id="1-题目"><a href="#1-题目" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">需要对集合x = &#123;1, 6, 2, 4, 3, 5&#125;中的元素进行排序,下列说法正确的是(  )
-
-A.可以用sorted(x)排序,结果为一列表
-B.可以用x.sort()排序,结果为一有序集合
-C.可以用sorted(x)排序,结果为一有序集合
-D.可以用x.sort()排序,结果为一列表
-</code></pre>
-<p><strong>答案：A</strong></p>
-<p><strong>选项A</strong>：<code>sorted()</code>是Python内置全局排序函数，支持对所有可迭代对象（包括集合）进行排序，返回值固定为列表，正确。</p>
-<p><strong>选项B</strong>：集合没有<code>sort()</code>方法，且Python中不存在“有序集合”的默认类型，错误。</p>
-<p><strong>选项C</strong>：<code>sorted()</code>函数的返回值是列表，而非集合，错误。</p>
-<p><strong>选项D</strong>：集合没有<code>sort()</code>方法，无法调用该方法执行排序操作，错误。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目"><a href="#2-题目" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">已知集合set1 = &#123;(1, &#39;b&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;), (2, &#39;a&#39;)&#125;,语句sorted(set1,key=lambda x:x[1])的结果为___________________.
-
-A.[(2, &#39;a&#39;), (1, &#39;b&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)]
-B.[(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)]
-C.&#123;(2, &#39;a&#39;), (1, &#39;b&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#125;
-D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#125;
-</code></pre>
-<p><strong>答案：A</strong></p>
-<p><strong>选项A</strong>：<code>sorted()</code>函数返回值固定为列表，且<code>key=lambda x:x[1]</code>表示按元组的第二个元素（字符串）升序排序，结果为[(2, ‘a’), (1, ‘b’), (3, ‘c’), (4, ‘d’)]，正确。</p>
-<p><strong>选项B</strong>：排序顺序错误，(2, ‘a’)应该排在(1, ‘b’)之前，错误。</p>
-<p><strong>选项C</strong>：<code>sorted()</code>函数返回值是列表，不是集合，错误。</p>
-<p><strong>选项D</strong>：<code>sorted()</code>函数返回值是列表，不是集合，且排序顺序错误，错误。</p>
-<p>&nbsp;</p>
-<h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><h2 id="1-题目-1"><a href="#1-题目-1" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">字典可以作为集合的元素。   (  )
-</code></pre>
-<p><strong>答案：错</strong></p>
+    <h1 id="集合"><a class="markdownIt-Anchor" href="#集合">#</a> 集合</h1>
+<h1 id="选择题"><a class="markdownIt-Anchor" href="#选择题">#</a> 选择题</h1>
+<h2 id="1-题目"><a class="markdownIt-Anchor" href="#1-题目">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>需要对集合x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">&#125;</span>中的元素进行排序<span class="token punctuation">,</span>下列说法正确的是<span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>可以用<span class="token builtin">sorted</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>排序<span class="token punctuation">,</span>结果为一列表</pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>可以用x<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>排序<span class="token punctuation">,</span>结果为一有序集合</pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>可以用<span class="token builtin">sorted</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>排序<span class="token punctuation">,</span>结果为一有序集合</pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>可以用x<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>排序<span class="token punctuation">,</span>结果为一列表</pre></td></tr></table></figure><p><strong>答案：A</strong></p>
+<p><strong>选项 A</strong>： <code>sorted()</code>  是 Python 内置全局排序函数，支持对所有可迭代对象（包括集合）进行排序，返回值固定为列表，正确。</p>
+<p><strong>选项 B</strong>：集合没有 <code>sort()</code>  方法，且 Python 中不存在 “有序集合” 的默认类型，错误。</p>
+<p><strong>选项 C</strong>： <code>sorted()</code>  函数的返回值是列表，而非集合，错误。</p>
+<p><strong>选项 D</strong>：集合没有 <code>sort()</code>  方法，无法调用该方法执行排序操作，错误。</p>
+<p> </p>
+<h2 id="2-题目"><a class="markdownIt-Anchor" href="#2-题目">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知集合set1 <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>语句<span class="token builtin">sorted</span><span class="token punctuation">(</span>set1<span class="token punctuation">,</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span>x<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>的结果为___________________<span class="token punctuation">.</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">]</span></pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span><span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span><span class="token punctuation">&#123;</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><p><strong>答案：A</strong></p>
+<p><strong>选项 A</strong>： <code>sorted()</code>  函数返回值固定为列表，且 <code>key=lambda x:x[1]</code>  表示按元组的第二个元素（字符串）升序排序，结果为 [(2, ‘a’), (1, ‘b’), (3, ‘c’), (4, ‘d’)]，正确。</p>
+<p><strong>选项 B</strong>：排序顺序错误，(2, ‘a’) 应该排在 (1, ‘b’) 之前，错误。</p>
+<p><strong>选项 C</strong>： <code>sorted()</code>  函数返回值是列表，不是集合，错误。</p>
+<p><strong>选项 D</strong>： <code>sorted()</code>  函数返回值是列表，不是集合，且排序顺序错误，错误。</p>
+<p> </p>
+<h1 id="判断题"><a class="markdownIt-Anchor" href="#判断题">#</a> 判断题</h1>
+<h2 id="1-题目-2"><a class="markdownIt-Anchor" href="#1-题目-2">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>字典可以作为集合的元素。   <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：集合的元素必须是可哈希对象，而字典是可变对象，不可哈希，因此字典不能作为集合的元素。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-1"><a href="#2-题目-1" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">已知AB为两个集合,若AB一定为True.   (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：题目表述不完整，假设是<code>A.issubset(B)</code>或类似操作，并非对于任意两个集合都一定为True，需要根据集合的实际元素来判断。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目"><a href="#3-题目" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">表达式 &#123;1, 3, 2&#125; &gt; &#123;1, 2, 3&#125; 的值为True。  (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：Python中的集合是无序的，{1, 3, 2}和{1, 2, 3}是相等集合。集合的<code>&gt;</code>运算符用于判断前一个集合是否是后一个集合的真超集，相等集合之间不存在真超集关系，因此表达式的值为False。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目"><a href="#4-题目" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">集合只能包含不可变数据,不能包含可变数据. (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
+<p> </p>
+<h2 id="2-题目-2"><a class="markdownIt-Anchor" href="#2-题目-2">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知AB为两个集合<span class="token punctuation">,</span>若AB一定为<span class="token boolean">True</span><span class="token punctuation">.</span>   <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：题目表述不完整，假设是 <code>A.issubset(B)</code>  或类似操作，并非对于任意两个集合都一定为 True，需要根据集合的实际元素来判断。</p>
+<p> </p>
+<h2 id="3-题目"><a class="markdownIt-Anchor" href="#3-题目">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>表达式 <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">&#125;</span> <span class="token operator">></span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">&#125;</span> 的值为<span class="token boolean">True</span>。  <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：Python 中的集合是无序的，{1, 3, 2} 和 {1, 2, 3} 是相等集合。集合的 <code>&gt;</code>  运算符用于判断前一个集合是否是后一个集合的真超集，相等集合之间不存在真超集关系，因此表达式的值为 False。</p>
+<p> </p>
+<h2 id="4-题目"><a class="markdownIt-Anchor" href="#4-题目">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>集合只能包含不可变数据<span class="token punctuation">,</span>不能包含可变数据<span class="token punctuation">.</span> <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
 <p><strong>解析</strong>：集合的元素必须是可哈希对象（即不可变对象），这样才能保证集合的唯一性和高效的查找效率。可变对象（如列表、字典）不可哈希，不能作为集合的元素。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目"><a href="#5-题目" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">集合的元素可以是列表.   (  )
-</code></pre>
-<p><strong>答案：错</strong></p>
+<p> </p>
+<h2 id="5-题目"><a class="markdownIt-Anchor" href="#5-题目">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>集合的元素可以是列表<span class="token punctuation">.</span>   <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：列表是可变对象，不可哈希，而集合的元素必须是可哈希对象，因此列表不能作为集合的元素。</p>
-<p>&nbsp;</p>
-<h2 id="6-题目"><a href="#6-题目" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">已知 x = &#123;1, 2, 3&#125;，那么执行语句 x.add(3) 之后，x的值为&#123;1, 2, 3, 3&#125;。   (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：集合的核心特性是元素唯一，不允许重复。执行<code>x.add(3)</code>时，由于3已经存在于集合中，集合不会发生任何变化，x的值仍然是{1, 2, 3}。</p>
-<p>&nbsp;</p>
-<h2 id="7-题目"><a href="#7-题目" class="headerlink" title="7. 题目"></a>7. 题目</h2><pre><code class="python">集合中的元素可以重复.  (  )
-</code></pre>
-<p><strong>答案：错</strong></p>
+<p> </p>
+<h2 id="6-题目"><a class="markdownIt-Anchor" href="#6-题目">#</a> 6. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知 x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">&#125;</span>，那么执行语句 x<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> 之后，x的值为<span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">&#125;</span>。   <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：集合的核心特性是元素唯一，不允许重复。执行 <code>x.add(3)</code>  时，由于 3 已经存在于集合中，集合不会发生任何变化，x 的值仍然是 {1, 2, 3}。</p>
+<p> </p>
+<h2 id="7-题目"><a class="markdownIt-Anchor" href="#7-题目">#</a> 7. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>集合中的元素可以重复<span class="token punctuation">.</span>  <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：集合是无序且不包含重复元素的容器，无论通过何种方式向集合中添加元素，集合都不会保留重复项。</p>
-<p>&nbsp;</p>
-<h2 id="8-题目"><a href="#8-题目" class="headerlink" title="8. 题目"></a>8. 题目</h2><pre><code class="python">字典和集合属于无序序列.  (  )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：在Python中，字典和集合都是无序的容器类型，它们的元素存储顺序不遵循插入顺序（Python 3.7+虽保留字典插入顺序，但本质仍不是序列类型）。</p>
-<p>&nbsp;</p>
-<h2 id="9-题目"><a href="#9-题目" class="headerlink" title="9. 题目"></a>9. 题目</h2><pre><code class="python">set([1, 3, 4, 5, 2, 3, 6, 7])和集合&#123;1, 3, 4, 5, 2, 3, 6, 7&#125;相等.(   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：题目表述的错误在于：{1, 3, 4, 5, 2, 3, 6, 7}本身不是“原始输入的集合”，而是一个“带有重复元素的非法集合字面量书写形式”。集合的本质是不允许重复元素的，因此不存在“包含重复3的集合”，这个书写形式本身是不符合集合定义的。</p>
-<p>&nbsp;</p>
-<h2 id="10-题目"><a href="#10-题目" class="headerlink" title="10. 题目"></a>10. 题目</h2><pre><code class="python">字典可以作为集合的元素.  (    )
-</code></pre>
-<p><strong>答案：错</strong></p>
+<p> </p>
+<h2 id="8-题目"><a class="markdownIt-Anchor" href="#8-题目">#</a> 8. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>字典和集合属于无序序列<span class="token punctuation">.</span>  <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：在 Python 中，字典和集合都是无序的容器类型，它们的元素存储顺序不遵循插入顺序（Python 3.7 + 虽保留字典插入顺序，但本质仍不是序列类型）。</p>
+<p> </p>
+<h2 id="9-题目"><a class="markdownIt-Anchor" href="#9-题目">#</a> 9. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">)</span>和集合<span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">&#125;</span>相等<span class="token punctuation">.</span><span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：题目表述的错误在于：{1, 3, 4, 5, 2, 3, 6, 7} 本身不是 “原始输入的集合”，而是一个 “带有重复元素的非法集合字面量书写形式”。集合的本质是不允许重复元素的，因此不存在 “包含重复 3 的集合”，这个书写形式本身是不符合集合定义的。</p>
+<p> </p>
+<h2 id="10-题目"><a class="markdownIt-Anchor" href="#10-题目">#</a> 10. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>字典可以作为集合的元素<span class="token punctuation">.</span>  <span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
 <p><strong>解析</strong>：集合的元素必须是可哈希对象，而字典是可变对象，不可哈希，因此字典不能作为集合的元素。</p>
-<p>&nbsp;</p>
-<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><h2 id="1-题目-2"><a href="#1-题目-2" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">表达式type(&#123;3&#125;)的值为_________
-</code></pre>
-<p><strong>答案：set</strong></p>
-<p><strong>解析</strong>：<code>&#123;3&#125;</code>是集合的字面量表示方式，<code>type(&#123;3&#125;)</code>返回该对象的类型，即<code>set</code>。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-2"><a href="#2-题目-2" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">语句set(dict(zip([1, 2], [3, 4])))的结果为_________
-</code></pre>
-<p><strong>答案：{1,2}</strong></p>
-<p><strong>解析</strong>：<code>zip([1, 2], [3, 4])</code>生成元组(1,3)、(2,4)；<code>dict()</code>将这些元组转换为字典{1: 3, 2: 4}；<code>set()</code>提取字典的键，得到集合{1,2}。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目-1"><a href="#3-题目-1" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">给定一个列表li = [1,2,3,1,2],请利用集合通过一条语句去除其中的重复数,最终以列表的形式进行输出.这条语句是________
-</code></pre>
-<p><strong>答案：print(list(set(li))</strong></p>
-<p><strong>解析</strong>：<code>set(li)</code>利用集合的唯一性特性去除列表中的重复元素；<code>list()</code>将集合转回列表；<code>print()</code>输出最终结果。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目-1"><a href="#4-题目-1" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">语句set(zip([1, 2], [3, 4]))的结果为_______
-</code></pre>
-<p><strong>答案：{(1,3),(2,4)}</strong></p>
-<p><strong>解析</strong>：<code>zip([1, 2], [3, 4])</code>生成元组(1,3)、(2,4)；<code>set()</code>将这些元组作为元素创建集合，得到{(1,3),(2,4)}。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目-1"><a href="#5-题目-1" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">表达式&#123;*range(4), 4, *(5, 6, 7)&#125;的值为_________
-</code></pre>
-<p>答案：{0,1,2,3,4,5,6,7}</p>
-<p><strong>解析</strong>：<code>*range(4)</code>展开为0,1,2,3；<code>*(5, 6, 7)</code>展开为5,6,7；加上4，所有元素组合成集合{0,1,2,3,4,5,6,7}。</p>
-<p>&nbsp;</p>
-<h2 id="6-题目-1"><a href="#6-题目-1" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">表达式 &#123;1, 2, 3&#125; - &#123;3, 4, 5&#125; 的值为_______
-</code></pre>
-<p><strong>答案：{1,2}</strong></p>
-<p><strong>解析</strong>：集合的<code>-</code>运算符用于计算前一个集合相对于后一个集合的差集，即返回包含所有在第一个集合中存在但在第二个集合中不存在的元素的新集合。</p>
-<p>&nbsp;</p>
-<h2 id="7-题目-1"><a href="#7-题目-1" class="headerlink" title="7. 题目"></a>7. 题目</h2><pre><code class="python">已知x = [1, 2, 3]，那么表达式not (set(x*100)&amp;set(x))的值为_________
-</code></pre>
-<p><strong>答案：False</strong></p>
-<p><strong>解析</strong>：<code>x*100</code>生成包含1,2,3重复100次的列表；<code>set(x*100)</code>和<code>set(x)</code>都得到集合{1,2,3}；<code>set(x*100)&amp;set(x)</code>计算交集，结果为{1,2,3}；<code>not</code>对非空集合返回False。</p>
-<p>&nbsp;</p>
-<h2 id="8-题目-1"><a href="#8-题目-1" class="headerlink" title="8. 题目"></a>8. 题目</h2><pre><code class="python">已知l1 = list(&#123;1, 3, 4, 5, 2, 3, 6, 7&#125;),则len(l1)的值为______
-</code></pre>
-<p><strong>答案：7</strong></p>
-<p><strong>解析</strong>：集合{1, 3, 4, 5, 2, 3, 6, 7}自动去重后包含7个元素（1,2,3,4,5,6,7）；<code>list()</code>将集合转换为列表，<code>len(l1)</code>返回列表的长度7。</p>
+<p> </p>
+<h1 id="填空题"><a class="markdownIt-Anchor" href="#填空题">#</a> 填空题</h1>
+<h2 id="1-题目-3"><a class="markdownIt-Anchor" href="#1-题目-3">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>表达式<span class="token builtin">type</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>的值为_________</pre></td></tr></table></figure><p><strong>答案：set</strong></p>
+<p><strong>解析</strong>： <code>&#123;3&#125;</code>  是集合的字面量表示方式， <code>type(&#123;3&#125;)</code>  返回该对象的类型，即 <code>set</code> 。</p>
+<p> </p>
+<h2 id="2-题目-3"><a class="markdownIt-Anchor" href="#2-题目-3">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>语句<span class="token builtin">set</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>的结果为_________</pre></td></tr></table></figure><p><strong>答案：{1,2}</strong></p>
+<p><strong>解析</strong>： <code>zip([1, 2], [3, 4])</code>  生成元组 (1,3)、(2,4)； <code>dict()</code>  将这些元组转换为字典 {1: 3, 2: 4}； <code>set()</code>  提取字典的键，得到集合 {1,2}。</p>
+<p> </p>
+<h2 id="3-题目-2"><a class="markdownIt-Anchor" href="#3-题目-2">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>给定一个列表li <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>请利用集合通过一条语句去除其中的重复数<span class="token punctuation">,</span>最终以列表的形式进行输出<span class="token punctuation">.</span>这条语句是________</pre></td></tr></table></figure><p><strong>答案：print (list (set (li))</strong></p>
+<p><strong>解析</strong>： <code>set(li)</code>  利用集合的唯一性特性去除列表中的重复元素； <code>list()</code>  将集合转回列表； <code>print()</code>  输出最终结果。</p>
+<p> </p>
+<h2 id="4-题目-2"><a class="markdownIt-Anchor" href="#4-题目-2">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>语句<span class="token builtin">set</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>的结果为_______</pre></td></tr></table></figure><p><strong>答案：{(1,3),(2,4)}</strong></p>
+<p><strong>解析</strong>： <code>zip([1, 2], [3, 4])</code>  生成元组 (1,3)、(2,4)； <code>set()</code>  将这些元组作为元素创建集合，得到 {(1,3),(2,4)}。</p>
+<p> </p>
+<h2 id="5-题目-2"><a class="markdownIt-Anchor" href="#5-题目-2">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>表达式<span class="token punctuation">&#123;</span><span class="token operator">*</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token operator">*</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span>的值为_________</pre></td></tr></table></figure><p 0,1,2,3,4,5,6,7="">答案：</p>
+<p><strong>解析</strong>： <code>*range(4)</code>  展开为 0,1,2,3； <code>*(5, 6, 7)</code>  展开为 5,6,7；加上 4，所有元素组合成集合 {0,1,2,3,4,5,6,7}。</p>
+<p> </p>
+<h2 id="6-题目-2"><a class="markdownIt-Anchor" href="#6-题目-2">#</a> 6. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>表达式 <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">&#125;</span> <span class="token operator">-</span> <span class="token punctuation">&#123;</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">&#125;</span> 的值为_______</pre></td></tr></table></figure><p><strong>答案：{1,2}</strong></p>
+<p><strong>解析</strong>：集合的 <code>-</code>  运算符用于计算前一个集合相对于后一个集合的差集，即返回包含所有在第一个集合中存在但在第二个集合中不存在的元素的新集合。</p>
+<p> </p>
+<h2 id="7-题目-2"><a class="markdownIt-Anchor" href="#7-题目-2">#</a> 7. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>，那么表达式<span class="token keyword">not</span> <span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token operator">*</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token operator">&amp;</span><span class="token builtin">set</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>的值为_________</pre></td></tr></table></figure><p><strong>答案：False</strong></p>
+<p><strong>解析</strong>： <code>x*100</code>  生成包含 1,2,3 重复 100 次的列表； <code>set(x*100)</code>  和 <code>set(x)</code>  都得到集合 {1,2,3}； <code>set(x*100)&amp;set(x)</code>  计算交集，结果为 {1,2,3}； <code>not</code>  对非空集合返回 False。</p>
+<p> </p>
+<h2 id="8-题目-2"><a class="markdownIt-Anchor" href="#8-题目-2">#</a> 8. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>已知l1 <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>则<span class="token builtin">len</span><span class="token punctuation">(</span>l1<span class="token punctuation">)</span>的值为______</pre></td></tr></table></figure><p><strong>答案：7</strong></p>
+<p><strong>解析</strong>：集合 {1, 3, 4, 5, 2, 3, 6, 7} 自动去重后包含 7 个元素（1,2,3,4,5,6,7）； <code>list()</code>  将集合转换为列表， <code>len(l1)</code>  返回列表的长度 7。</p>
 
       <div class="tags">
           <a href="/tags/Python/" rel="tag"><i class="ic i-tag"></i> Python</a>
@@ -329,7 +303,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
     <div class="item left">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;19.jpg" title="Python程序设计习题——字典">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;1.jpg" title="Python程序设计习题——字典">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——字典</h3>
@@ -339,7 +313,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
     <div class="item right">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;6.jpg" title="Python程序设计习题——函数">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;11.jpg" title="Python程序设计习题——函数">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——函数</h3>
@@ -361,7 +335,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9B%86%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text">集合</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text">6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text">7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text">8. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.9.</span> <span class="toc-text">9. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.10.</span> <span class="toc-text">10. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.6.</span> <span class="toc-text">6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.7.</span> <span class="toc-text">7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.8.</span> <span class="toc-text">8. 题目</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9B%86%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text"> 集合</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text"> 6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text"> 7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text"> 8. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.9.</span> <span class="toc-text"> 9. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.10.</span> <span class="toc-text"> 10. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.6.</span> <span class="toc-text"> 6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.7.</span> <span class="toc-text"> 7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.8.</span> <span class="toc-text"> 8. 题目</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -379,19 +353,19 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
+        <span class="count">19</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">28</span>
+        <span class="count">33</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -461,16 +435,27 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
+    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2025/09/05/ctfshow%20php%E7%89%B9%E6%80%A7/" title="ctfshow php特性">ctfshow php特性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/05/ctfshow%E7%88%86%E7%A0%B4/" title="ctfshow爆破">ctfshow爆破</a></span>
   </li>
 
       
@@ -487,10 +472,10 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/" title="分类于 数据结构（C++）">数据结构（C++）</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/" title="Python程序设计习题——集合">Python程序设计习题——集合</a></span>
+    <span><a href="/2026/02/13/%E7%BA%BF%E6%80%A7%E8%A1%A8/" title="线性表">线性表</a></span>
   </li>
 
       
@@ -500,7 +485,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="Python程序设计习题——程序思维与Python语言基础">Python程序设计习题——程序思维与Python语言基础</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/" title="Python程序设计习题——文件">Python程序设计习题——文件</a></span>
   </li>
 
       
@@ -510,17 +495,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" title="Python程序设计习题——字典">Python程序设计习题——字典</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" title="Python程序设计习题——函数">Python程序设计习题——函数</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" title="Python程序设计习题——类与继承">Python程序设计习题——类与继承</a></span>
   </li>
 
       
@@ -530,7 +505,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" title="ctfshow命令执行">ctfshow命令执行</a></span>
+    <span><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" title="ctfshow信息搜集">ctfshow信息搜集</a></span>
   </li>
 
       
@@ -540,7 +515,7 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" title="ctfshow文件包含">ctfshow文件包含</a></span>
+    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
   </li>
 
   </ul>
@@ -565,13 +540,13 @@ D.&#123;(1, &#39;b&#39;), (2, &#39;a&#39;), (3, &#39;c&#39;), (4, &#39;d&#39;)&#
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">1.4m 字</span>
+    <span title="站点总字数">1.3m 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">20:39</span>
+    <span title="站点阅读时长">20:17</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>

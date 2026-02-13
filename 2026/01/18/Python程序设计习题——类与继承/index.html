@@ -76,7 +76,7 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>3k</span>
+    <span>2.9k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -117,12 +117,12 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="/images/bg/9.jpg"></li>
-          <li class="item" data-background-image="/images/bg/2.jpg"></li>
-          <li class="item" data-background-image="/images/bg/6.jpg"></li>
-          <li class="item" data-background-image="/images/bg/18.jpg"></li>
           <li class="item" data-background-image="/images/bg/10.jpg"></li>
-          <li class="item" data-background-image="/images/bg/21.jpg"></li>
+          <li class="item" data-background-image="/images/bg/5.jpg"></li>
+          <li class="item" data-background-image="/images/bg/8.jpg"></li>
+          <li class="item" data-background-image="/images/bg/6.jpg"></li>
+          <li class="item" data-background-image="/images/bg/14.jpg"></li>
+          <li class="item" data-background-image="/images/bg/19.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,172 +168,101 @@ AlgoZZi's Blog = 不说永远  珍惜现在</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="类与继承"><a href="#类与继承" class="headerlink" title="类与继承"></a>类与继承</h1><h1 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h1><h2 id="1-题目"><a href="#1-题目" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">定义类如下
-class Hello():
-    def __init__(self,name)
-        self.name=name
-    def showInfo(self)
-        print(self.name)
-下面代码能正常执行的 (   )
-
-A.
-h = Hello()
-h.showInfo(‘张三’)
-B.
-h = Hello(‘张三’)
-h.showInfo()
-C.
-h = Hello
-h.showInfo()
-D.
-h = Hello(‘admin’)
-showInfo
-</code></pre>
-<p><strong>答案：B</strong></p>
-<p><strong>选项A</strong>：错误，__init__方法需要name参数，但创建对象时没有传入，且showInfo方法不需要参数却传入了’张三’。</p>
-<p><strong>选项B</strong>：正确，创建对象时传入了name参数，showInfo方法正确调用，不需要额外参数。</p>
-<p><strong>选项C</strong>：错误，h&#x3D;Hello没有创建实例，直接赋值了类对象，无法调用实例方法showInfo。</p>
-<p><strong>选项D</strong>：错误，showInfo是方法，需要通过对象调用，直接写showInfo不会执行任何操作。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目"><a href="#2-题目" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">定义类如下：
-class A():
-    def a():
-        print(“a”)
-class B ():
-    def b():
-        print(“b”)
-class C():
-    def c():
-        print(c)
-class D(A,C):
-    def d():
-        print(“d”)
-d = D()
-d.a()
-d.b()
-d.d()
-则程序执行的结果是（  ）
-
-A.a,b,d
-B.执行会报错
-C.a,d
-D.d,a
-</code></pre>
-<p><strong>答案：B</strong></p>
-<p><strong>选项A</strong>：错误，d.b()无此方法，d.a()和d.d()因缺少self参数报错，无法输出该结果。</p>
-<p><strong>选项B</strong>：正确，程序存在多重致命错误：a()和d()方法缺少self参数，d.b()调用了不存在的方法，必然触发异常。</p>
-<p><strong>选项C</strong>：错误，d.a()和d.d()均会因缺少self参数报错，无法正常打印。</p>
-<p><strong>选项D</strong>：错误，方法调用均触发报错，无正常输出。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目"><a href="#3-题目" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">关于python类 说法错误的是（  ）
-
-A.类的静态属性可以用类名和对象来调用
-B.类的实例方法在创建对象前可以调用
-C.类的实例方法必须创建对象后才可以调用
-D.类的类方法可以用对象和类名来调用
-</code></pre>
-<p><strong>答案：B</strong></p>
-<p><strong>选项A</strong>：正确，类的静态属性可以通过类名和对象名访问。</p>
-<p><strong>选项B</strong>：错误，实例方法必须通过对象调用，创建对象前无法调用。</p>
-<p><strong>选项C</strong>：正确，实例方法必须通过对象调用。</p>
-<p><strong>选项D</strong>：正确，类方法可以通过类名和对象名访问。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目"><a href="#4-题目" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">(多选)
-定义类如下：
-   class  Hello():
-            pass
-下面说明错误的是（    ）
-
-A.该类实例中只包含__dir__（），不包含__hash__（）
-B.该类实例中包含__hash__（）方法
-C.该类没有定义任何方法，所以该实例中没有包含任何方法
-D.该类实例中包含__dir__（）方法
-</code></pre>
-<p><strong>答案：AC</strong></p>
-<p><strong>选项A</strong>：错误，类实例会继承object类的所有特殊方法，包括_<em>hash</em>_()。</p>
-<p><strong>选项B</strong>：正确，类实例继承了object类的_<em>hash</em>_()方法。</p>
-<p><strong>选项C</strong>：错误，即使类没有定义任何方法，实例也会继承object类的方法。</p>
-<p><strong>选项D</strong>：正确，类实例继承了object类的_<em>dir</em>_()方法。</p>
-<p>&nbsp;</p>
-<h1 id="判断题"><a href="#判断题" class="headerlink" title="判断题"></a>判断题</h1><h2 id="1-题目-1"><a href="#1-题目-1" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">定义类时所有实例方法的第一个参数用来表示对象本身，在类的外部通过对象名来调用实例方法时不需要为该参数传值。  (  )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：在Python中，实例方法的第一个参数通常命名为self，表示对象本身，在调用时Python会自动将对象传递给这个参数，不需要显式传值。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-1"><a href="#2-题目-1" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">只可以动态为对象增加数据成员，而不能为对象动态增加成员方法。   (   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：在Python中，既可以动态为对象增加数据成员，也可以动态为对象增加成员方法，可以通过赋值的方式实现。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目-1"><a href="#3-题目-1" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">对于Python类中的私有成员，可以通过“对象名._类名__私有成员名”的方式来访问。 (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：Python中的私有成员使用双下划线前缀（__）定义，但实际上只是进行了名称修饰，仍然可以通过“对象名._类名__私有成员名”的方式访问。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目-1"><a href="#4-题目-1" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">如果定义类时没有编写析构函数，Python将提供一个默认的析构函数进行必要的资源清理工作。(    ) 
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：如果定义类时没有编写析构函数，Python会提供一个默认的析构函数，用于释放对象占用的资源。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目"><a href="#5-题目" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">Python支持多继承，如果父类中有相同的方法名，而在子类中调用时没有指定父类名，则Python解释器将从左向右按顺序进行搜索。  (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：Python支持多继承，当调用方法时，解释器会按照MRO（方法解析顺序）从左向右搜索父类中的方法。</p>
-<p>&nbsp;</p>
-<h2 id="6-题目"><a href="#6-题目" class="headerlink" title="6. 题目"></a>6. 题目</h2><pre><code class="python">Python中没有严格意义上的私有成员。 (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：Python中的私有成员只是通过名称修饰（name mangling）来实现的，并不是真正的私有，可以通过特殊方式访问，因此没有严格意义上的私有成员。</p>
-<p>&nbsp;</p>
-<h2 id="7-题目"><a href="#7-题目" class="headerlink" title="7. 题目"></a>7. 题目</h2><pre><code class="python">在类定义的外部没有任何办法可以访问对象的私有成员。(   )
-</code></pre>
-<p><strong>答案：错</strong></p>
-<p><strong>解析</strong>：虽然Python使用名称修饰来保护私有成员，但仍然可以通过“对象名._类名__私有成员名”的方式在外部访问。</p>
-<p>&nbsp;</p>
-<h2 id="8-题目"><a href="#8-题目" class="headerlink" title="8. 题目"></a>8. 题目</h2><pre><code class="python">定义类时所有实例方法的第一个参数用来表示对象本身,在类的外部通过对象名来调用实例方法时不需要为该参数传值.  (  )
-</code></pre>
-<p><strong>答案：对</strong></p>
+    <h1 id="类与继承"><a class="markdownIt-Anchor" href="#类与继承">#</a> 类与继承</h1>
+<h1 id="选择题"><a class="markdownIt-Anchor" href="#选择题">#</a> 选择题</h1>
+<h2 id="1-题目"><a class="markdownIt-Anchor" href="#1-题目">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>定义类如下</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">Hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>name<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        self<span class="token punctuation">.</span>name<span class="token operator">=</span>name</pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">showInfo</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>self<span class="token punctuation">.</span>name<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre>下面代码能正常执行的 <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>A<span class="token punctuation">.</span></pre></td></tr><tr><td data-num="10"></td><td><pre>h <span class="token operator">=</span> Hello<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>h<span class="token punctuation">.</span>showInfo<span class="token punctuation">(</span>‘张三’<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="12"></td><td><pre>B<span class="token punctuation">.</span></pre></td></tr><tr><td data-num="13"></td><td><pre>h <span class="token operator">=</span> Hello<span class="token punctuation">(</span>‘张三’<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre>h<span class="token punctuation">.</span>showInfo<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>C<span class="token punctuation">.</span></pre></td></tr><tr><td data-num="16"></td><td><pre>h <span class="token operator">=</span> Hello</pre></td></tr><tr><td data-num="17"></td><td><pre>h<span class="token punctuation">.</span>showInfo<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>D<span class="token punctuation">.</span></pre></td></tr><tr><td data-num="19"></td><td><pre>h <span class="token operator">=</span> Hello<span class="token punctuation">(</span>‘admin’<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="20"></td><td><pre>showInfo</pre></td></tr></table></figure><p><strong>答案：B</strong></p>
+<p><strong>选项 A</strong>：错误，__init__方法需要 name 参数，但创建对象时没有传入，且 showInfo 方法不需要参数却传入了’张三’。</p>
+<p><strong>选项 B</strong>：正确，创建对象时传入了 name 参数，showInfo 方法正确调用，不需要额外参数。</p>
+<p><strong>选项 C</strong>：错误，h=Hello 没有创建实例，直接赋值了类对象，无法调用实例方法 showInfo。</p>
+<p><strong>选项 D</strong>：错误，showInfo 是方法，需要通过对象调用，直接写 showInfo 不会执行任何操作。</p>
+<p> </p>
+<h2 id="2-题目"><a class="markdownIt-Anchor" href="#2-题目">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>定义类如下：</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="4"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>“a”<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="7"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>“b”<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">C</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">c</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="10"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">class</span> <span class="token class-name">D</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span>C<span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token keyword">def</span> <span class="token function">d</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="13"></td><td><pre>        <span class="token keyword">print</span><span class="token punctuation">(</span>“d”<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="14"></td><td><pre>d <span class="token operator">=</span> D<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="15"></td><td><pre>d<span class="token punctuation">.</span>a<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="16"></td><td><pre>d<span class="token punctuation">.</span>b<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="17"></td><td><pre>d<span class="token punctuation">.</span>d<span class="token punctuation">(</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>则程序执行的结果是（  ）</pre></td></tr><tr><td data-num="19"></td><td><pre></pre></td></tr><tr><td data-num="20"></td><td><pre>A<span class="token punctuation">.</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>d</pre></td></tr><tr><td data-num="21"></td><td><pre>B<span class="token punctuation">.</span>执行会报错</pre></td></tr><tr><td data-num="22"></td><td><pre>C<span class="token punctuation">.</span>a<span class="token punctuation">,</span>d</pre></td></tr><tr><td data-num="23"></td><td><pre>D<span class="token punctuation">.</span>d<span class="token punctuation">,</span>a</pre></td></tr></table></figure><p><strong>答案：B</strong></p>
+<p><strong>选项 A</strong>：错误，d.b () 无此方法，d.a () 和 d.d () 因缺少 self 参数报错，无法输出该结果。</p>
+<p><strong>选项 B</strong>：正确，程序存在多重致命错误：a () 和 d () 方法缺少 self 参数，d.b () 调用了不存在的方法，必然触发异常。</p>
+<p><strong>选项 C</strong>：错误，d.a () 和 d.d () 均会因缺少 self 参数报错，无法正常打印。</p>
+<p><strong>选项 D</strong>：错误，方法调用均触发报错，无正常输出。</p>
+<p> </p>
+<h2 id="3-题目"><a class="markdownIt-Anchor" href="#3-题目">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>关于python类 说法错误的是（  ）</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>A<span class="token punctuation">.</span>类的静态属性可以用类名和对象来调用</pre></td></tr><tr><td data-num="4"></td><td><pre>B<span class="token punctuation">.</span>类的实例方法在创建对象前可以调用</pre></td></tr><tr><td data-num="5"></td><td><pre>C<span class="token punctuation">.</span>类的实例方法必须创建对象后才可以调用</pre></td></tr><tr><td data-num="6"></td><td><pre>D<span class="token punctuation">.</span>类的类方法可以用对象和类名来调用</pre></td></tr></table></figure><p><strong>答案：B</strong></p>
+<p><strong>选项 A</strong>：正确，类的静态属性可以通过类名和对象名访问。</p>
+<p><strong>选项 B</strong>：错误，实例方法必须通过对象调用，创建对象前无法调用。</p>
+<p><strong>选项 C</strong>：正确，实例方法必须通过对象调用。</p>
+<p><strong>选项 D</strong>：正确，类方法可以通过类名和对象名访问。</p>
+<p> </p>
+<h2 id="4-题目"><a class="markdownIt-Anchor" href="#4-题目">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">(</span>多选<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre>定义类如下：</pre></td></tr><tr><td data-num="3"></td><td><pre>   <span class="token keyword">class</span>  <span class="token class-name">Hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span></pre></td></tr><tr><td data-num="4"></td><td><pre>            <span class="token keyword">pass</span></pre></td></tr><tr><td data-num="5"></td><td><pre>下面说明错误的是（    ）</pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>A<span class="token punctuation">.</span>该类实例中只包含__dir__（），不包含__hash__（）</pre></td></tr><tr><td data-num="8"></td><td><pre>B<span class="token punctuation">.</span>该类实例中包含__hash__（）方法</pre></td></tr><tr><td data-num="9"></td><td><pre>C<span class="token punctuation">.</span>该类没有定义任何方法，所以该实例中没有包含任何方法</pre></td></tr><tr><td data-num="10"></td><td><pre>D<span class="token punctuation">.</span>该类实例中包含__dir__（）方法</pre></td></tr></table></figure><p><strong>答案：AC</strong></p>
+<p><strong>选项 A</strong>：错误，类实例会继承 object 类的所有特殊方法，包括_<em>hash</em>_()。</p>
+<p><strong>选项 B</strong>：正确，类实例继承了 object 类的_<em>hash</em>_() 方法。</p>
+<p><strong>选项 C</strong>：错误，即使类没有定义任何方法，实例也会继承 object 类的方法。</p>
+<p><strong>选项 D</strong>：正确，类实例继承了 object 类的_<em>dir</em>_() 方法。</p>
+<p> </p>
+<h1 id="判断题"><a class="markdownIt-Anchor" href="#判断题">#</a> 判断题</h1>
+<h2 id="1-题目-2"><a class="markdownIt-Anchor" href="#1-题目-2">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>定义类时所有实例方法的第一个参数用来表示对象本身，在类的外部通过对象名来调用实例方法时不需要为该参数传值。  <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：在 Python 中，实例方法的第一个参数通常命名为 self，表示对象本身，在调用时 Python 会自动将对象传递给这个参数，不需要显式传值。</p>
+<p> </p>
+<h2 id="2-题目-2"><a class="markdownIt-Anchor" href="#2-题目-2">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>只可以动态为对象增加数据成员，而不能为对象动态增加成员方法。   <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：在 Python 中，既可以动态为对象增加数据成员，也可以动态为对象增加成员方法，可以通过赋值的方式实现。</p>
+<p> </p>
+<h2 id="3-题目-2"><a class="markdownIt-Anchor" href="#3-题目-2">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>对于Python类中的私有成员，可以通过“对象名<span class="token punctuation">.</span>_类名__私有成员名”的方式来访问。 <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：Python 中的私有成员使用双下划线前缀（__）定义，但实际上只是进行了名称修饰，仍然可以通过 “对象名._类名__私有成员名” 的方式访问。</p>
+<p> </p>
+<h2 id="4-题目-2"><a class="markdownIt-Anchor" href="#4-题目-2">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>如果定义类时没有编写析构函数，Python将提供一个默认的析构函数进行必要的资源清理工作。<span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：如果定义类时没有编写析构函数，Python 会提供一个默认的析构函数，用于释放对象占用的资源。</p>
+<p> </p>
+<h2 id="5-题目"><a class="markdownIt-Anchor" href="#5-题目">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>Python支持多继承，如果父类中有相同的方法名，而在子类中调用时没有指定父类名，则Python解释器将从左向右按顺序进行搜索。  <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：Python 支持多继承，当调用方法时，解释器会按照 MRO（方法解析顺序）从左向右搜索父类中的方法。</p>
+<p> </p>
+<h2 id="6-题目"><a class="markdownIt-Anchor" href="#6-题目">#</a> 6. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>Python中没有严格意义上的私有成员。 <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：Python 中的私有成员只是通过名称修饰（name mangling）来实现的，并不是真正的私有，可以通过特殊方式访问，因此没有严格意义上的私有成员。</p>
+<p> </p>
+<h2 id="7-题目"><a class="markdownIt-Anchor" href="#7-题目">#</a> 7. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>在类定义的外部没有任何办法可以访问对象的私有成员。<span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：错</strong></p>
+<p><strong>解析</strong>：虽然 Python 使用名称修饰来保护私有成员，但仍然可以通过 “对象名._类名__私有成员名” 的方式在外部访问。</p>
+<p> </p>
+<h2 id="8-题目"><a class="markdownIt-Anchor" href="#8-题目">#</a> 8. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>定义类时所有实例方法的第一个参数用来表示对象本身<span class="token punctuation">,</span>在类的外部通过对象名来调用实例方法时不需要为该参数传值<span class="token punctuation">.</span>  <span class="token punctuation">(</span>  <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
 <p><strong>解析</strong>：实例方法的第一个参数表示对象本身，调用时不需要显式传值。</p>
-<p>&nbsp;</p>
-<h2 id="9-题目"><a href="#9-题目" class="headerlink" title="9. 题目"></a>9. 题目</h2><pre><code class="python">Python中一切内容都可以称为对象。  (   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：在Python中，一切都是对象，包括数字、字符串、函数、类等。</p>
-<p>&nbsp;</p>
-<h2 id="10-题目"><a href="#10-题目" class="headerlink" title="10. 题目"></a>10. 题目</h2><pre><code class="python">定义类时，在一个方法前面使用@staticmethod进行修饰，则该方法属于静态方法。(    )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：@staticmethod装饰器用于定义静态方法，静态方法不需要self或cls参数，可以通过类名或对象名调用。</p>
-<p>&nbsp;</p>
-<h2 id="11-题目"><a href="#11-题目" class="headerlink" title="11. 题目"></a>11. 题目</h2><pre><code class="python">在设计派生类时，基类的私有成员默认是不会继承的。(   )
-</code></pre>
-<p><strong>答案：对</strong></p>
-<p><strong>解析</strong>：在Python中，基类的私有成员（使用双下划线前缀定义的成员）默认不会被派生类继承，这是名称修饰的结果。</p>
-<p>&nbsp;</p>
-<h1 id="填空题"><a href="#填空题" class="headerlink" title="填空题"></a>填空题</h1><h2 id="1-题目-2"><a href="#1-题目-2" class="headerlink" title="1. 题目"></a>1. 题目</h2><pre><code class="python">在Python中，不论类的名字是什么，构造方法的名字都是______
-</code></pre>
-<p><strong>答案：__init__</strong></p>
-<p><strong>解析</strong>：在Python中，构造方法的固定名称是____init____，用于初始化对象。</p>
-<p>&nbsp;</p>
-<h2 id="2-题目-2"><a href="#2-题目-2" class="headerlink" title="2. 题目"></a>2. 题目</h2><pre><code class="python">在Python中定义类时，与特殊方法名__floordiv__()对应的运算符为__________
-</code></pre>
-<p><strong>答案：&#x2F;&#x2F;</strong></p>
-<p><strong>解析</strong>：在Python中，__floordiv__()方法对应于整数除法运算符&#x2F;&#x2F;。</p>
-<p>&nbsp;</p>
-<h2 id="3-题目-2"><a href="#3-题目-2" class="headerlink" title="3. 题目"></a>3. 题目</h2><pre><code class="python">定义类时，在一个方法前面使用装饰器_________进行修饰，则该方法属于类方法。
-</code></pre>
-<p><strong>答案：@classmethod</strong></p>
-<p><strong>解析</strong>：@classmethod装饰器用于定义类方法，类方法的第一个参数通常是cls，表示类本身。</p>
-<p>&nbsp;</p>
-<h2 id="4-题目-2"><a href="#4-题目-2" class="headerlink" title="4. 题目"></a>4. 题目</h2><pre><code class="python">在Python定义类时，与运算符“**”对应的特殊方法名为_____
-</code></pre>
-<p><strong>答案：_<em>pow</em>_()</strong></p>
-<p><strong>解析</strong>：在Python中，_<em>pow</em>_()方法对应于幂运算符**。</p>
-<p>&nbsp;</p>
-<h2 id="5-题目-1"><a href="#5-题目-1" class="headerlink" title="5. 题目"></a>5. 题目</h2><pre><code class="python">通过装饰器________可以将类中的方法当作属性成员进行访问。
-</code></pre>
-<p><strong>答案：@property</strong></p>
-<p><strong>解析</strong>：@property装饰器用于将方法转换为属性，可以通过属性访问的方式调用方法，而不需要加括号。</p>
+<p> </p>
+<h2 id="9-题目"><a class="markdownIt-Anchor" href="#9-题目">#</a> 9. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>Python中一切内容都可以称为对象。  <span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：在 Python 中，一切都是对象，包括数字、字符串、函数、类等。</p>
+<p> </p>
+<h2 id="10-题目"><a class="markdownIt-Anchor" href="#10-题目">#</a> 10. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>定义类时，在一个方法前面使用@<span class="token builtin">staticmethod</span>进行修饰，则该方法属于静态方法。<span class="token punctuation">(</span>    <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：@staticmethod 装饰器用于定义静态方法，静态方法不需要 self 或 cls 参数，可以通过类名或对象名调用。</p>
+<p> </p>
+<h2 id="11-题目"><a class="markdownIt-Anchor" href="#11-题目">#</a> 11. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>在设计派生类时，基类的私有成员默认是不会继承的。<span class="token punctuation">(</span>   <span class="token punctuation">)</span></pre></td></tr></table></figure><p><strong>答案：对</strong></p>
+<p><strong>解析</strong>：在 Python 中，基类的私有成员（使用双下划线前缀定义的成员）默认不会被派生类继承，这是名称修饰的结果。</p>
+<p> </p>
+<h1 id="填空题"><a class="markdownIt-Anchor" href="#填空题">#</a> 填空题</h1>
+<h2 id="1-题目-3"><a class="markdownIt-Anchor" href="#1-题目-3">#</a> 1. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>在Python中，不论类的名字是什么，构造方法的名字都是______</pre></td></tr></table></figure><p><strong>答案：__init__</strong></p>
+<p><strong>解析</strong>：在 Python 中，构造方法的固定名称是____init____，用于初始化对象。</p>
+<p> </p>
+<h2 id="2-题目-3"><a class="markdownIt-Anchor" href="#2-题目-3">#</a> 2. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>在Python中定义类时，与特殊方法名__floordiv__<span class="token punctuation">(</span><span class="token punctuation">)</span>对应的运算符为__________</pre></td></tr></table></figure><p><strong>答案：//</strong></p>
+<p><strong>解析</strong>：在 Python 中，__floordiv__() 方法对应于整数除法运算符 //。</p>
+<p> </p>
+<h2 id="3-题目-3"><a class="markdownIt-Anchor" href="#3-题目-3">#</a> 3. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>定义类时，在一个方法前面使用装饰器_________进行修饰，则该方法属于类方法。</pre></td></tr></table></figure><p><strong>答案：@classmethod</strong></p>
+<p><strong>解析</strong>：@classmethod 装饰器用于定义类方法，类方法的第一个参数通常是 cls，表示类本身。</p>
+<p> </p>
+<h2 id="4-题目-3"><a class="markdownIt-Anchor" href="#4-题目-3">#</a> 4. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>在Python定义类时，与运算符“<span class="token operator">**</span>”对应的特殊方法名为_____</pre></td></tr></table></figure><p><strong>答案：_<em>pow</em>_()</strong></p>
+<p><strong>解析</strong>：在 Python 中，_<em>pow</em>_() 方法对应于幂运算符 **。</p>
+<p> </p>
+<h2 id="5-题目-2"><a class="markdownIt-Anchor" href="#5-题目-2">#</a> 5. 题目</h2>
+<figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>通过装饰器________可以将类中的方法当作属性成员进行访问。</pre></td></tr></table></figure><p><strong>答案：@property</strong></p>
+<p><strong>解析</strong>：@property 装饰器用于将方法转换为属性，可以通过属性访问的方式调用方法，而不需要加括号。</p>
 
       <div class="tags">
           <a href="/tags/Python/" rel="tag"><i class="ic i-tag"></i> Python</a>
@@ -380,7 +309,7 @@ D.该类实例中包含__dir__（）方法
     <div class="item left">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;21.jpg" title="Python程序设计习题——函数">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" itemprop="url" rel="prev" data-background-image="&#x2F;images&#x2F;bg&#x2F;15.jpg" title="Python程序设计习题——函数">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——函数</h3>
@@ -390,7 +319,7 @@ D.该类实例中包含__dir__（）方法
     <div class="item right">
       
 
-  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;12.jpg" title="Python程序设计习题——文件">
+  <a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/" itemprop="url" rel="next" data-background-image="&#x2F;images&#x2F;bg&#x2F;9.jpg" title="Python程序设计习题——文件">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Python语言程序设计</span>
   <h3>Python程序设计习题——文件</h3>
@@ -412,7 +341,7 @@ D.该类实例中包含__dir__（）方法
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF"><span class="toc-number">1.</span> <span class="toc-text">类与继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.4.</span> <span class="toc-text">4. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text">判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">3.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.5.</span> <span class="toc-text">5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text">6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text">7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text">8. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.9.</span> <span class="toc-text">9. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.10.</span> <span class="toc-text">10. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.11.</span> <span class="toc-text">11. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.1.</span> <span class="toc-text">1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.2.</span> <span class="toc-text">2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.3.</span> <span class="toc-text">3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.4.</span> <span class="toc-text">4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-1"><span class="toc-number">4.5.</span> <span class="toc-text">5. 题目</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF"><span class="toc-number">1.</span> <span class="toc-text"> 类与继承</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text"> 选择题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE"><span class="toc-number">2.4.</span> <span class="toc-text"> 4. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 判断题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">3.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.5.</span> <span class="toc-text"> 5. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.6.</span> <span class="toc-text"> 6. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.7.</span> <span class="toc-text"> 7. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.8.</span> <span class="toc-text"> 8. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.9.</span> <span class="toc-text"> 9. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.10.</span> <span class="toc-text"> 10. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E9%A2%98%E7%9B%AE"><span class="toc-number">3.11.</span> <span class="toc-text"> 11. 题目</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text"> 填空题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.1.</span> <span class="toc-text"> 1. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.2.</span> <span class="toc-text"> 2. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.3.</span> <span class="toc-text"> 3. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%A2%98%E7%9B%AE-3"><span class="toc-number">4.4.</span> <span class="toc-text"> 4. 题目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E9%A2%98%E7%9B%AE-2"><span class="toc-number">4.5.</span> <span class="toc-text"> 5. 题目</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
@@ -430,19 +359,19 @@ D.该类实例中包含__dir__（）方法
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
+        <span class="count">19</span>
         <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">2</span>
+        <span class="count">3</span>
         <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">28</span>
+        <span class="count">33</span>
         <span class="name">标签</span>
       </a>
     </div>
@@ -502,7 +431,27 @@ D.该类实例中包含__dir__（）方法
 <a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/" title="Python程序设计习题——字典">Python程序设计习题——字典</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/" title="Python程序设计习题——类与继承">Python程序设计习题——类与继承</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+</div>
+
+    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88C-%EF%BC%89/" title="分类于 数据结构（C++）">数据结构（C++）</a>
+</div>
+
+    <span><a href="/2026/02/13/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" title="栈和队列">栈和队列</a></span>
   </li>
 
       
@@ -522,46 +471,7 @@ D.该类实例中包含__dir__（）方法
 <a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2025/09/06/ctfshow-SQL%E6%B3%A8%E5%85%A5/" title="ctfshow SQL注入">ctfshow SQL注入</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" title="Python程序设计习题——函数">Python程序设计习题——函数</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
-</div>
-
     <span><a href="/2025/09/05/ctfshow%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86/" title="ctfshow信息搜集">ctfshow信息搜集</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
-</div>
-
-    <span><a href="/2026/01/16/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="Python程序设计">Python程序设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2025/07/08/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -578,20 +488,40 @@ D.该类实例中包含__dir__（）方法
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
 </div>
 
-    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
+    <span><a href="/2025/09/06/ctfshow%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" title="ctfshow文件上传">ctfshow文件上传</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/ctfshow-web%E5%85%A5%E9%97%A8wp/" title="分类于 ctfshow-web入门wp">ctfshow-web入门wp</a>
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
 </div>
 
-    <span><a href="/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/" title="ctfshow命令执行">ctfshow命令执行</a></span>
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/" title="Python程序设计习题——函数">Python程序设计习题——函数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+</div>
+
+    <span><a href="/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/" title="Python程序设计习题——程序思维与Python语言基础">Python程序设计习题——程序思维与Python语言基础</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Python%E8%AF%AD%E8%A8%80%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="分类于 Python语言程序设计">Python语言程序设计</a>
+</div>
+
+    <span><a href="/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" title="Python程序设计习题——列表与列表推导式">Python程序设计习题——列表与列表推导式</a></span>
   </li>
 
   </ul>
@@ -616,13 +546,13 @@ D.该类实例中包含__dir__（）方法
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">1.4m 字</span>
+    <span title="站点总字数">1.3m 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">20:39</span>
+    <span title="站点阅读时长">20:17</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
