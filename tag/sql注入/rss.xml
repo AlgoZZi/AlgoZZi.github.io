@@ -30,15 +30,17 @@
         <category>日志包含</category>
         <category>session条件竞争</category>
         <category>文件包含漏洞</category>
-        <category>数据结构</category>
-        <category>算法</category>
-        <category>栈</category>
-        <category>队列</category>
         <category>爆破</category>
         <category>BurpSuite</category>
-        <category>线性表</category>
+        <category>数据结构</category>
+        <category>算法</category>
+        <category>串</category>
+        <category>稀疏矩阵</category>
+        <category>栈</category>
+        <category>队列</category>
         <category>二叉树</category>
         <category>堆</category>
+        <category>线性表</category>
         <category>集合</category>
         <category>二叉排序树BST</category>
         <category>二叉平衡树ALV</category>
