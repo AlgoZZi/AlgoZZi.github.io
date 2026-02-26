@@ -7,7 +7,6 @@
     <category term="Python" />
     <category term="CTF" />
     <category term="Web" />
-    <category term="信息搜集" />
     <category term="SQL注入" />
     <category term="时间盲注" />
     <category term="布尔盲注" />
@@ -16,13 +15,17 @@
     <category term="sqlmap" />
     <category term="Webshell" />
     <category term="MySQL" />
+    <category term="信息搜集" />
+    <category term="命令执行RCE" />
+    <category term="无参RCE" />
+    <category term="php伪协议" />
+    <category term="Linux系统命令" />
+    <category term="过滤绕过" />
+    <category term="POC" />
     <category term="文件上传" />
     <category term="木马上传" />
-    <category term="命令执行RCE" />
     <category term="日志包含" />
-    <category term="Linux系统命令" />
     <category term="session条件竞争" />
-    <category term="文件包含漏洞" />
     <category term="爆破" />
     <category term="BurpSuite" />
     <category term="数据结构" />
@@ -32,24 +35,21 @@
     <category term="Prim算法" />
     <category term="dijkstra算法" />
     <category term="拓扑排序" />
-    <category term="无参RCE" />
-    <category term="php伪协议" />
-    <category term="过滤绕过" />
-    <category term="POC" />
     <category term="插入排序算法" />
     <category term="交换排序算法" />
     <category term="选择排序算法" />
+    <category term="文件包含漏洞" />
     <category term="栈" />
     <category term="队列" />
-    <category term="线性表" />
-    <category term="串" />
-    <category term="稀疏矩阵" />
     <category term="集合" />
     <category term="二叉排序树BST" />
     <category term="二叉平衡树ALV" />
     <category term="哈希表" />
+    <category term="线性表" />
     <category term="二叉树" />
     <category term="堆" />
+    <category term="串" />
+    <category term="稀疏矩阵" />
     <category term="PHP漏洞" />
     <category term="哈希碰撞" />
     <category term="正则漏洞" />
@@ -2664,11 +2664,11 @@ halfversionedmorekeywords.py 	 MySQL &amp;lt; 5.1中关键字前加注释
         <category term="CTF" />
         <category term="Web" />
         <category term="Webshell" />
+        <category term="命令执行RCE" />
+        <category term="Linux系统命令" />
         <category term="文件上传" />
         <category term="木马上传" />
-        <category term="命令执行RCE" />
         <category term="日志包含" />
-        <category term="Linux系统命令" />
         <category term="session条件竞争" />
         <updated>2025-09-06T08:55:54.000Z</updated>
     </entry>
@@ -5242,9 +5242,9 @@ if(isset($_GET[&#39;c&#39;]))&amp;#123;
         <category term="CTF" />
         <category term="Web" />
         <category term="命令执行RCE" />
-        <category term="Linux系统命令" />
         <category term="无参RCE" />
         <category term="php伪协议" />
+        <category term="Linux系统命令" />
         <category term="过滤绕过" />
         <category term="POC" />
         <updated>2025-09-05T08:10:52.000Z</updated>
