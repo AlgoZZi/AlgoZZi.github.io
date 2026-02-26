@@ -36,6 +36,11 @@
         <category>算法</category>
         <category>串</category>
         <category>稀疏矩阵</category>
+        <category>邻接表</category>
+        <category>Kruskal算法</category>
+        <category>Prim算法</category>
+        <category>dijkstra算法</category>
+        <category>拓扑排序</category>
         <category>栈</category>
         <category>队列</category>
         <category>二叉树</category>

@@ -33,6 +33,11 @@
     <category term="算法" />
     <category term="串" />
     <category term="稀疏矩阵" />
+    <category term="邻接表" />
+    <category term="Kruskal算法" />
+    <category term="Prim算法" />
+    <category term="dijkstra算法" />
+    <category term="拓扑排序" />
     <category term="栈" />
     <category term="队列" />
     <category term="二叉树" />
