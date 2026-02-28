@@ -1,30 +1,31 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://AlgoZZi.github.io</id>
     <title>不说永远  珍惜现在 • Posts by &#34;过滤绕过&#34; tag</title>
-    <link href="http://example.com" />
+    <link href="https://AlgoZZi.github.io" />
     <updated>2025-09-05T08:10:52.000Z</updated>
     <category term="Python" />
     <category term="CTF" />
     <category term="Web" />
+    <category term="SQL注入" />
+    <category term="时间盲注" />
+    <category term="布尔盲注" />
+    <category term="报错注入" />
+    <category term="堆叠注入" />
+    <category term="sqlmap" />
+    <category term="Webshell" />
+    <category term="MySQL" />
+    <category term="文件上传" />
+    <category term="木马上传" />
+    <category term="命令执行RCE" />
+    <category term="日志包含" />
+    <category term="Linux系统命令" />
+    <category term="session条件竞争" />
     <category term="爆破" />
     <category term="BurpSuite" />
-    <category term="命令执行RCE" />
-    <category term="无参RCE" />
-    <category term="php伪协议" />
-    <category term="Linux系统命令" />
-    <category term="过滤绕过" />
-    <category term="POC" />
-    <category term="信息搜集" />
+    <category term="文件包含漏洞" />
     <category term="数据结构" />
     <category term="算法" />
-    <category term="插入排序算法" />
-    <category term="交换排序算法" />
-    <category term="选择排序算法" />
-    <category term="文件包含漏洞" />
-    <category term="日志包含" />
-    <category term="木马上传" />
-    <category term="session条件竞争" />
     <category term="邻接表" />
     <category term="Kruskal算法" />
     <category term="Prim算法" />
@@ -32,31 +33,30 @@
     <category term="拓扑排序" />
     <category term="串" />
     <category term="稀疏矩阵" />
-    <category term="栈" />
-    <category term="队列" />
-    <category term="文件上传" />
-    <category term="Webshell" />
+    <category term="信息搜集" />
+    <category term="插入排序算法" />
+    <category term="交换排序算法" />
+    <category term="选择排序算法" />
+    <category term="无参RCE" />
+    <category term="php伪协议" />
+    <category term="过滤绕过" />
+    <category term="POC" />
     <category term="二叉树" />
     <category term="堆" />
-    <category term="SQL注入" />
-    <category term="时间盲注" />
-    <category term="布尔盲注" />
-    <category term="报错注入" />
-    <category term="堆叠注入" />
-    <category term="sqlmap" />
-    <category term="MySQL" />
+    <category term="线性表" />
+    <category term="栈" />
+    <category term="队列" />
     <category term="集合" />
     <category term="二叉排序树BST" />
     <category term="二叉平衡树ALV" />
     <category term="哈希表" />
-    <category term="线性表" />
     <category term="PHP漏洞" />
     <category term="哈希碰撞" />
     <category term="正则漏洞" />
     <entry>
-        <id>http://example.com/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/</id>
+        <id>https://algozzi.github.io/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/</id>
         <title>ctfshow命令执行</title>
-        <link rel="alternate" href="http://example.com/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/"/>
+        <link rel="alternate" href="https://algozzi.github.io/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/"/>
         <content type="html">&lt;h1 id=&#34;web29&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#web29&#34;&gt;#&lt;/a&gt; web29&lt;/h1&gt;
 &lt;figure class=&#34;highlight php&#34;&gt;&lt;figcaption data-lang=&#34;PHP&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token php language-php&#34;&gt;&lt;span class=&#34;token delimiter important&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;/*&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# -*- coding: utf-8 -*-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# @Author: h1xa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# @Date:   2020-09-04 00:12:34&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# @Last Modified by:   h1xa&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# @Last Modified time: 2020-09-04 00:26:48&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# @email: h1xa@ctfer.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;# @link: https://ctfer.com&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;*/&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;error_reporting&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;isset&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token variable&#34;&gt;$c&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$_GET&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;token string single-quoted-string&#34;&gt;&#39;c&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;token function&#34;&gt;preg_match&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string double-quoted-string&#34;&gt;&#34;/flag/i&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;token variable&#34;&gt;$c&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;        &lt;span class=&#34;token keyword&#34;&gt;eval&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$c&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;span class=&#34;token keyword&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token function&#34;&gt;highlight_file&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token constant&#34;&gt;__FILE__&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;过滤了  &lt;code&gt;flag&lt;/code&gt; &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;payload&lt;/strong&gt;&lt;/p&gt;
@@ -423,9 +423,9 @@ if(isset($_GET[&#39;c&#39;]))&amp;#123;
         <category term="CTF" />
         <category term="Web" />
         <category term="命令执行RCE" />
+        <category term="Linux系统命令" />
         <category term="无参RCE" />
         <category term="php伪协议" />
-        <category term="Linux系统命令" />
         <category term="过滤绕过" />
         <category term="POC" />
         <updated>2025-09-05T08:10:52.000Z</updated>

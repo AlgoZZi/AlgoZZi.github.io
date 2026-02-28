@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>不说永远  珍惜现在 • Posts by &#34;php伪协议&#34; tag</title>
-        <link>http://example.com</link>
+        <link>https://AlgoZZi.github.io</link>
         <description></description>
         <language>zh-CN</language>
         <pubDate>Fri, 05 Sep 2025 16:10:52 +0800</pubDate>
@@ -10,24 +10,25 @@
         <category>Python</category>
         <category>CTF</category>
         <category>Web</category>
+        <category>SQL注入</category>
+        <category>时间盲注</category>
+        <category>布尔盲注</category>
+        <category>报错注入</category>
+        <category>堆叠注入</category>
+        <category>sqlmap</category>
+        <category>Webshell</category>
+        <category>MySQL</category>
+        <category>文件上传</category>
+        <category>木马上传</category>
+        <category>命令执行RCE</category>
+        <category>日志包含</category>
+        <category>Linux系统命令</category>
+        <category>session条件竞争</category>
         <category>爆破</category>
         <category>BurpSuite</category>
-        <category>命令执行RCE</category>
-        <category>无参RCE</category>
-        <category>php伪协议</category>
-        <category>Linux系统命令</category>
-        <category>过滤绕过</category>
-        <category>POC</category>
-        <category>信息搜集</category>
+        <category>文件包含漏洞</category>
         <category>数据结构</category>
         <category>算法</category>
-        <category>插入排序算法</category>
-        <category>交换排序算法</category>
-        <category>选择排序算法</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
         <category>邻接表</category>
         <category>Kruskal算法</category>
         <category>Prim算法</category>
@@ -35,37 +36,36 @@
         <category>拓扑排序</category>
         <category>串</category>
         <category>稀疏矩阵</category>
-        <category>栈</category>
-        <category>队列</category>
-        <category>文件上传</category>
-        <category>Webshell</category>
+        <category>信息搜集</category>
+        <category>插入排序算法</category>
+        <category>交换排序算法</category>
+        <category>选择排序算法</category>
+        <category>无参RCE</category>
+        <category>php伪协议</category>
+        <category>过滤绕过</category>
+        <category>POC</category>
         <category>二叉树</category>
         <category>堆</category>
-        <category>SQL注入</category>
-        <category>时间盲注</category>
-        <category>布尔盲注</category>
-        <category>报错注入</category>
-        <category>堆叠注入</category>
-        <category>sqlmap</category>
-        <category>MySQL</category>
+        <category>线性表</category>
+        <category>栈</category>
+        <category>队列</category>
         <category>集合</category>
         <category>二叉排序树BST</category>
         <category>二叉平衡树ALV</category>
         <category>哈希表</category>
-        <category>线性表</category>
         <category>PHP漏洞</category>
         <category>哈希碰撞</category>
         <category>正则漏洞</category>
         <item>
-            <guid isPermalink="true">http://example.com/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/</guid>
             <title>ctfshow命令执行</title>
-            <link>http://example.com/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/</link>
+            <link>https://algozzi.github.io/2025/09/05/ctfshow%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/</link>
             <category>CTF</category>
             <category>Web</category>
             <category>命令执行RCE</category>
+            <category>Linux系统命令</category>
             <category>无参RCE</category>
             <category>php伪协议</category>
-            <category>Linux系统命令</category>
             <category>过滤绕过</category>
             <category>POC</category>
             <pubDate>Fri, 05 Sep 2025 16:10:52 +0800</pubDate>

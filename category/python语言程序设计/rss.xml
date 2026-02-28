@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>不说永远  珍惜现在 • Posts by &#34;python语言程序设计&#34; category</title>
-        <link>http://example.com</link>
+        <link>https://AlgoZZi.github.io</link>
         <description></description>
         <language>zh-CN</language>
         <pubDate>Sun, 18 Jan 2026 00:21:19 +0800</pubDate>
@@ -10,24 +10,25 @@
         <category>Python</category>
         <category>CTF</category>
         <category>Web</category>
+        <category>SQL注入</category>
+        <category>时间盲注</category>
+        <category>布尔盲注</category>
+        <category>报错注入</category>
+        <category>堆叠注入</category>
+        <category>sqlmap</category>
+        <category>Webshell</category>
+        <category>MySQL</category>
+        <category>文件上传</category>
+        <category>木马上传</category>
+        <category>命令执行RCE</category>
+        <category>日志包含</category>
+        <category>Linux系统命令</category>
+        <category>session条件竞争</category>
         <category>爆破</category>
         <category>BurpSuite</category>
-        <category>命令执行RCE</category>
-        <category>无参RCE</category>
-        <category>php伪协议</category>
-        <category>Linux系统命令</category>
-        <category>过滤绕过</category>
-        <category>POC</category>
-        <category>信息搜集</category>
+        <category>文件包含漏洞</category>
         <category>数据结构</category>
         <category>算法</category>
-        <category>插入排序算法</category>
-        <category>交换排序算法</category>
-        <category>选择排序算法</category>
-        <category>文件包含漏洞</category>
-        <category>日志包含</category>
-        <category>木马上传</category>
-        <category>session条件竞争</category>
         <category>邻接表</category>
         <category>Kruskal算法</category>
         <category>Prim算法</category>
@@ -35,31 +36,30 @@
         <category>拓扑排序</category>
         <category>串</category>
         <category>稀疏矩阵</category>
-        <category>栈</category>
-        <category>队列</category>
-        <category>文件上传</category>
-        <category>Webshell</category>
+        <category>信息搜集</category>
+        <category>插入排序算法</category>
+        <category>交换排序算法</category>
+        <category>选择排序算法</category>
+        <category>无参RCE</category>
+        <category>php伪协议</category>
+        <category>过滤绕过</category>
+        <category>POC</category>
         <category>二叉树</category>
         <category>堆</category>
-        <category>SQL注入</category>
-        <category>时间盲注</category>
-        <category>布尔盲注</category>
-        <category>报错注入</category>
-        <category>堆叠注入</category>
-        <category>sqlmap</category>
-        <category>MySQL</category>
+        <category>线性表</category>
+        <category>栈</category>
+        <category>队列</category>
         <category>集合</category>
         <category>二叉排序树BST</category>
         <category>二叉平衡树ALV</category>
         <category>哈希表</category>
-        <category>线性表</category>
         <category>PHP漏洞</category>
         <category>哈希碰撞</category>
         <category>正则漏洞</category>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/</guid>
             <title>Python程序设计习题——文件</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E6%96%87%E4%BB%B6/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:21:19 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文件&#34;&gt;#&lt;/a&gt; 文件&lt;/h1&gt;
@@ -117,9 +117,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/</guid>
             <title>Python程序设计习题——类与继承</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%B1%BB%E4%B8%8E%E7%BB%A7%E6%89%BF/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:17:16 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;类与继承&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#类与继承&#34;&gt;#&lt;/a&gt; 类与继承&lt;/h1&gt;
@@ -220,9 +220,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/</guid>
             <title>Python程序设计习题——函数</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%87%BD%E6%95%B0/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:15:37 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#函数&#34;&gt;#&lt;/a&gt; 函数&lt;/h1&gt;
@@ -327,9 +327,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/</guid>
             <title>Python程序设计习题——集合</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E9%9B%86%E5%90%88/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:14:13 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;集合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#集合&#34;&gt;#&lt;/a&gt; 集合&lt;/h1&gt;
@@ -424,9 +424,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/</guid>
             <title>Python程序设计习题——字典</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%AD%97%E5%85%B8/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:12:31 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;字典&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#字典&#34;&gt;#&lt;/a&gt; 字典&lt;/h1&gt;
@@ -527,9 +527,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/</guid>
             <title>Python程序设计习题——元组</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%85%83%E7%BB%84/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:10:48 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;元组&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#元组&#34;&gt;#&lt;/a&gt; 元组&lt;/h1&gt;
@@ -621,9 +621,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/</guid>
             <title>Python程序设计习题——列表与列表推导式</title>
-            <link>http://example.com/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/</link>
+            <link>https://algozzi.github.io/2026/01/18/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E5%88%97%E8%A1%A8%E4%B8%8E%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/</link>
             <category>Python</category>
             <pubDate>Sun, 18 Jan 2026 00:08:35 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;列表与列表推导式&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#列表与列表推导式&#34;&gt;#&lt;/a&gt; 列表与列表推导式&lt;/h1&gt;
@@ -705,9 +705,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</guid>
             <title>Python程序设计习题——程序思维与Python语言基础</title>
-            <link>http://example.com/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
+            <link>https://algozzi.github.io/2026/01/17/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E4%B9%A0%E9%A2%98%E2%80%94%E2%80%94%E7%A8%8B%E5%BA%8F%E6%80%9D%E7%BB%B4%E4%B8%8EPython%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/</link>
             <category>Python</category>
             <pubDate>Sat, 17 Jan 2026 23:54:24 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;程序思维与python语言基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#程序思维与python语言基础&#34;&gt;#&lt;/a&gt; 程序思维与 Python 语言基础&lt;/h1&gt;
@@ -818,9 +818,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2026/01/16/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</guid>
+            <guid isPermalink="true">https://algozzi.github.io/2026/01/16/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</guid>
             <title>Python程序设计</title>
-            <link>http://example.com/2026/01/16/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link>
+            <link>https://algozzi.github.io/2026/01/16/Python%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</link>
             <category>Python</category>
             <pubDate>Fri, 16 Jan 2026 22:25:33 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;目录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#目录&#34;&gt;#&lt;/a&gt; 目录&lt;/h2&gt;
